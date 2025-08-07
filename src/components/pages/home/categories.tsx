@@ -1,3 +1,4 @@
+'use client';
 import CategoryCard from './category-card';
 import { categories } from '@/data/categories';
 import { motion } from 'framer-motion';
