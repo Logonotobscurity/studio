@@ -1,3 +1,5 @@
+"use client"
+
 import * as React from "react"
 
 const MOBILE_BREAKPOINT = 768
@@ -10,14 +12,13 @@ export function useIsMobile() {
       setIsMobile(window.innerWidth < MOBILE_BREAKPOINT);
     };
 
-    // Initial check
+    // Initial check after component mounts on the client
     checkDevice();
 
-    const mql = window.matchMedia(`(max-width: ${MOBILE_BREAKPOINT - 1}px)`);
-    mql.addEventListener("change", checkDevice);
+    window.addEventListener("resize", checkDevice);
 
     return () => {
-      mql.removeEventListener("change", checkDevice);
+      window.removeEventListener("resize", checkDevice);
     };
   }, []);
 
