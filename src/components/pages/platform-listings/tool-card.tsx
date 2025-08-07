@@ -59,5 +59,3 @@ export default function ToolCard({ tool, onSelect }: ToolCardProps) {
     </Card>
   );
 }
-
-    
