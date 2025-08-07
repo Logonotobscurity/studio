@@ -1,10 +1,11 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import type { Tool } from "@/lib/tools";
-import { ArrowUpRight, Star } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import Link from 'next/link';
 import { Badge } from "@/components/ui/badge";
 import { tagMap } from "@/lib/constants";
 import { motion } from 'framer-motion';
+import Rating from "@/components/ui/rating";
 
 type ToolCardProps = {
   tool: Tool;
@@ -12,21 +13,6 @@ type ToolCardProps = {
 };
 
 export default function ToolCard({ tool, onSelect }: ToolCardProps) {
-
-  const renderStars = (rating: number) => {
-    const totalStars = 5;
-    const filledStars = Math.round(rating);
-    return (
-      <div className="flex items-center gap-0.5 rating-glow p-2" aria-label={`Rating: ${rating} out of 5 stars`}>
-        {[...Array(totalStars)].map((_, i) => (
-          <Star
-            key={i}
-            className={`h-4 w-4 transition-colors ${i < filledStars ? 'text-orange-400 fill-orange-400' : 'text-muted-foreground/50'}`}
-          />
-        ))}
-      </div>
-    );
-  };
 
   const cardVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -46,7 +32,7 @@ export default function ToolCard({ tool, onSelect }: ToolCardProps) {
           <CardHeader>
             <div className="flex justify-between items-start">
                 <CardTitle className="text-xl font-bold">{tool.tool}</CardTitle>
-                {tool.rating && renderStars(tool.rating)}
+                {tool.rating && <Rating rating={tool.rating} />}
             </div>
             <CardDescription className="font-inter !mt-2">{tool.benefit}</CardDescription>
           </CardHeader>

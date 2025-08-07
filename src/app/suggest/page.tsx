@@ -8,13 +8,13 @@ import { Textarea } from '@/components/ui/textarea';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { useToast } from '@/hooks/use-toast';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Send } from 'lucide-react';
+import { Send, Loader2 } from 'lucide-react';
 import type { Metadata } from 'next';
 
-// export const metadata: Metadata = {
-//   title: 'Suggest a Tool',
-//   description: 'Have a tool that should be on StartIT? Let us know!',
-// };
+export const metadata: Metadata = {
+  title: 'Suggest a Tool',
+  description: 'Have a tool that should be on StartIT? Let us know!',
+};
 
 const formSchema = z.object({
   toolName: z.string().min(2, 'Tool name must be at least 2 characters.'),
@@ -119,8 +119,14 @@ export default function SuggestToolPage() {
                   )}
                 />
                 <Button type="submit" className="w-full" disabled={form.formState.isSubmitting}>
-                   {form.formState.isSubmitting ? 'Submitting...' : 'Submit Suggestion'}
-                   <Send className="ml-2 h-4 w-4" />
+                   {form.formState.isSubmitting ? (
+                    <Loader2 className="animate-spin" />
+                   ) : (
+                    <>
+                      Submit Suggestion
+                      <Send className="ml-2 h-4 w-4" />
+                    </>
+                   )}
                 </Button>
               </form>
             </Form>

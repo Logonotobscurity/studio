@@ -2,11 +2,12 @@ import type { Tool } from "@/lib/tools";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowLeft, ArrowUpRight, Star } from "lucide-react";
+import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { tagMap } from "@/lib/constants";
 import { motion } from "framer-motion";
+import Rating from "@/components/ui/rating";
 
 type ToolDossierProps = {
   tool: Tool;
@@ -14,20 +15,6 @@ type ToolDossierProps = {
 };
 
 export default function ToolDossier({ tool, onBack }: ToolDossierProps) {
-  const renderStars = (rating: number) => {
-    const totalStars = 5;
-    const filledStars = Math.round(rating);
-    return (
-      <div className="flex items-center gap-0.5" aria-label={`Rating: ${rating} out of 5 stars`}>
-        {[...Array(totalStars)].map((_, i) => (
-          <Star
-            key={i}
-            className={`h-5 w-5 transition-colors ${i < filledStars ? 'text-orange-400 fill-orange-400' : 'text-muted-foreground/50'}`}
-          />
-        ))}
-      </div>
-    );
-  };
 
   return (
     <div className="h-full flex flex-col bg-background">
@@ -45,7 +32,7 @@ export default function ToolDossier({ tool, onBack }: ToolDossierProps) {
             <CardHeader className="p-0">
               <div className="flex justify-between items-start">
                 <CardTitle className="text-2xl font-bold truncate">{tool.tool}</CardTitle>
-                {tool.rating && renderStars(tool.rating)}
+                {tool.rating && <Rating rating={tool.rating} size="lg" />}
               </div>
               <CardDescription className="!mt-2 text-base truncate">{tool.benefit}</CardDescription>
             </CardHeader>

@@ -4,15 +4,10 @@ import { Sparkles, ArrowUpRight } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { tools } from '@/lib/tools-data';
 
-const popularTools = [
-  { name: 'Vercel', category: 'Hosting', href: 'https://vercel.com', logo: 'https://placehold.co/40x40' },
-  { name: 'Hotjar', category: 'Analytics', href: 'https://hotjar.com', logo: 'https://placehold.co/40x40' },
-  { name: 'Figma', category: 'Design', href: 'https://figma.com', logo: 'https://placehold.co/40x40' },
-  { name: 'Notion', category: 'Productivity', href: 'https://notion.so', logo: 'https://placehold.co/40x40' },
-  { name: 'Stripe', category: 'Payments', href: 'https://stripe.com', logo: 'https://placehold.co/40x40' },
-  { name: 'OpenAI', category: 'AI', href: 'https://openai.com', logo: 'https://placehold.co/40x40' },
-];
+// Get the top 6 most popular tools based on the "*" tag
+const popularTools = tools.filter(tool => tool.tags?.includes('*')).slice(0, 6);
 
 export default function MostViewedTools() {
   return (
@@ -33,10 +28,10 @@ export default function MostViewedTools() {
             <ul className="divide-y divide-border">
               {popularTools.map((tool) => (
                 <li key={tool.name}>
-                  <Link href={tool.href} target="_blank" rel="noopener noreferrer" className="flex items-center p-4 hover:bg-muted/50 transition-colors group">
+                  <Link href={tool.url} target="_blank" rel="noopener noreferrer" className="flex items-center p-4 hover:bg-muted/50 transition-colors group">
                     <Image 
-                      src={tool.logo} 
-                      alt={`${tool.name} logo`} 
+                      src={`https://placehold.co/40x40`} 
+                      alt={`${tool.tool} logo`} 
                       width={40} 
                       height={40} 
                       className="rounded-md" 
@@ -44,7 +39,7 @@ export default function MostViewedTools() {
                       sizes="40px"
                     />
                     <div className="ml-4 flex-grow">
-                      <p className="font-semibold">{tool.name}</p>
+                      <p className="font-semibold">{tool.tool}</p>
                       <p className="text-sm text-muted-foreground font-inter">{tool.category}</p>
                     </div>
                     <div className="flex items-center text-sm text-muted-foreground">

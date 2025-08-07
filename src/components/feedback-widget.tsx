@@ -2,9 +2,8 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MessageSquare, Coffee, X, Send } from 'lucide-react';
+import { MessageSquare, Coffee, X, Send, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import Link from 'next/link';
 import { useToast } from '@/hooks/use-toast';
 
 export default function FeedbackWidget() {
@@ -13,16 +12,12 @@ export default function FeedbackWidget() {
   const { toast } = useToast();
 
   const handleToggle = () => {
-    // In a real app, you would track this interaction with an analytics event
-    // analytics.track('feedback_widget_toggled', { open: !isOpen });
     setIsOpen(!isOpen);
   };
   
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setIsSubmitting(true);
-    // In a real app, you would send this data to a backend endpoint
-    // await fetch('/api/feedback', { ... });
     
     // Simulate API call
     await new Promise(resolve => setTimeout(resolve, 1000));
@@ -65,8 +60,14 @@ export default function FeedbackWidget() {
                     aria-label="Feedback input"
                   />
                   <Button type="submit" className="w-full" disabled={isSubmitting}>
-                    {isSubmitting ? 'Submitting...' : 'Send Feedback'}
-                    <Send className="ml-2 h-4 w-4"/>
+                    {isSubmitting ? (
+                      <Loader2 className="animate-spin" />
+                    ) : (
+                      <>
+                        Send Feedback
+                        <Send className="ml-2 h-4 w-4"/>
+                      </>
+                    )}
                   </Button>
                 </form>
 
