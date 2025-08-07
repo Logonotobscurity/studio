@@ -1,0 +1,457 @@
+
+
+### 🔍 PROBLEMS & NEED-GAP
+- https://needgap.com  
+- https://80000hours.org/problem-profiles  
+
+### 💡 STARTUP IDEA & MVP
+- https://needgap.com  
+
+### 🎓 SCHOOL
+- https://startupschool.org  
+
+### 📚 BLOGS & READING LISTS
+- https://paulgraham.com  
+- https://stratechery.com  
+- https://themoneyillusion.com  
+- https://www.bayesianinvestor.com  
+- https://seths.blog  
+- https://hitstartup.com  
+- https://github.com/charlax/reading-list  
+- https://aosabook.org  
+
+### 🏗️ SOFTWARE ARCHITECTURE & PATTERNS
+- https://refactoring.guru  
+- https://github.com/kettanaito/architecture-notes  
+
+### 🗣️ COMMUNITIES & PEOPLE
+- https://reddit.com/r/startups  
+- https://reddit.com/r/SaaS  
+- https://news.ycombinator.com/ask  
+- https://reddit.com/r/hwstartups  
+- https://founderlist.com  
+- https://cofounderslab.com  
+- https://cofounder-matching.ycombinator.com  
+- https://angel.co/recruit  
+- https://linkedin.com  
+- https://github.com  
+- https://stackoverflow.com  
+
+### 🛠️ PROFESSIONALS & FREELANCE
+- https://fiverr.com  
+- https://flexjobs.com  
+- https://dribbble.com  
+- https://hatchways.io  
+- https://upwork.com  
+- https://flexiple.com  
+- https://toptal.com  
+
+### 💰 SALARY & EQUITY
+- https://levels.fyi  
+- https://stackoverflow.com/jobs/salary  
+- https://totalcomp.io  
+- https://foundrs.com  
+
+### 🪪 NAMING & DOMAINS
+- https://wordsafety.com  
+- https://naming-tools.com  
+- https://namemesh.com  
+- https://namelix.com  
+- https://namechk.com  
+- https://namify.com  
+
+### 📑 COMPLIANCE & LEGAL
+- https://capbase.com  
+- https://avodocs.com  
+- https://iubenda.com  
+- https://juro.com  
+
+### 🏢 COMPANY FORMATION
+- https://stripe.com/atlas  
+- https://startfleet.io  
+- https://xolo.io  
+
+### 📟 PROGRAMMING LANGUAGES
+- https://rust-lang.org  
+- https://isocpp.org  
+- https://golang.org  
+- https://java.com  
+- https://html.spec.whatwg.org  
+- https://typescriptlang.org  
+- https://javascript.com  
+- https://webassembly.org  
+- https://php.net  
+- https://ruby-lang.org  
+- https://lua.org  
+- https://python.org  
+- https://julialang.org  
+- https://r-project.org  
+- https://graphql.org  
+- https://dotnet.microsoft.com  
+- https://kotlinlang.org  
+- https://swift.org  
+
+### 🗄️ DATABASES
+- https://postgresql.org  
+- https://sqlite.org  
+- https://memcached.org  
+- https://leveldb.org  
+- https://redis.io  
+- https://mongodb.com  
+- https://couchbase.com  
+- https://neo4j.com  
+- https://timescale.com  
+- https://cockroachlabs.com  
+- https://scylladb.com  
+- https://fly.io  
+- https://splitgraph.com  
+- https://rxdb.info  
+- https://beekeeperstudio.io  
+
+### ⚙️ FRAMEWORKS & RUNTIMES
+- https://reactjs.org  
+- https://angular.io  
+- https://emberjs.com  
+- https://vuejs.org  
+- https://svelte.dev  
+- https://marionettejs.com  
+- https://andybrewer.github.io/mvp  
+- https://tailwindcss.com  
+- https://getbootstrap.com  
+- https://radix-ui.com  
+- https://tailwindui.com  
+- https://tailwindtemplates.io  
+- https://rubyonrails.org  
+- https://laravel.com  
+- https://nextjs.org  
+- https://kit.svelte.dev  
+- https://remix.run  
+- https://deno.land  
+- https://nodejs.org  
+- https://flutter.dev  
+- https://reactnative.dev  
+- https://flutterflow.io  
+- https://adalo.com  
+- https://judo.app  
+- https://glideapps.com  
+- https://bubble.io  
+- https://wix.com/velo  
+- https://softr.io  
+- https://utopia.app  
+- https://unflow.com  
+- https://jupyter.org  
+
+### 🚪 API & SECURITY
+- https://github.com/public-apis/public-apis  
+- https://hoppscotch.io  
+- https://shadertoy.com  
+- https://tixy.land  
+- https://sliderland.com  
+- https://owasp.org  
+- https://sqreen.com  
+- https://frida.re  
+- https://ghidra.re  
+- https://jetbrains.com/qodana  
+
+### 🧪 TESTING & QA
+- https://appcircle.io  
+- https://github.com/anderspitman/awesome-tunneling  
+
+### 📚 TRAINING & COURSES
+- https://freecodecamp.org  
+- https://codecrafters.io  
+
+### ☁️ PaaS / FaaS / BaaS / IaaS
+- https://fly.io  
+- https://vercel.com  
+- https://render.com  
+- https://railway.app  
+- https://cloud.google.com/appengine  
+- https://dokku.com  
+- https://ledokku.com  
+- https://caprover.com  
+- https://aws.amazon.com/lambda  
+- https://azure.microsoft.com/functions  
+- https://cloud.google.com/functions  
+- https://github.com/piku/piku  
+- https://supabase.com  
+- https://pocketbase.io  
+- https://firebase.google.com  
+- https://parseplatform.org  
+- https://appwrite.io  
+
+### 🏗️ INFRASTRUCTURE AS CODE & DNS / CDN
+- https://terraform.io  
+- https://infracost.io  
+- https://hetzner.com  
+- https://digitalocean.com  
+- https://scaleway.com  
+- https://vultr.com  
+- https://ovh.com  
+- https://aws.amazon.com/ec2  
+- https://azure.microsoft.com/virtual-machines  
+- https://cloud.google.com/compute  
+- https://oracle.com/cloud  
+- https://lambdalabs.com  
+- https://cloudflare.com  
+- https://constellix.com  
+- https://bunny.net  
+
+### 🔍 SEARCH & ANALYTICS
+- https://algolia.com  
+- https://typesense.org  
+- https://elastic.co  
+- https://swiftype.com  
+- https://usefathom.com  
+- https://plausible.io  
+- https://hockeystack.com  
+- https://analytics.google.com  
+- https://mixpanel.com  
+- https://goaccess.io  
+- https://matomo.org  
+- https://uxwizz.com  
+
+### 🖥️ MONITORING & LOGS
+- https://sentry.io  
+- https://prometheus.io  
+- https://confluent.io  
+- https://honeycomb.io  
+- https://rookout.com  
+- https://uptimerobot.com  
+- https://fluentd.org  
+- https://logz.io  
+- https://lnav.org  
+
+### 🎨 DESIGN & GRAPHICS
+- https://canva.com  
+- https://affinity.serif.com/photo  
+- https://stencil.com  
+- https://photopea.com  
+- https://picsart.com  
+- https://gimp.org  
+- https://motionity.app  
+- https://figma.com  
+- https://stage.so  
+- https://mockrocket.com  
+- https://screely.com  
+- https://overflow.io  
+- https://spline.design  
+- https://krita.org  
+- https://inkscape.org  
+- https://affinity.serif.com/designer  
+- https://aseprite.org  
+- https://pixilart.com  
+
+### 🌈 DESIGN RESOURCES
+- https://colorhunt.co  
+- https://coolors.co  
+- https://material.io/resources/color  
+- https://colordrop.io  
+- https://lospec.com  
+- https://toptal.com/designers/subtlepatterns  
+- https://filterss.com  
+- https://ui.glass/generator  
+- https://romannurik.github.io/AndroidAssetStudio  
+- https://realfavicongenerator.net  
+- https://css3please.com  
+- https://flexboxplease.com  
+- https://neumorphism.io  
+- https://pexels.com  
+- https://stocksnap.io  
+- https://unsplash.com  
+- https://pixabay.com  
+- https://freepik.com  
+- https://flaticon.com  
+- https://thenounproject.com  
+- https://iconfinder.com  
+- https://lineicons.com  
+
+### 🎵 AUDIO & MUSIC
+- https://onemanband.co  
+- https://youtube.com/audiolibrary  
+- https://nocopyrightsounds.co.uk  
+- https://riotgamesmusic.com  
+- https://earworm.app  
+- https://freesound.org  
+- https://freepats.zenvoid.org  
+
+### 🎙️ PODCAST & VOICE
+- https://transistor.fm  
+
+### 🗂️ PROJECT & TEAM
+- https://notion.so  
+- https://trello.com  
+- https://basecamp.com  
+- https://wrike.com  
+- https://asana.com  
+- https://smartsheet.com  
+- https://zoho.com/projects  
+- https://zenkit.com/base  
+- https://hypercontext.com  
+- https://lattice.com  
+- https://pause.so  
+
+### 👥 CRM & SUPPORT
+- https://zoho.com/crm  
+- https://hubspot.com/crm  
+- https://freshsales.com  
+- https://salesforce.com/essentials  
+- https://pipedrive.com  
+- https://rocketlane.com  
+- https://segment.com  
+- https://jitsu.com  
+- https://crisp.chat  
+- https://zendesk.com  
+- https://freshdesk.com  
+- https://helpscout.com  
+- https://intercom.com  
+
+### 📊 SPREADSHEETS & DOCS
+- https://airtable.com  
+- https://collaboraoffice.com  
+- https://coda.io  
+- https://sheets.google.com  
+
+### 📽️ PRESENTATION & VIDEO
+- https://canva.com/presentations  
+- https://beautiful.ai  
+- https://pitch.com  
+- https://loom.com  
+- https://decklinks.co  
+
+### 💬 TEAM CHAT & CONFERENCE
+- https://slack.com  
+- https://teams.microsoft.com  
+- https://discord.com  
+- https://zulip.com  
+- https://mattermost.com  
+- https://jitsi.org  
+- https://zoom.us  
+- https://meet.google.com  
+- https://chime.aws  
+- https://daily.co  
+- https://crowdcast.io  
+- https://webex.com  
+- https://goto.com/meeting  
+- https://intermedia.com/anymeeting  
+- https://mural.co  
+- https://kosyoffice.com  
+- https://prysm.com  
+- https://bluescape.com  
+- https://remo.co  
+- https://easyretro.com  
+
+### 📧 EMAIL & MARKETING
+- https://rackspace.com/email  
+- https://mailinabox.email  
+- https://mailu.io  
+- https://mailcow.email  
+- https://zoho.com/mail  
+- https://fastmail.com  
+- https://gsuite.google.com  
+- https://loopemail.com  
+- https://kanbanmail.com  
+- https://mixmax.com  
+- https://uglyemail.com  
+- https://clearbit.com/connect  
+- https://dropbox.com/gmail  
+- https://box.com/gmail  
+- https://zoom.us/gmail  
+- https://gmelius.com  
+- https://hubspot.com/sales  
+- https://mailchimp.com  
+- https://sendinblue.com  
+- https://convertkit.com  
+- https://mailjet.com  
+- https://mandrillapp.com  
+- https://mailgun.com  
+- https://aws.amazon.com/ses  
+- https://postmarkapp.com  
+- https://postalserver.io  
+
+### 🏷️ PRODUCTIVITY & HEALTH
+- https://buttmover.com  
+- https://memoryhammer.app  
+- https://untools.co  
+- https://lofi.co  
+- https://lifeat.io  
+- https://lofi.cafe  
+- https://lofi.limo  
+- https://musicforprogramming.net  
+
+### 💸 PAYMENTS & FINANCE
+- https://flurly.com  
+- https://ko-fi.com  
+- https://buymeacoffee.com  
+- https://itch.io  
+- https://gumroad.com  
+- https://opencollective.com  
+- https://liberapay.com  
+- https://stripe.com  
+- https://paypal.com  
+- https://paddle.com  
+- https://chargebee.com  
+- https://pay.google.com  
+- https://apple.com/apple-pay  
+- https://pay.amazon.com  
+- https://payu.com  
+- https://doku.com  
+- https://spreedly.com  
+
+### 📈 ACCOUNTING & MODELING
+- https://quickbooks.intuit.com  
+- https://zoho.com/books  
+- https://freshbooks.com  
+- https://sage.com/en-us/products/50  
+- https://tipalti.com  
+- https://vcita.com  
+- https://isitworththecost.com  
+- https://pry.co  
+- https://finmark.com  
+
+### 🌱 INCUBATORS & GRANTS
+- https://growthmentor.com/accelerators  
+- https://bridgeforbillions.org  
+- https://nasastartupstudio.org  
+- https://openai.com/fund  
+- https://gatesfoundation.org  
+- https://mozilla.org/moss  
+- https://arnoldventures.org  
+- https://thielfellowship.org  
+- https://sloan.org  
+- https://mercatus.org/emergent-ventures  
+- https://aigrant.org  
+- https://fossunited.org  
+- https://fundera.com/business-loans/grants  
+- https://startupindia.gov.in  
+- https://business.qld.gov.au/running-business/grants  
+- https://sakofchit.com/side-project-grants  
+- https://technology.nasa.gov  
+
+### 💰 INVESTORS & CROWDFUNDING
+- https://openvc.app  
+- https://devtoolangels.com  
+- https://angelmatch.io  
+- https://privateequitylist.com  
+- https://omidyar.com  
+- https://vitalcapital.com  
+- https://triodos.com  
+- https://reinvestment.com  
+- https://blueorchard.com  
+- https://crfund.com  
+- https://hockeystick.co  
+- https://kickstarter.com  
+- https://indiegogo.com  
+- https://wefunder.com  
+- https://startengine.com  
+- https://republic.co  
+- https://crowdsupply.com  
+
+### 🎁 STARTUP FREEBIES
+- https://startups.microsoft.com  
+- https://cloud.google.com/startup  
+- https://facebook.com/startups  
+
+---
+
+The list above contains **every unique, resolvable web link** scraped from the “Problem” → “Startup Freebies” sections of the StartupIT site, expanded to canonical HTTPS URLs.

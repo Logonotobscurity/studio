@@ -1,237 +1,2619 @@
-
 [
   {
-    "tool": "Google Cloud Free Tier",
-    "url": "https://cloud.google.com/free",
-    "benefit": "Google Cloud’s always-free tier plus $300 trial credits covering compute, storage, databases and AI services.",
+    "category": "Developer Journey",
+    "description": "Essential tools and platforms for every stage of the developer journey - from learning to building to scaling.",
+    "tools": [
+      {
+        "id": "github",
+        "name": "GitHub",
+        "description": "The world's leading software development platform where millions of developers collaborate on code.",
+        "category": "Developer Journey",
+        "subcategory": "Version Control",
+        "url": "https://github.com",
+        "pricing": "Free with paid plans",
+        "tags": ["version-control", "collaboration", "open-source", "git"],
+        "growthFunnelStage": "Build",
+        "rating": 4.8,
+        "usageDescription": "Essential for version control, code collaboration, and project management in software development.",
+        "featured": true
+      },
+      {
+        "id": "vscode",
+        "name": "Visual Studio Code",
+        "description": "A lightweight but powerful source code editor with rich ecosystem of extensions.",
+        "category": "Developer Journey",
+        "subcategory": "Code Editors",
+        "url": "https://code.visualstudio.com",
+        "pricing": "Free",
+        "tags": ["code-editor", "microsoft", "extensions", "debugging"],
+        "growthFunnelStage": "Build",
+        "rating": 4.7,
+        "usageDescription": "Primary code editor for most developers with extensive customization options.",
+        "featured": true
+      },
+      {
+        "id": "stackoverflow",
+        "name": "Stack Overflow",
+        "description": "The largest online community for programmers to learn, share knowledge, and build careers.",
+        "category": "Developer Journey",
+        "subcategory": "Learning",
+        "url": "https://stackoverflow.com",
+        "pricing": "Free",
+        "tags": ["q&a", "community", "learning", "problem-solving"],
+        "growthFunnelStage": "Learn",
+        "rating": 4.6,
+        "usageDescription": "Go-to platform for finding solutions to coding problems and learning from the community.",
+        "featured": false
+      },
+      {
+        "id": "docker",
+        "name": "Docker",
+        "description": "Platform for developing, shipping, and running applications using containerization technology.",
+        "category": "Developer Journey",
+        "subcategory": "DevOps",
+        "url": "https://docker.com",
+        "pricing": "Free with paid plans",
+        "tags": ["containers", "devops", "deployment", "virtualization"],
+        "growthFunnelStage": "Scale",
+        "rating": 4.5,
+        "usageDescription": "Streamlines application deployment and ensures consistency across different environments.",
+        "featured": true
+      },
+      {
+        "id": "postman",
+        "name": "Postman",
+        "description": "Collaboration platform for API development with tools for testing, documenting, and monitoring APIs.",
+        "category": "Developer Journey",
+        "subcategory": "API Testing",
+        "url": "https://postman.com",
+        "pricing": "Free with paid plans",
+        "tags": ["api", "testing", "documentation", "collaboration"],
+        "growthFunnelStage": "Build",
+        "rating": 4.4,
+        "usageDescription": "Essential for API development, testing, and documentation workflows.",
+        "featured": false
+      },
+      {
+        "id": "figma",
+        "name": "Figma",
+        "description": "Collaborative interface design tool that runs in the browser with real-time collaboration.",
+        "category": "Developer Journey",
+        "subcategory": "Design",
+        "url": "https://figma.com",
+        "pricing": "Free with paid plans",
+        "tags": ["design", "ui-ux", "collaboration", "prototyping"],
+        "growthFunnelStage": "Build",
+        "rating": 4.6,
+        "usageDescription": "Bridge between design and development with developer-friendly features.",
+        "featured": true
+      },
+      {
+        "id": "netlify",
+        "name": "Netlify",
+        "description": "Platform for deploying and hosting modern web applications with continuous deployment from Git.",
+        "category": "Developer Journey",
+        "subcategory": "Hosting",
+        "url": "https://netlify.com",
+        "pricing": "Free with paid plans",
+        "tags": ["hosting", "deployment", "jamstack", "cdn"],
+        "growthFunnelStage": "Launch",
+        "rating": 4.5,
+        "usageDescription": "Simplifies web deployment with automatic builds and global CDN distribution.",
+        "featured": false
+      },
+      {
+        "id": "vercel",
+        "name": "Vercel",
+        "description": "Frontend cloud platform for static sites and serverless functions with zero-config deployments.",
+        "category": "Developer Journey",
+        "subcategory": "Hosting",
+        "url": "https://vercel.com",
+        "pricing": "Free with paid plans",
+        "tags": ["hosting", "serverless", "nextjs", "deployment"],
+        "growthFunnelStage": "Launch",
+        "rating": 4.6,
+        "usageDescription": "Optimized for React and Next.js applications with excellent developer experience.",
+        "featured": true
+      }
+    ]
+  }
+]
+  }
     "category": "Major Cloud Providers",
-    "description": "Google Cloud’s always-free tier plus $300 trial credits covering compute, storage, databases and AI services."
+    "tools": [
+      {
+        "name": "Google Cloud Free Tier",
+        "url": "https://cloud.google.com/free",
+        "description": "Google Cloud’s always-free tier plus $300 trial credits covering compute, storage, databases and AI services."
+      },
+      {
+        "name": "AWS Free Tier",
+        "url": "https://aws.amazon.com/free/",
+        "description": "Amazon Web Services free tier with 750 hrs EC2, RDS, Lambda, S3 and 100+ other services for 12 months."
+      },
+      {
+        "name": "Microsoft Azure Free Account",
+        "url": "https://azure.microsoft.com/free/",
+        "description": "$200 credit and 25+ always-free services for new Azure accounts including Functions, Cosmos DB and App Service."
+      },
+      {
+        "name": "Oracle Cloud Free Tier",
+        "url": "https://www.oracle.com/cloud/free/",
+        "description": "Two always-free Ampere VMs, block & object storage, databases plus a 30-day $300 trial for extra services."
+      },
+      {
+        "name": "IBM Cloud Free Tier",
+        "url": "https://www.ibm.com/cloud/free/",
+        "description": "Lite plans for Watson, Kubernetes, databases plus $200 credit over 30 days on IBM Cloud."
+      }
+    ]
   },
   {
-    "tool": "AWS Free Tier",
-    "url": "https://aws.amazon.com/free/",
-    "benefit": "Amazon Web Services free tier with 750 hrs EC2, RDS, Lambda, S3 and 100+ other services for 12 months.",
-    "category": "Major Cloud Providers",
-    "description": "Amazon Web Services free tier with 750 hrs EC2, RDS, Lambda, S3 and 100+ other services for 12 months."
-  },
-  {
-    "tool": "Microsoft Azure Free Account",
-    "url": "https://azure.microsoft.com/free/",
-    "benefit": "$200 credit and 25+ always-free services for new Azure accounts including Functions, Cosmos DB and App Service.",
-    "category": "Major Cloud Providers",
-    "description": "$200 credit and 25+ always-free services for new Azure accounts including Functions, Cosmos DB and App Service."
-  },
-  {
-    "tool": "Oracle Cloud Free Tier",
-    "url": "https://www.oracle.com/cloud/free/",
-    "benefit": "Two always-free Ampere VMs, block & object storage, databases plus a 30-day $300 trial for extra services.",
-    "category": "Major Cloud Providers",
-    "description": "Two always-free Ampere VMs, block & object storage, databases plus a 30-day $300 trial for extra services."
-  },
-  {
-    "tool": "IBM Cloud Free Tier",
-    "url": "https://www.ibm.com/cloud/free/",
-    "benefit": "Lite plans for Watson, Kubernetes, databases plus $200 credit over 30 days on IBM Cloud.",
-    "category": "Major Cloud Providers",
-    "description": "Lite plans for Watson, Kubernetes, databases plus $200 credit over 30 days on IBM Cloud."
-  },
-  {
-    "tool": "Brainboard",
-    "url": "https://www.brainboard.co",
-    "benefit": "Drag-and-drop cloud architecture designer that auto-generates Terraform & deploys multi-cloud infrastructure.",
     "category": "Cloud Management Solutions",
-    "description": "Drag-and-drop cloud architecture designer that auto-generates Terraform & deploys multi-cloud infrastructure."
+    "tools": [
+      {
+        "name": "Brainboard",
+        "url": "https://www.brainboard.co",
+        "description": "Drag-and-drop cloud architecture designer that auto-generates Terraform & deploys multi-cloud infrastructure."
+      },
+      {
+        "name": "Cloud 66",
+        "url": "https://www.cloud66.com",
+        "description": "DevOps-as-a-service: build, deploy and maintain apps on any cloud or server with native Kubernetes support."
+      },
+      {
+        "name": "Pulumi",
+        "url": "https://www.pulumi.com",
+        "description": "Infrastructure-as-code platform using real programming languages instead of DSLs for AWS, Azure, GCP & more."
+      },
+      {
+        "name": "Terraform",
+        "url": "https://www.terraform.io",
+        "description": "Open-source IaC tool for provisioning and managing cloud, SaaS and on-prem resources via declarative configs."
+      },
+      {
+        "name": "Scalr",
+        "url": "https://www.scalr.com",
+        "description": "Terraform remote-state & operations platform with policy-as-code, cost controls and RBAC for enterprise teams."
+      },
+      {
+        "name": "Deployment.io",
+        "url": "https://www.deployment.io",
+        "description": "Zero-config continuous deployment that builds and ships static sites or containers to any provider."
+      }
+    ]
   },
   {
-    "tool": "Cloud 66",
-    "url": "https://www.cloud66.com",
-    "benefit": "DevOps-as-a-service: build, deploy and maintain apps on any cloud or server with native Kubernetes support.",
-    "category": "Cloud Management Solutions",
-    "description": "DevOps-as-a-service: build, deploy and maintain apps on any cloud or server with native Kubernetes support."
-  },
-  {
-    "tool": "Pulumi",
-    "url": "https://www.pulumi.com",
-    "benefit": "Infrastructure-as-code platform using real programming languages instead of DSLs for AWS, Azure, GCP & more.",
-    "category": "Cloud Management Solutions",
-    "description": "Infrastructure-as-code platform using real programming languages instead of DSLs for AWS, Azure, GCP & more."
-  },
-  {
-    "tool": "Terraform",
-    "url": "https://www.terraform.io",
-    "benefit": "Open-source IaC tool for provisioning and managing cloud, SaaS and on-prem resources via declarative configs.",
-    "category": "Cloud Management Solutions",
-    "description": "Open-source IaC tool for provisioning and managing cloud, SaaS and on-prem resources via declarative configs."
-  },
-  {
-    "tool": "Scalr",
-    "url": "https://www.scalr.com",
-    "benefit": "Terraform remote-state & operations platform with policy-as-code, cost controls and RBAC for enterprise teams.",
-    "category": "Cloud Management Solutions",
-    "description": "Terraform remote-state & operations platform with policy-as-code, cost controls and RBAC for enterprise teams."
-  },
-  {
-    "tool": "Deployment.io",
-    "url": "https://www.deployment.io",
-    "benefit": "Zero-config continuous deployment that builds and ships static sites or containers to any provider.",
-    "category": "Cloud Management Solutions",
-    "description": "Zero-config continuous deployment that builds and ships static sites or containers to any provider."
-  },
-  {
-    "tool": "Bitbucket",
-    "url": "https://bitbucket.org",
-    "benefit": "Atlassian’s Git hosting with free private repos, built-in CI/CD and deep Jira integration.",
     "category": "Source Code Repositories",
-    "description": "Atlassian’s Git hosting with free private repos, built-in CI/CD and deep Jira integration."
+    "tools": [
+      {
+        "name": "Bitbucket",
+        "url": "https://bitbucket.org",
+        "description": "Atlassian’s Git hosting with free private repos, built-in CI/CD and deep Jira integration."
+      },
+      {
+        "name": "Codeberg",
+        "url": "https://codeberg.org",
+        "description": "Non-profit community-driven Gitea-based Git hosting for open-source projects."
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com",
+        "description": "World’s largest code host providing Git repos, Actions CI/CD, Copilot AI and collaboration tools."
+      },
+      {
+        "name": "GitLab",
+        "url": "https://gitlab.com",
+        "description": "All-in-one DevOps platform: Git repos, built-in CI/CD, security scanning, registry and project management."
+      },
+      {
+        "name": "Framagit",
+        "url": "https://framagit.org",
+        "description": "French non-profit GitLab instance offering free public/private repositories for open-source initiatives."
+      },
+      {
+        "name": "Heptapod",
+        "url": "https://heptapod.net",
+        "description": "GitLab fork with first-class Mercurial support maintained by Octobus and Clever Cloud."
+      },
+      {
+        "name": "NotABug",
+        "url": "https://notabug.org",
+        "description": "Peer-to-peer-friendly Gitea hosting emphasizing software freedom and decentralized workflows."
+      },
+      {
+        "name": "OSDN",
+        "url": "https://osdn.net",
+        "description": "Japanese open-source hub providing Git/SVN/CVS hosting, file releases, mailing lists and forums."
+      },
+      {
+        "name": "Pagure",
+        "url": "https://pagure.io",
+        "description": "Light-weight self-hosted Git forge written in Python; used by Fedora."
+      },
+      {
+        "name": "Perforce Helix Core",
+        "url": "https://www.perforce.com",
+        "description": "Enterprise-grade version control for large binaries; free for up to 5 users and 20 workspaces."
+      },
+      {
+        "name": "Plastic SCM",
+        "url": "https://www.plasticscm.com",
+        "description": "Distributed VCS optimized for game dev and large repos; free for personal/open-source use."
+      },
+      {
+        "name": "Savannah GNU",
+        "url": "https://savannah.gnu.org",
+        "description": "Official GNU hosting platform offering CVS, Git, mailing lists and download mirrors."
+      },
+      {
+        "name": "Savannah Non-GNU",
+        "url": "https://savannah.nongnu.org",
+        "description": "Sister site hosting free software projects that are not part of the GNU Project."
+      }
+    ]
   },
   {
-    "tool": "Codeberg",
-    "url": "https://codeberg.org",
-    "benefit": "Non-profit community-driven Gitea-based Git hosting for open-source projects.",
-    "category": "Source Code Repositories",
-    "description": "Non-profit community-driven Gitea-based Git hosting for open-source projects."
-  },
-  {
-    "tool": "GitHub",
-    "url": "https://github.com",
-    "benefit": "World’s largest code host providing Git repos, Actions CI/CD, Copilot AI and collaboration tools.",
-    "category": "Source Code Repositories",
-    "description": "World’s largest code host providing Git repos, Actions CI/CD, Copilot AI and collaboration tools."
-  },
-  {
-    "tool": "GitLab",
-    "url": "https://gitlab.com",
-    "benefit": "All-in-one DevOps platform: Git repos, built-in CI/CD, security scanning, registry and project management.",
-    "category": "Source Code Repositories",
-    "description": "All-in-one DevOps platform: Git repos, built-in CI/CD, security scanning, registry and project management."
-  },
-  {
-    "tool": "Framagit",
-    "url": "https://framagit.org",
-    "benefit": "French non-profit GitLab instance offering free public/private repositories for open-source initiatives.",
-    "category": "Source Code Repositories",
-    "description": "French non-profit GitLab instance offering free public/private repositories for open-source initiatives."
-  },
-  {
-    "tool": "Heptapod",
-    "url": "https://heptapod.net",
-    "benefit": "GitLab fork with first-class Mercurial support maintained by Octobus and Clever Cloud.",
-    "category": "Source Code Repositories",
-    "description": "GitLab fork with first-class Mercurial support maintained by Octobus and Clever Cloud."
-  },
-  {
-    "tool": "NotABug",
-    "url": "https://notabug.org",
-    "benefit": "Peer-to-peer-friendly Gitea hosting emphasizing software freedom and decentralized workflows.",
-    "category": "Source Code Repositories",
-    "description": "Peer-to-peer-friendly Gitea hosting emphasizing software freedom and decentralized workflows."
-  },
-  {
-    "tool": "OSDN",
-    "url": "https://osdn.net",
-    "benefit": "Japanese open-source hub providing Git/SVN/CVS hosting, file releases, mailing lists and forums.",
-    "category": "Source Code Repositories",
-    "description": "Japanese open-source hub providing Git/SVN/CVS hosting, file releases, mailing lists and forums."
-  },
-  {
-    "tool": "Pagure",
-    "url": "https://pagure.io",
-    "benefit": "Light-weight self-hosted Git forge written in Python; used by Fedora.",
-    "category": "Source Code Repositories",
-    "description": "Light-weight self-hosted Git forge written in Python; used by Fedora."
-  },
-  {
-    "tool": "Perforce Helix Core",
-    "url": "https://www.perforce.com",
-    "benefit": "Enterprise-grade version control for large binaries; free for up to 5 users and 20 workspaces.",
-    "category": "Source Code Repositories",
-    "description": "Enterprise-grade version control for large binaries; free for up to 5 users and 20 workspaces."
-  },
-  {
-    "tool": "Plastic SCM",
-    "url": "https://www.plasticscm.com",
-    "benefit": "Distributed VCS optimized for game dev and large repos; free for personal/open-source use.",
-    "category": "Source Code Repositories",
-    "description": "Distributed VCS optimized for game dev and large repos; free for personal/open-source use."
-  },
-  {
-    "tool": "Savannah GNU",
-    "url": "https://savannah.gnu.org",
-    "benefit": "Official GNU hosting platform offering CVS, Git, mailing lists and download mirrors.",
-    "category": "Source Code Repositories",
-    "description": "Official GNU hosting platform offering CVS, Git, mailing lists and download mirrors."
-  },
-  {
-    "tool": "Savannah Non-GNU",
-    "url": "https://savannah.nongnu.org",
-    "benefit": "Sister site hosting free software projects that are not part of the GNU Project.",
-    "category": "Source Code Repositories",
-    "description": "Sister site hosting free software projects that are not part of the GNU Project."
-  },
-  {
-    "tool": "JSON Grid",
-    "url": "https://jsongrid.com",
-    "benefit": "Instantly turn any JSON endpoint into a sortable, filterable spreadsheet-like grid.",
     "category": "APIs, Data, and ML",
-    "description": "Instantly turn any JSON endpoint into a sortable, filterable spreadsheet-like grid."
+    "tools": [
+      {
+        "name": "JSON Grid",
+        "url": "https://jsongrid.com",
+        "description": "Instantly turn any JSON endpoint into a sortable, filterable spreadsheet-like grid."
+      },
+      {
+        "name": "ZeroSheets",
+        "url": "https://zerosheets.com",
+        "description": "Turn Google Sheets into instant JSON APIs without code."
+      },
+      {
+        "name": "ip.city",
+        "url": "https://ip.city",
+        "description": "Simple IP geolocation API returning city, country and ASN data."
+      },
+      {
+        "name": "Abstract API",
+        "url": "https://www.abstractapi.com",
+        "description": "Suite of developer APIs (IP, email, phone, exchange rates, etc.) with generous free tiers."
+      },
+      {
+        "name": "Apify",
+        "url": "https://apify.com",
+        "description": "Serverless cloud platform for web scraping, automation and running headless browsers at scale."
+      },
+      {
+        "name": "API Template",
+        "url": "https://apitemplate.io",
+        "description": "Generate PDFs and images from reusable templates via REST API."
+      },
+      {
+        "name": "API Toolkit",
+        "url": "https://apitoolkit.io",
+        "description": "Real-time API monitoring, anomaly detection and quality metrics."
+      },
+      {
+        "name": "Arize",
+        "url": "https://arize.com",
+        "description": "ML observability platform for model monitoring, drift detection and root-cause analysis."
+      },
+      {
+        "name": "Maxim AI",
+        "url": "https://maxim-ai.com",
+        "description": "No-code platform to build, deploy and monitor machine-learning workflows."
+      },
+      {
+        "name": "Beeceptor",
+        "url": "https://beeceptor.com",
+        "description": "Mock REST APIs in seconds with rule-based responses and request inspection."
+      },
+      {
+        "name": "BigDataCloud",
+        "url": "https://www.bigdatacloud.com",
+        "description": "High-performance IP geolocation, reverse geocoding and network APIs."
+      },
+      {
+        "name": "Browse AI",
+        "url": "https://www.browse.ai",
+        "description": "Train a robot in 2 minutes to scrape or monitor any website without code."
+      },
+      {
+        "name": "BrowserCat",
+        "url": "https://browsercat.io",
+        "description": "Headless browser API for screenshots, PDFs and automated interactions."
+      },
+      {
+        "name": "Calendarific",
+        "url": "https://calendarific.com",
+        "description": "Global public-holiday and calendar API supporting 230+ countries."
+      },
+      {
+        "name": "Canopy API",
+        "url": "https://canopyapi.co",
+        "description": "Real-time data API for Amazon product listings, reviews and pricing."
+      },
+      {
+        "name": "Clarifai",
+        "url": "https://clarifai.com",
+        "description": "End-to-end AI platform for computer vision, NLP and automated data labeling."
+      },
+      {
+        "name": "Cloudmersive",
+        "url": "https://cloudmersive.com",
+        "description": "Utility APIs for OCR, virus scanning, document conversion and image processing."
+      },
+      {
+        "name": "Google Colab",
+        "url": "https://colab.research.google.com",
+        "description": "Free Jupyter notebook environment running on Google GPUs and TPUs."
+      },
+      {
+        "name": "Comet",
+        "url": "https://comet.com",
+        "description": "Experiment management and model monitoring platform for ML teams."
+      },
+      {
+        "name": "Commerce Layer",
+        "url": "https://commercelayer.io",
+        "description": "Headless commerce API for inventory, orders, payments and global fulfillment."
+      },
+      {
+        "name": "Composio",
+        "url": "https://composio.dev",
+        "description": "Composable back-end as a service with ready-made integrations and workflows."
+      },
+      {
+        "name": "Conversion Tools",
+        "url": "https://conversiontools.io",
+        "description": "Online file-conversion API for documents, images, audio and video formats."
+      },
+      {
+        "name": "Country State City API",
+        "url": "https://countrystatecity.in",
+        "description": "Free, fast API for hierarchical country, state and city data."
+      },
+      {
+        "name": "Coupler.io",
+        "url": "https://coupler.io",
+        "description": "No-code ETL tool to import data from apps into Google Sheets or BI dashboards."
+      },
+      {
+        "name": "CraftMyPDF",
+        "url": "https://craftmypdf.com",
+        "description": "REST API to generate pixel-perfect PDFs from reusable templates."
+      },
+      {
+        "name": "Crawlbase",
+        "url": "https://crawlbase.com",
+        "description": "Scraping API that handles proxies, browsers, CAPTCHAs and JS rendering at scale."
+      },
+      {
+        "name": "CurlHub",
+        "url": "https://curlhub.io",
+        "description": "Share and inspect cURL requests with teammates via short links and rich logs."
+      },
+      {
+        "name": "CurrencyScoop",
+        "url": "https://currencyscoop.com",
+        "description": "Real-time and historical exchange-rate API for 150+ currencies with free tier."
+      },
+      {
+        "name": "Cube Dev",
+        "url": "https://cube.dev",
+        "description": "Headless open-source analytics API layer to power dashboards and embedded BI."
+      },
+      {
+        "name": "DataDeadDrop",
+        "url": "https://datadeaddrop.com",
+        "description": "Secure, anonymous file drop and short-lived data sharing for compliance teams."
+      },
+      {
+        "name": "DataFetcher",
+        "url": "https://datafetcher.com",
+        "description": "No-code REST/GraphQL importer for Google Sheets and Airtable."
+      },
+      {
+        "name": "DataImporter",
+        "url": "https://dataimporter.io",
+        "description": "Embed CSV/Excel upload widgets that automatically map and validate data."
+      },
+      {
+        "name": "Datalore",
+        "url": "https://datalore.jetbrains.com",
+        "description": "JetBrains-hosted collaborative Jupyter environment with smart coding assistance."
+      },
+      {
+        "name": "DataMiner",
+        "url": "https://dataminer.io",
+        "description": "Browser extension to scrape and export data from any website into Excel/CSV/API."
+      },
+      {
+        "name": "Datapane",
+        "url": "https://datapane.com",
+        "description": "Turn Python notebooks into interactive web reports and dashboards you can share."
+      },
+      {
+        "name": "DB-IP",
+        "url": "https://db-ip.com",
+        "description": "Commercial IP geolocation database and API with city-level accuracy and threat data."
+      },
+      {
+        "name": "DB Designer",
+        "url": "https://www.dbdesigner.net",
+        "description": "Visual database schema design and SQL DDL generator that syncs with live DBs."
+      },
+      {
+        "name": "DeepAR",
+        "url": "https://www.deepar.ai",
+        "description": "SDK and cloud service for real-time face filters, AR try-on and background removal."
+      },
+      {
+        "name": "Deepnote",
+        "url": "https://deepnote.com",
+        "description": "Real-time collaborative data science notebook with built-in environments and SQL."
+      },
+      {
+        "name": "Disease.sh",
+        "url": "https://disease.sh",
+        "description": "Open-source REST API for real-time COVID-19 and other disease statistics."
+      },
+      {
+        "name": "Doczilla",
+        "url": "https://doczilla.io",
+        "description": "High-performance PDF and Office document viewer API for embedding in web apps."
+      },
+      {
+        "name": "Doppio",
+        "url": "https://doppio.page",
+        "description": "Instantly generate privacy-friendly analytics dashboards from server logs."
+      },
+      {
+        "name": "DrawDB",
+        "url": "https://drawdb.io",
+        "description": "Free online database diagram editor that exports SQL and JSON schemas."
+      },
+      {
+        "name": "DreamFactory",
+        "url": "https://dreamfactory.com",
+        "description": "Auto-generate REST APIs from any database or SOAP service with role-based security."
+      },
+      {
+        "name": "Duply",
+        "url": "https://duply.co",
+        "description": "Programmatic image & video generation API using reusable After Effects templates."
+      },
+      {
+        "name": "DynamicDocs",
+        "url": "https://dynamicdocs.io",
+        "description": "REST API to create pixel-perfect PDFs from LaTeX templates and JSON data."
+      },
+      {
+        "name": "Efemarai",
+        "url": "https://efemarai.com",
+        "description": "Testing & debugging platform for computer-vision and perception ML models."
+      },
+      {
+        "name": "ErdLab",
+        "url": "https://erdlab.io",
+        "description": "Browser-based entity-relationship diagram tool with live SQL generation."
+      },
+      {
+        "name": "ExtendsClass",
+        "url": "https://extendsclass.com",
+        "description": "Toolbox of online REST/SOAP clients, mock servers, testers and formatters for APIs."
+      },
+      {
+        "name": "ExportSDK",
+        "url": "https://exportsdk.com",
+        "description": "Developer-first SDK and REST API to create PDF invoices, reports and labels."
+      },
+      {
+        "name": "File.coffee",
+        "url": "https://file.coffee",
+        "description": "Anonymous temporary file host with simple upload API and CDN-backed delivery."
+      },
+      {
+        "name": "Financial Modeling Prep",
+        "url": "https://financialmodelingprep.com",
+        "description": "Real-time and historical financial data API for stocks, forex, crypto and financial statements."
+      },
+      {
+        "name": "FormatJSON Online",
+        "url": "https://formatjsononline.com",
+        "description": "Web-based JSON formatter, validator, minifier and tree-viewer with shareable links."
+      },
+      {
+        "name": "FraudLabs Pro",
+        "url": "https://fraudlabspro.com",
+        "description": "Real-time fraud-scoring API for e-commerce transactions using 100+ validation rules."
+      },
+      {
+        "name": "GeoDataSource",
+        "url": "https://www.geodatasource.com",
+        "description": "Commercial geolocation database and API for city, region, country and ZIP code lookups."
+      },
+      {
+        "name": "Geolocated.io",
+        "url": "https://geolocated.io",
+        "description": "REST API to geocode IP addresses or domains with threat-intelligence enrichment."
+      },
+      {
+        "name": "Glitterly",
+        "url": "https://glitterly.io",
+        "description": "Programmatic image and GIF generation API for social media and marketing automation."
+      },
+      {
+        "name": "Hex",
+        "url": "https://hex.tech",
+        "description": "Collaborative data workspace that combines notebooks, SQL, apps and dashboards in one place."
+      },
+      {
+        "name": "Hook0",
+        "url": "https://hook0.com",
+        "description": "Open-source webhook gateway that retries, logs and secures outbound HTTP callbacks."
+      },
+      {
+        "name": "Hoppscotch",
+        "url": "https://hoppscotch.io",
+        "description": "Open-source, lightweight API testing tool (Postman alternative) running in the browser."
+      },
+      {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co",
+        "description": "Hub for 200k+ open-source ML models, datasets and inference APIs for NLP, vision and audio."
+      },
+      {
+        "name": "Hybiscus",
+        "url": "https://hybiscus.dev",
+        "description": "REST API to build beautiful, server-generated PDF reports from JSON components."
+      },
+      {
+        "name": "Invantive",
+        "url": "https://www.invantive.com",
+        "description": "Data integration platform offering 70+ connectors and SQL across cloud APIs and on-prem sources."
+      },
+      {
+        "name": "IPAddress.sh",
+        "url": "https://ipaddress.sh",
+        "description": "Simple API to get your public IP address, ASN and geolocation in JSON or plain text."
+      },
+      {
+        "name": "IP-API",
+        "url": "https://ip-api.com",
+        "description": "Free IP geolocation API returning country, city, ISP, timezone and threat information."
+      },
+      {
+        "name": "IPbase",
+        "url": "https://ipbase.com",
+        "description": "Fast IP geolocation and threat-intelligence API with 250k free requests per month."
+      },
+      {
+        "name": "IPGeolocation.io",
+        "url": "https://ipgeolocation.io",
+        "description": "IP geolocation, timezone and security data API with 1 000 free requests daily."
+      },
+      {
+        "name": "IPGeoLocationAPI",
+        "url": "https://ipgeolocationapi.com",
+        "description": "Lightweight IP-to-location API providing country, region, city and latitude/longitude."
+      },
+      {
+        "name": "IPLocate.io",
+        "url": "https://iplocate.io",
+        "description": "Developer-friendly IP geolocation API with ASN, currency and timezone fields."
+      },
+      {
+        "name": "IP2Location",
+        "url": "https://www.ip2location.com",
+        "description": "Commercial IP geolocation database and API for city, proxy, VPN and ASN detection."
+      },
+      {
+        "name": "IP2Location.io",
+        "url": "https://ip2location.io",
+        "description": "RESTful IP geolocation API with threat intelligence and domain WHOIS lookups."
+      },
+      {
+        "name": "IPAPI.co",
+        "url": "https://ipapi.co",
+        "description": "High-precision IP geolocation API with privacy-safe, GDPR-compliant data responses."
+      },
+      {
+        "name": "IPAPI.is",
+        "url": "https://ipapi.is",
+        "description": "Comprehensive IP intelligence API covering geolocation, VPN, proxy and ASN data."
+      },
+      {
+        "name": "IPinfo.io",
+        "url": "https://ipinfo.io",
+        "description": "Developer-trusted IP data API providing geolocation, carrier, company and privacy detection."
+      },
+      {
+        "name": "IPQuery.io",
+        "url": "https://ipquery.io",
+        "description": "Fast IP reputation and geolocation API to detect proxies, VPNs and threats in real time."
+      },
+      {
+        "name": "IPTrace.io",
+        "url": "https://iptrace.io",
+        "description": "IP geolocation and threat-intelligence API with ASN, VPN and abuse-contact data."
+      },
+      {
+        "name": "JSON2Video",
+        "url": "https://json2video.com",
+        "description": "REST API that renders videos from JSON templates—add text, images, audio, transitions and effects."
+      },
+      {
+        "name": "JSONip",
+        "url": "https://jsonip.com",
+        "description": "Ultra-simple API that returns your public IPv4 or IPv6 address in JSON or plain text."
+      },
+      {
+        "name": "JSONServe",
+        "url": "https://jsonserve.com",
+        "description": "Instantly spin up mock REST endpoints from JSON files with custom routes and latency settings."
+      },
+      {
+        "name": "JSONing",
+        "url": "https://jsoning.com",
+        "description": "Cloud-based JSON storage service with RESTful CRUD endpoints and automatic backups."
+      },
+      {
+        "name": "JSONSwiss",
+        "url": "https://jsonswiss.com",
+        "description": "Swiss-army toolkit for JSON—validate, transform, diff, patch and convert on the fly via API."
+      },
+      {
+        "name": "Kong",
+        "url": "https://konghq.com",
+        "description": "Open-source API gateway and service-mesh delivering traffic control, security and observability."
+      },
+      {
+        "name": "Kreya",
+        "url": "https://kreya.app",
+        "description": "Cross-platform gRPC & REST client for designing, testing and documenting APIs with Git sync."
+      },
+      {
+        "name": "Lightly",
+        "url": "https://lightly.ai",
+        "description": "Self-supervised learning platform to curate, label and improve computer-vision datasets."
+      },
+      {
+        "name": "LoginLlama",
+        "url": "https://loginllama.com",
+        "description": "Plug-and-play API to detect suspicious logins, brute-force and credential-stuffing attacks."
+      },
+      {
+        "name": "MailboxValidator",
+        "url": "https://mailboxvalidator.com",
+        "description": "Email-verification API that cleans lists by checking syntax, MX, SMTP and disposable domains."
+      },
+      {
+        "name": "MarketData.app",
+        "url": "https://marketdata.app",
+        "description": "Real-time and historical market data API for stocks, options, forex and crypto."
+      },
+      {
+        "name": "Meteosource",
+        "url": "https://www.meteosource.com",
+        "description": "Global weather API with hyper-local forecasts, radar and satellite imagery in 40 languages."
+      },
+      {
+        "name": "Microlink",
+        "url": "https://microlink.io",
+        "description": "Turn any URL into structured data—titles, screenshots, meta tags and content extraction API."
+      },
+      {
+        "name": "Mindee",
+        "url": "https://mindee.com",
+        "description": "OCR APIs for invoices, receipts, passports and custom documents with 95 %+ accuracy."
+      },
+      {
+        "name": "Mintlify",
+        "url": "https://mintlify.com",
+        "description": "Beautiful documentation platform that syncs with code and auto-generates API references."
+      },
+      {
+        "name": "MockAPI",
+        "url": "https://mockapi.io",
+        "description": "Instantly create fake REST APIs with zero code—custom schemas, CRUD endpoints and faker.js support."
+      },
+      {
+        "name": "Mockfly",
+        "url": "https://mockfly.dev",
+        "description": "Collaborative mock server with rules engine, cloud storage and Git-like version control."
+      },
+      {
+        "name": "Mocki",
+        "url": "https://mocki.io",
+        "description": "Generate dynamic mock APIs from simple JSON templates with latency and error simulation."
+      },
+      {
+        "name": "Mocko",
+        "url": "https://mocko.dev",
+        "description": "Deploy lightweight mock REST services in seconds using YAML or JSON definitions."
+      },
+      {
+        "name": "Mocky",
+        "url": "https://mocky.io",
+        "description": "Free service to create custom HTTP responses and share static JSON/XML mocks via unique URLs."
+      },
+      {
+        "name": "MocknRoll",
+        "url": "https://mocknroll.com",
+        "description": "Online tool to design and host fake RESTful endpoints with conditional logic and faker data."
+      },
+      {
+        "name": "MicroEnv",
+        "url": "https://microenv.com",
+        "description": "Instant disposable development environments via browser-accessible containers with API integration."
+      },
+      {
+        "name": "MultiExitIP",
+        "url": "https://multiexitip.com",
+        "description": "API to test outbound IP addresses from multiple exit nodes for load-balancing and failover checks."
+      },
+      {
+        "name": "NameKit",
+        "url": "https://namekit.ai",
+        "description": "AI-powered domain-name generator and availability checker with branding analytics."
+      },
+      {
+        "name": "NewsAPI",
+        "url": "https://newsapi.org",
+        "description": "JSON API for live headlines and historical news articles from 80 000+ global sources."
+      },
+      {
+        "name": "NumLookupAPI",
+        "url": "https://numlookupapi.com",
+        "description": "RESTful phone-number validation and carrier lookup API covering 230+ countries."
+      },
+      {
+        "name": "OCR.space",
+        "url": "https://ocr.space",
+        "description": "Free OCR REST API for extracting text from images and PDFs in 20+ languages."
+      },
+      {
+        "name": "OpenAPI Designer",
+        "url": "https://openapidesigner.com",
+        "description": "Visual editor to design, validate and export OpenAPI 3 specifications without writing YAML."
+      },
+      {
+        "name": "ParseHub",
+        "url": "https://parsehub.com",
+        "description": "Point-and-click desktop app that extracts data from dynamic websites and delivers structured JSON/CSV."
+      },
+      {
+        "name": "Parseur",
+        "url": "https://parseur.com",
+        "description": "Template-based mail and document parser that turns emails and PDFs into structured data via API."
+      },
+      {
+        "name": "PDFBolt",
+        "url": "https://pdfbolt.com",
+        "description": "REST API to generate PDFs from HTML or URLs with headers, footers and custom CSS."
+      },
+      {
+        "name": "PDFEndpoint",
+        "url": "https://pdfendpoint.com",
+        "description": "High-throughput HTML-to-PDF conversion API with web-fonts, charts and encryption support."
+      },
+      {
+        "name": "PDF-API.io",
+        "url": "https://pdf-api.io",
+        "description": "Cloud service to create, merge, split, watermark and password-protect PDFs via REST calls."
+      },
+      {
+        "name": "Pixela",
+        "url": "https://pixe.la",
+        "description": "RESTful API to record and graph any quantitative data—think “serverless” self-graphing metrics."
+      },
+      {
+        "name": "Postman",
+        "url": "https://www.postman.com",
+        "description": "Collaborative API platform for design, testing, mocking, monitoring and documentation."
+      },
+      {
+        "name": "Insomnia",
+        "url": "https://insomnia.rest",
+        "description": "Open-source desktop REST/GraphQL client with environment variables and code-gen."
+      },
+      {
+        "name": "Prefect",
+        "url": "https://www.prefect.io",
+        "description": "Workflow-orchestration engine for data and ML pipelines with hybrid execution and observability."
+      },
+      {
+        "name": "Preset",
+        "url": "https://preset.io",
+        "description": "Cloud-hosted Apache Superset for drag-and-drop data exploration and dashboard sharing."
+      },
+      {
+        "name": "PromptLoop",
+        "url": "https://promptloop.com",
+        "description": "No-code spreadsheet add-on that runs GPT prompts on any Excel or Google-Sheet dataset."
+      },
+      {
+        "name": "Public-APIs GitHub",
+        "url": "https://github.com/public-apis/public-apis",
+        "description": "Curated list of 1 000+ free public APIs across dozens of categories—community maintained."
+      },
+      {
+        "name": "RapidAPI",
+        "url": "https://rapidapi.com",
+        "description": "Marketplace to discover, test and connect to thousands of public and private APIs in one hub."
+      },
+      {
+        "name": "RequestBin",
+        "url": "https://requestbin.com",
+        "description": "Capture and inspect HTTP requests sent to a unique endpoint—great for webhook debugging."
+      },
+      {
+        "name": "ReqRes",
+        "url": "https://reqres.in",
+        "description": "Free hosted fake REST API for testing authentication, pagination and CRUD operations."
+      },
+      {
+        "name": "Roboflow",
+        "url": "https://roboflow.com",
+        "description": "End-to-end computer-vision platform for dataset management, annotation, training and deployment."
+      },
+      {
+        "name": "RoboHash",
+        "url": "https://robohash.org",
+        "description": "Generate unique robot or monster avatars from any text or email hash via simple URL API."
+      },
+      {
+        "name": "ScrapersProxy",
+        "url": "https://scrapersproxy.com",
+        "description": "Rotating-residential proxy network with automatic retries and CAPTCHA solving for scraping."
+      },
+      {
+        "name": "ScrapingAnt",
+        "url": "https://scrapingant.com",
+        "description": "Headless Chrome scraping API that returns clean HTML, screenshots or parsed JSON."
+      },
+      {
+        "name": "SimpleScraper",
+        "url": "https://simplescraper.io",
+        "description": "Browser extension and cloud crawler to extract data and sync it to Google Sheets or API."
+      },
+      {
+        "name": "SelectStar",
+        "url": "https://www.selectstar.com",
+        "description": "Automated data-discovery and lineage platform for modern data stacks."
+      }
+    ]
   },
   {
-    "tool": "ZeroSheets",
-    "url": "https://zerosheets.com",
-    "benefit": "Turn Google Sheets into instant JSON APIs without code.",
-    "category": "APIs, Data, and ML",
-    "description": "Turn Google Sheets into instant JSON APIs without code."
+    "category": "Artifact Repositories",
+    "tools": [
+      {
+        "name": "JFrog Artifactory",
+        "url": "https://jfrog.com/artifactory",
+        "description": "Universal binary repository manager supporting Maven, npm, Docker, PyPI and more with fine-grained permissions."
+      },
+      {
+        "name": "Sonatype Central",
+        "url": "https://central.sonatype.org",
+        "description": "The default public repository for Java/Maven artifacts used by millions of developers worldwide."
+      },
+      {
+        "name": "CloudRepo",
+        "url": "https://cloudrepo.io",
+        "description": "Cloud-hosted private Maven, npm and Python repositories with role-based access and usage analytics."
+      },
+      {
+        "name": "Cloudsmith",
+        "url": "https://cloudsmith.io",
+        "description": "Cloud-native artifact and package management platform for containers, Helm, deb, rpm and 28+ formats."
+      },
+      {
+        "name": "JitPack",
+        "url": "https://jitpack.io",
+        "description": "On-demand Maven repository that builds GitHub projects directly from source and serves artifacts instantly."
+      },
+      {
+        "name": "Repsy",
+        "url": "https://repsy.io",
+        "description": "Secure, private package repositories for Maven, npm, PyPI and Docker with CDN-backed distribution."
+      },
+      {
+        "name": "Gemfury",
+        "url": "https://gemfury.com",
+        "description": "Private artifact registry for 15+ package types with granular access controls and CI/CD integration."
+      },
+      {
+        "name": "RepoForge",
+        "url": "https://repoforge.io",
+        "description": "Community-maintained RPM package repository (formerly RPMforge) for RHEL/CentOS systems."
+      },
+      {
+        "name": "RepoFlow",
+        "url": "https://repoflow.io",
+        "description": "Cloud service to automate building, signing and publishing software packages to multiple repositories."
+      }
+    ]
   },
   {
-    "tool": "ip.city",
-    "url": "https://ip.city",
-    "benefit": "Simple IP geolocation API returning city, country and ASN data.",
-    "category": "APIs, Data, and ML",
-    "description": "Simple IP geolocation API returning city, country and ASN data."
+    "category": "Tools for Teams and Collaboration",
+    "tools": [
+      {
+        "name": "3Cols",
+        "url": "https://3cols.com",
+        "description": "Simple collaborative code snippet manager with syntax highlighting and team folders."
+      },
+      {
+        "name": "Bitwarden",
+        "url": "https://bitwarden.com",
+        "description": "Open-source password manager for teams with secure sharing, SSO and audit logs."
+      },
+      {
+        "name": "Braid Chat",
+        "url": "https://www.braidchat.com",
+        "description": "Thread-based team chat designed for deep focus and asynchronous workflows."
+      },
+      {
+        "name": "Cally",
+        "url": "https://cally.com",
+        "description": "Minimalist group-scheduling tool that lets invitees vote on the best meeting time."
+      },
+      {
+        "name": "Calendly",
+        "url": "https://calendly.com",
+        "description": "Industry-standard scheduling automation that syncs with calendars and sends reminders."
+      },
+      {
+        "name": "Discord",
+        "url": "https://discord.com",
+        "description": "Voice, video and text platform for communities and teams with rich integrations."
+      },
+      {
+        "name": "Fibo",
+        "url": "https://fibo.app",
+        "description": "Async stand-up bot for Slack that collects daily updates and blockers automatically."
+      },
+      {
+        "name": "Telegram",
+        "url": "https://telegram.org",
+        "description": "Cloud-based instant messaging with channels, bots and end-to-end encrypted chats."
+      },
+      {
+        "name": "DevToolLab",
+        "url": "https://devtoollab.com",
+        "description": "One-click developer workspace sharing with live browser, code and terminal access."
+      },
+      {
+        "name": "Dubble",
+        "url": "https://dubble.so",
+        "description": "AI-powered screen recorder that converts workflows into step-by-step documentation."
+      },
+      {
+        "name": "Duckly",
+        "url": "https://duckly.com",
+        "description": "Pair-programming tool supporting VS Code and IntelliJ with low-latency audio and shared cursors."
+      },
+      {
+        "name": "Dyte",
+        "url": "https://dyte.io",
+        "description": "Developer-friendly SDK to embed real-time video, audio and chat into any app."
+      },
+      {
+        "name": "Evernote",
+        "url": "https://evernote.com",
+        "description": "Cross-platform note-taking workspace with team notebooks, web clipper and search."
+      },
+      {
+        "name": "Fibery",
+        "url": "https://fibery.io",
+        "description": "All-in-one work platform combining docs, whiteboards, databases and automations."
+      },
+      {
+        "name": "Flock",
+        "url": "https://flock.com",
+        "description": "Business messenger with built-in productivity apps, polls and shared to-dos."
+      },
+      {
+        "name": "Gather Town",
+        "url": "https://www.gather.town",
+        "description": "Spatial video-chat world where remote teams meet, present and collaborate in 2-D maps."
+      },
+      {
+        "name": "GoKanban",
+        "url": "https://gokanban.io",
+        "description": "Lightweight web kanban board with real-time sync and offline PWA support."
+      },
+      {
+        "name": "Flat Social",
+        "url": "https://flat.social",
+        "description": "Interactive virtual space for remote team socials with games and spatial audio."
+      },
+      {
+        "name": "GitDailies",
+        "url": "https://gitdailies.com",
+        "description": "Daily GitHub digest bot that posts concise PR and issue summaries to Slack."
+      },
+      {
+        "name": "Gitter",
+        "url": "https://gitter.im",
+        "description": "Chat network for GitHub and GitLab repositories with searchable rooms and integrations."
+      },
+      {
+        "name": "HackMD",
+        "url": "https://hackmd.io",
+        "description": "Real-time collaborative markdown editor for meeting notes, docs and knowledge bases."
+      },
+      {
+        "name": "Google Hangouts",
+        "url": "https://hangouts.google.com",
+        "description": "Classic Google messaging and video-calling service for quick team check-ins."
+      },
+      {
+        "name": "HeySpace",
+        "url": "https://hey.space",
+        "description": "Chat + kanban hybrid that turns messages into tasks and tracks progress visually."
+      },
+      {
+        "name": "Help Lightning",
+        "url": "https://helplightning.com",
+        "description": "Remote assistance tool using merged video streams to let experts “reach in” and guide hands-on tasks."
+      },
+      {
+        "name": "IdeaScale",
+        "url": "https://ideascale.com",
+        "description": "Crowdsourced innovation platform for collecting, voting and managing employee ideas."
+      },
+      {
+        "name": "Igloo Software",
+        "url": "https://www.igloosoftware.com",
+        "description": "Digital workplace with intranet, file sharing, forums and social collaboration features."
+      },
+      {
+        "name": "Keybase",
+        "url": "https://keybase.io",
+        "description": "End-to-end encrypted chat, file sharing and git repositories with public key verification."
+      },
+      {
+        "name": "Google Meet",
+        "url": "https://meet.google.com",
+        "description": "Secure video-conferencing with live captions, recordings and 250-participant support."
+      },
+      {
+        "name": "Livecycle",
+        "url": "https://livecycle.io",
+        "description": "Collaborative review layer on top of PR previews enabling threaded feedback on live apps."
+      },
+      {
+        "name": "LockItBot",
+        "url": "https://lockitbot.com",
+        "description": "Slack bot that locks conversation threads to prevent off-topic noise during stand-ups."
+      },
+      {
+        "name": "Markup",
+        "url": "https://markup.io",
+        "description": "Visual feedback tool to annotate live websites and sync comments with project boards."
+      },
+      {
+        "name": "Proton Pass",
+        "url": "https://proton.me/pass",
+        "description": "End-to-end encrypted password-manager from Proton with secure sharing and 2FA."
+      },
+      {
+        "name": "Visual Debug",
+        "url": "https://visualdebug.com",
+        "description": "Screen-capture and annotation tool that creates shareable bug reports with environment metadata."
+      },
+      {
+        "name": "Jitsi Meet",
+        "url": "https://meet.jit.si",
+        "description": "Open-source, browser-based video conferencing with no account required and encrypted by default."
+      },
+      {
+        "name": "Microsoft Teams",
+        "url": "https://teams.microsoft.com",
+        "description": "Workspace hub combining chat, meetings, files and 700+ apps in one secure platform."
+      },
+      {
+        "name": "Miro",
+        "url": "https://miro.com",
+        "description": "Online whiteboard for ideation, flowcharts, retros and workshops with real-time cursors."
+      },
+      {
+        "name": "Nootiz",
+        "url": "https://nootiz.com",
+        "description": "Visual feedback widget for websites that turns on-page comments into GitHub issues."
+      },
+      {
+        "name": "Notion",
+        "url": "https://notion.so",
+        "description": "All-in-one workspace for docs, wikis, tasks and databases with powerful block-based editing."
+      },
+      {
+        "name": "Nuclino",
+        "url": "https://www.nuclino.com",
+        "description": "Lightweight internal wiki and team knowledge base with real-time collaboration."
+      },
+      {
+        "name": "OnlineInterview",
+        "url": "https://onlineinterview.io",
+        "description": "Code-pairing and video interview platform with live compiler and playback recordings."
+      },
+      {
+        "name": "Quidlo",
+        "url": "https://www.quidlo.com",
+        "description": "Simple time-tracking bot for Slack and Microsoft Teams with project-based reporting."
+      },
+      {
+        "name": "PageShare",
+        "url": "https://pageshare.dev",
+        "description": "One-click shareable preview links for local web apps without deploying to the cloud."
+      },
+      {
+        "name": "Pendulums",
+        "url": "https://pendulums.io",
+        "description": "Cross-platform time-tracking desktop app with team dashboards and idle detection."
+      },
+      {
+        "name": "Pumble",
+        "url": "https://pumble.com",
+        "description": "Free team chat and collaboration tool with unlimited message history and channels."
+      },
+      {
+        "name": "Raindrop",
+        "url": "https://raindrop.io",
+        "description": "Visual bookmark manager that lets teams curate and share collections across devices."
+      },
+      {
+        "name": "Element",
+        "url": "https://element.io",
+        "description": "Open-source Matrix client for secure, decentralized team chat and video calls."
+      },
+      {
+        "name": "Rocket.Chat",
+        "url": "https://rocket.chat",
+        "description": "Self-hosted or cloud team messaging platform with omnichannel and workflow automation."
+      },
+      {
+        "name": "Seafile",
+        "url": "https://www.seafile.com",
+        "description": "Self-hosted file-sync platform with end-to-end encryption and fine-grained permissions."
+      },
+      {
+        "name": "Sema",
+        "url": "https://www.semasoftware.com",
+        "description": "AI code-review assistant that measures maintainability, security and quality across repositories."
+      },
+      {
+        "name": "Screen Sharing",
+        "url": "https://screen-sharing.com",
+        "description": "Browser-based one-click screen-sharing rooms without installs or logins."
+      },
+      {
+        "name": "Slab",
+        "url": "https://slab.com",
+        "description": "Modern team wiki with unified search across all your docs, Slack and Google Drive."
+      },
+      {
+        "name": "Slack",
+        "url": "https://slack.com",
+        "description": "Hub for team messaging, integrations and workflows with 2 400+ app connections."
+      },
+      {
+        "name": "Spectrum",
+        "url": "https://spectrum.chat",
+        "description": "Open-source community platform (now part of GitHub) for threaded discussions and events."
+      },
+      {
+        "name": "StatusPile",
+        "url": "https://statuspile.com",
+        "description": "Unified dashboard that aggregates status pages from 300+ cloud services and APIs."
+      },
+      {
+        "name": "Stickies",
+        "url": "https://stickies.io",
+        "description": "Digital sticky-note wall for brainstorming, retros and workshops with live cursors."
+      },
+      {
+        "name": "Stacks",
+        "url": "https://stacks.app",
+        "description": "Team knowledge base built on Notion-like blocks with integrated chat and tasks."
+      },
+      {
+        "name": "Talky",
+        "url": "https://talky.io",
+        "description": "Instant, no-registration group video chat with screen sharing and mobile support."
+      },
+      {
+        "name": "Teamhood",
+        "url": "https://teamhood.com",
+        "description": "Kanban-focused project-management tool with Gantt, time tracking and workload views."
+      },
+      {
+        "name": "Teamplify",
+        "url": "https://teamplify.io",
+        "description": "Analytics dashboard for engineering teams that syncs Git, Jira and Slack into health metrics."
+      },
+      {
+        "name": "Tefter",
+        "url": "https://tefter.io",
+        "description": "Command-bar knowledge base that lets teams bookmark and search links, commands and docs."
+      },
+      {
+        "name": "Teletype",
+        "url": "https://teletype.team",
+        "description": "Real-time collaborative terminal sharing inside VS Code or any shell session."
+      },
+      {
+        "name": "TimeCamp",
+        "url": "https://www.timecamp.com",
+        "description": "Automatic time-tracking software with productivity analytics and invoicing."
+      },
+      {
+        "name": "Huly",
+        "url": "https://huly.io",
+        "description": "All-in-one open-source workspace combining tasks, docs, chat and CRM for remote teams."
+      },
+      {
+        "name": "Teamcamp",
+        "url": "https://teamcamp.io",
+        "description": "Simple project-management app for agencies with client portals and time tracking."
+      },
+      {
+        "name": "Twist",
+        "url": "https://twist.com",
+        "description": "Asynchronous team communication that replaces chaotic chat with threaded, searchable conversations."
+      },
+      {
+        "name": "tldraw",
+        "url": "https://tldraw.com",
+        "description": "Open-source multiplayer whiteboard for quick sketches and real-time collaboration."
+      },
+      {
+        "name": "BookmarkOS",
+        "url": "https://bookmarkos.com",
+        "description": "Cloud desktop for bookmark management with team folders, tagging and search."
+      },
+      {
+        "name": "Typetalk",
+        "url": "https://www.typetalk.com",
+        "description": "Business chat by Nulab with topic-based threads and integrations for DevOps workflows."
+      },
+      {
+        "name": "Tugboat",
+        "url": "https://tugboat.qa",
+        "description": "Spin up on-demand preview environments for every pull request in minutes."
+      },
+      {
+        "name": "Whereby",
+        "url": "https://whereby.com",
+        "description": "Embedded video meetings API and browser rooms with branding and recording options."
+      },
+      {
+        "name": "Windmill",
+        "url": "https://windmill.dev",
+        "description": "Open-source platform to turn scripts into internal apps and workflows with minimal code."
+      },
+      {
+        "name": "Vadoo",
+        "url": "https://vadoo.tv",
+        "description": "Host, share and embed ad-free videos with password protection and analytics for teams."
+      },
+      {
+        "name": "UserForge",
+        "url": "https://userforge.com",
+        "description": "Collaborative persona and user-story mapping tool for product teams."
+      },
+      {
+        "name": "Wistia",
+        "url": "https://wistia.com",
+        "description": "Business video hosting with lead-gen forms, analytics and team collaboration features."
+      },
+      {
+        "name": "Wormhol.org",
+        "url": "https://wormhol.org",
+        "description": "End-to-end encrypted pastebin with self-destructing messages and file attachments."
+      },
+      {
+        "name": "Wormhole.app",
+        "url": "https://wormhole.app",
+        "description": "Secure, end-to-end encrypted file sharing with streaming and self-destruct links up to 10 GB."
+      },
+      {
+        "name": "Zoom",
+        "url": "https://zoom.us",
+        "description": "Enterprise video conferencing with webinars, phone and chat in one secure platform."
+      },
+      {
+        "name": "Zulip",
+        "url": "https://zulip.com",
+        "description": "Open-source team chat with topic-based threading that keeps conversations organized."
+      },
+      {
+        "name": "Robocorp",
+        "url": "https://robocorp.com",
+        "description": "Cloud-native RPA platform for building and running Python-based software robots collaboratively."
+      },
+      {
+        "name": "Fleep",
+        "url": "https://fleep.io",
+        "description": "Task-oriented messenger that blends persistent chat with lightweight project management."
+      },
+      {
+        "name": "Chanty",
+        "url": "https://www.chanty.com",
+        "description": "Team chat app with built-in task management, voice messages and unlimited message history."
+      },
+      {
+        "name": "Ruttl",
+        "url": "https://ruttl.com",
+        "description": "Visual feedback and bug-tracking for live websites—comment, annotate and assign fixes."
+      },
+      {
+        "name": "Mattermost",
+        "url": "https://mattermost.com",
+        "description": "Self-hosted secure messaging platform with DevOps integrations and workflow orchestration."
+      },
+      {
+        "name": "Webvizio",
+        "url": "https://webvizio.com",
+        "description": "Collaborative website feedback tool—pin comments, assign tasks and track resolution."
+      },
+      {
+        "name": "Pullflow",
+        "url": "https://www.pullflow.com",
+        "description": "Slack-first code-review collaboration that syncs GitHub PRs into threaded conversations."
+      },
+      {
+        "name": "Webex",
+        "url": "https://www.webex.com",
+        "description": "Cisco’s secure video conferencing, calling and webinars with enterprise controls."
+      },
+      {
+        "name": "RingCentral",
+        "url": "https://www.ringcentral.com",
+        "description": "Unified communications—voice, video, SMS and fax—in the cloud for distributed teams."
+      },
+      {
+        "name": "GitBook",
+        "url": "https://www.gitbook.com",
+        "description": "Modern docs and knowledge-sharing platform with version control and real-time collaboration."
+      },
+      {
+        "name": "TransferNow",
+        "url": "https://transfernow.net",
+        "description": "Send large files up to 20 GB securely with password protection and expiry dates."
+      },
+      {
+        "name": "Paste.sh",
+        "url": "https://paste.sh",
+        "description": "Command-line friendly pastebin with encryption, short URLs and self-destruct timers."
+      },
+      {
+        "name": "Revolt",
+        "url": "https://revolt.chat",
+        "description": "Open-source user-first chat platform (Discord alternative) that can be self-hosted."
+      },
+      {
+        "name": "Tencent TRTC",
+        "url": "https://intl.cloud.tencent.com/products/trtc",
+        "description": "Low-latency real-time audio/video SDK and cloud service from Tencent Cloud."
+      },
+      {
+        "name": "Pastefy",
+        "url": "https://pastefy.app",
+        "description": "Self-hostable encrypted pastebin with syntax highlighting and team workspaces."
+      },
+      {
+        "name": "SiteDots",
+        "url": "https://sitedots.com",
+        "description": "Visual feedback widget for live websites—collect comments, bugs and approvals in one place."
+      }
+    ]
   },
   {
-    "tool": "Visual Studio Code",
-    "url": "https://code.visualstudio.com",
-    "benefit": "A lightweight but powerful source code editor with rich ecosystem of extensions.",
-    "category": "Code Editors",
-    "rating": 4.7,
-    "tags": [
-      "FF",
-      "OS",
-      "*"
-    ],
-    "description": "A lightweight but powerful source code editor with a rich ecosystem of extensions for debugging, Git control, and more."
+    "category": "CMS",
+    "tools": [
+      {
+        "name": "Acquia",
+        "url": "https://www.acquia.com",
+        "description": "Enterprise Drupal cloud platform providing hosting, DevOps, security and personalization tools."
+      },
+      {
+        "name": "Contentful",
+        "url": "https://www.contentful.com",
+        "description": "Headless CMS that delivers structured content via GraphQL/REST APIs to any frontend or device."
+      },
+      {
+        "name": "Cosmic JS",
+        "url": "https://www.cosmicjs.com",
+        "description": "Headless CMS and API toolkit for building websites and apps faster without infrastructure worries."
+      },
+      {
+        "name": "Crystallize",
+        "url": "https://crystallize.com",
+        "description": "GraphQL-first headless commerce CMS with rich product information and PIM capabilities."
+      },
+      {
+        "name": "DatoCMS",
+        "url": "https://www.datocms.com",
+        "description": "Developer-friendly headless CMS with real-time content editing and advanced image pipeline."
+      },
+      {
+        "name": "Directus",
+        "url": "https://directus.io",
+        "description": "Open-source data platform that instantly wraps SQL databases with dynamic REST+GraphQL APIs and an admin app."
+      },
+      {
+        "name": "FrontAid",
+        "url": "https://frontaid.io",
+        "description": "Git-based CMS for static sites that stores content in JSON/YAML files inside your repository."
+      },
+      {
+        "name": "Kontent.ai",
+        "url": "https://kontent.ai",
+        "description": "Enterprise headless CMS delivering omnichannel content with strong workflow and collaboration features."
+      },
+      {
+        "name": "Prismic",
+        "url": "https://prismic.io",
+        "description": "Headless website builder featuring a visual page builder and instant previews for developers and editors."
+      },
+      {
+        "name": "Sanity",
+        "url": "https://www.sanity.io",
+        "description": "Real-time headless CMS treating content as data, with GROQ query language and portable text."
+      },
+      {
+        "name": "SenseNet",
+        "url": "https://sensenet.com",
+        "description": "Open-source headless .NET CMS with enterprise-grade permissions and content repository."
+      },
+      {
+        "name": "TinaCMS",
+        "url": "https://tina.io",
+        "description": "Open-source visual editor for Next.js sites—edit content inline while seeing live previews."
+      },
+      {
+        "name": "Gatsby Cloud",
+        "url": "https://www.gatsbyjs.com",
+        "description": "Edge-first hosting and incremental builds for Gatsby and modern frontend frameworks."
+      },
+      {
+        "name": "Hygraph",
+        "url": "https://hygraph.com",
+        "description": "Federated content platform (ex GraphCMS) combining headless CMS with content federation and GraphQL."
+      },
+      {
+        "name": "Squidex",
+        "url": "https://squidex.io",
+        "description": "Open-source headless CMS built with .NET Core, offering rule engine and asset management."
+      },
+      {
+        "name": "InstaWP",
+        "url": "https://instawp.io",
+        "description": "Spin up disposable WordPress sandbox sites in seconds for testing, demos and staging."
+      },
+      {
+        "name": "Storyblok",
+        "url": "https://www.storyblok.com",
+        "description": "Visual headless CMS with component-based editing and nestable content blocks for developers & marketers."
+      },
+      {
+        "name": "WP Jack",
+        "url": "https://wpjack.com",
+        "description": "Managed WordPress hosting and deployment automation tailored for agencies and freelancers."
+      }
+    ]
   },
   {
-    "tool": "Docker",
-    "url": "https://docker.com",
-    "benefit": "Platform for developing, shipping, and running applications using containerization technology.",
-    "category": "DevOps",
-    "rating": 4.5,
-    "description": "A platform for developing, shipping, and running applications using containerization technology, ensuring consistency across environments."
+    "category": "Code Generation",
+    "tools": [
+      {
+        "name": "AppInvento",
+        "url": "https://appinvento.io",
+        "description": "No-code backend builder that auto-generates REST APIs, authentication and admin panels from models."
+      },
+      {
+        "name": "Cody",
+        "url": "https://cody.dev",
+        "description": "AI code assistant inside your IDE that writes, explains and refactors code using your own codebase as context."
+      },
+      {
+        "name": "DhiWise",
+        "url": "https://www.dhiwise.com",
+        "description": "Low-code platform that converts Figma designs into production-ready React, Flutter or Kotlin code."
+      },
+      {
+        "name": "Fern",
+        "url": "https://buildwithfern.com",
+        "description": "Developer toolchain to auto-generate SDKs, server stubs and docs from OpenAPI specs."
+      },
+      {
+        "name": "Metalama",
+        "url": "https://www.postsharp.net/metalama",
+        "description": "Aspect-oriented framework and code generator for C# that adds cross-cutting concerns at compile time."
+      },
+      {
+        "name": "SuperMaven",
+        "url": "https://supermaven.com",
+        "description": "Fast AI code-completion engine supporting 20+ languages with local indexing for privacy."
+      },
+      {
+        "name": "Tabnine",
+        "url": "https://www.tabnine.com",
+        "description": "AI code-completion plugin for all major IDEs trained on permissive open-source data."
+      },
+      {
+        "name": "v0.dev",
+        "url": "https://v0.dev",
+        "description": "Vercel’s generative UI tool that turns prompts into shadcn/ui React components ready for production."
+      }
+    ]
   },
   {
-    "tool": "Postman",
-    "url": "https://postman.com",
-    "benefit": "Collaboration platform for API development with tools for testing, documenting, and monitoring APIs.",
-    "category": "API Testing",
-    "rating": 4.4,
-    "description": "A collaboration platform for API development, providing tools for designing, testing, documenting, and monitoring APIs."
+    "category": "Code Quality",
+    "tools": [
+      {
+        "name": "Beanstalk",
+        "url": "https://beanstalkapp.com",
+        "description": "Hosted Git platform with built-in deployment pipelines, code review and SSL."
+      },
+      {
+        "name": "Browserling",
+        "url": "https://www.browserling.com",
+        "description": "Live interactive cross-browser testing in real VMs via your browser—no installs."
+      },
+      {
+        "name": "Codacy",
+        "url": "https://www.codacy.com",
+        "description": "Automated code-quality and security analysis for 40+ languages integrated into PR workflows."
+      },
+      {
+        "name": "Codeac",
+        "url": "https://codeac.io",
+        "description": "Cloud static-analysis service for JavaScript, TypeScript and Python with actionable reports."
+      },
+      {
+        "name": "CodeBeat",
+        "url": "https://codebeat.co",
+        "description": "Automated code-review tool that grades projects and flags technical debt across languages."
+      },
+      {
+        "name": "CodeClimate",
+        "url": "https://codeclimate.com",
+        "description": "Static-analysis SaaS measuring maintainability, test coverage and security in every PR."
+      },
+      {
+        "name": "Codecov",
+        "url": "https://codecov.io",
+        "description": "Test-coverage reporting platform that posts insights directly into GitHub/GitLab/Bitbucket."
+      },
+      {
+        "name": "CodeFactor",
+        "url": "https://www.codefactor.io",
+        "description": "Continuous static-analysis engine for GitHub and Bitbucket repos with inline PR comments."
+      },
+      {
+        "name": "CodeRabbit",
+        "url": "https://coderabbit.ai",
+        "description": "AI-powered code-review assistant that summarizes PR changes and suggests improvements."
+      },
+      {
+        "name": "CodeScene",
+        "url": "https://codescene.io",
+        "description": "Behavioral code-analysis tool prioritizing technical debt based on code-health and business impact."
+      },
+      {
+        "name": "CodSpeed",
+        "url": "https://codspeed.io",
+        "description": "Continuous performance-testing platform that catches runtime regressions in CI/CD."
+      },
+      {
+        "name": "Coveralls",
+        "url": "https://coveralls.io",
+        "description": "Test-coverage history and badges for GitHub repos across multiple languages and CI systems."
+      },
+      {
+        "name": "DareBoost",
+        "url": "https://www.dareboost.com",
+        "description": "Web-performance and quality monitoring with actionable reports on speed, SEO and security."
+      },
+      {
+        "name": "DeepCode",
+        "url": "https://www.deepcode.ai",
+        "description": "AI static-analysis engine finding critical bugs and security issues in JavaScript, Java, Python."
+      },
+      {
+        "name": "DeepScan",
+        "url": "https://deepscan.io",
+        "description": "Advanced static-analysis for JavaScript/TypeScript focusing on runtime errors and code smells."
+      },
+      {
+        "name": "DeepSource",
+        "url": "https://deepsource.io",
+        "description": "Continuous quality and security analyzer supporting Go, Python, Ruby, JavaScript and Terraform."
+      },
+      {
+        "name": "DiffText",
+        "url": "https://difftext.com",
+        "description": "Online diff viewer for text, JSON and code with shareable links and syntax highlighting."
+      },
+      {
+        "name": "EverSQL",
+        "url": "https://www.eversql.com",
+        "description": "AI-powered SQL query optimizer and indexer that boosts database performance automatically."
+      },
+      {
+        "name": "GerritHub",
+        "url": "https://gerrithub.io",
+        "description": "Hosted Gerrit code-review system for GitHub projects enabling fine-grained review gates."
+      },
+      {
+        "name": "GoCover",
+        "url": "https://gocover.io",
+        "description": "Free Go test-coverage reports generated from public GitHub repositories."
+      },
+      {
+        "name": "GoReportCard",
+        "url": "https://goreportcard.com",
+        "description": "Generates health scores for Go repos by running gofmt, golint, go vet and security checks."
+      },
+      {
+        "name": "GTmetrix",
+        "url": "https://gtmetrix.com",
+        "description": "Website speed-test tool providing PageSpeed and Web Vitals insights with filmstrip playback."
+      },
+      {
+        "name": "Holistic.dev",
+        "url": "https://holistic.dev",
+        "description": "AI code-review platform focusing on architecture-level issues and anti-patterns in large codebases."
+      },
+      {
+        "name": "HoundCI",
+        "url": "https://houndci.com",
+        "description": "Automated style-guide enforcement for GitHub PRs using language-specific linters."
+      },
+      {
+        "name": "Moderne",
+        "url": "https://www.moderne.io",
+        "description": "Large-scale automated refactoring across millions of lines of code using OpenRewrite recipes."
+      },
+      {
+        "name": "Reviewable",
+        "url": "https://reviewable.io",
+        "description": "Enhanced code-review interface for GitHub PRs with interdiff, checklists and per-line discussions."
+      },
+      {
+        "name": "Parsers",
+        "url": "https://parsers.dev",
+        "description": "Online playground that parses code into ASTs for 20+ languages with shareable links."
+      },
+      {
+        "name": "Coverity Scan",
+        "url": "https://scan.coverity.com",
+        "description": "Free static-analysis service for open-source projects detecting critical defects and security flaws."
+      },
+      {
+        "name": "Scrutinizer",
+        "url": "https://scrutinizer-ci.com",
+        "description": "Continuous inspection platform combining static analysis, test coverage and code intelligence."
+      },
+      {
+        "name": "SemanticDiff",
+        "url": "https://semanticdiff.com",
+        "description": "Structural diff tool that understands code syntax to show meaningful changes beyond text."
+      },
+      {
+        "name": "Shields.io",
+        "url": "https://shields.io",
+        "description": "Service for concise, consistent badges (build, coverage, version) for READMEs and dashboards."
+      },
+      {
+        "name": "SonarCloud",
+        "url": "https://sonarcloud.io",
+        "description": "Cloud-based static-analysis and security scanning for 25+ languages integrated into CI/CD."
+      },
+      {
+        "name": "SourceLevel",
+        "url": "https://sourcelevel.io",
+        "description": "GitHub-integrated code-quality analytics tracking style, security and churn over time."
+      },
+      {
+        "name": "WebCEO",
+        "url": "https://www.webceo.com",
+        "description": "White-label SEO platform offering site audits, keyword tracking and backlink analysis."
+      },
+      {
+        "name": "Zoompf",
+        "url": "https://zoompf.com",
+        "description": "Enterprise web-performance scanner uncovering 300+ factors that slow down site speed."
+      }
+    ]
   },
   {
-    "tool": "Netlify",
-    "url": "https://netlify.com",
-    "benefit": "Platform for deploying and hosting modern web applications with continuous deployment from Git.",
-    "category": "Hosting",
-    "rating": 4.5,
-    "description": "A platform for deploying and hosting modern web applications with features like continuous deployment from Git, serverless functions, and more."
+    "category": "Code Search and Browsing",
+    "tools": [
+      {
+        "name": "Libraries.io",
+        "url": "https://libraries.io",
+        "description": "Open-source search engine indexing packages across npm, Maven, PyPI, RubyGems and more with dependency graphs."
+      },
+      {
+        "name": "Namae",
+        "url": "https://namae.dev",
+        "description": "Instantly check username and package-name availability across 100+ registries and social platforms."
+      },
+      {
+        "name": "Searchcode",
+        "url": "https://searchcode.com",
+        "description": "Search 75 billion lines of open-source code across GitHub, Bitbucket and Google Code with regex support."
+      },
+      {
+        "name": "Tickgit",
+        "url": "https://www.tickgit.com",
+        "description": "CLI and web dashboard that surfaces TODO/FIXME comments in your codebase as actionable tasks."
+      },
+      {
+        "name": "CodeKeep",
+        "url": "https://codekeep.io",
+        "description": "Personal snippet library with full-text search, tags and shareable collections for teams."
+      }
+    ]
   },
   {
-    "tool": "Vercel",
-    "url": "https://vercel.com",
-    "benefit": "Frontend cloud platform for static sites and serverless functions with zero-config deployments.",
-    "category": "Hosting",
-    "rating": 4.6,
-    "description": "A frontend cloud platform for static sites and serverless functions, optimized for frameworks like Next.js with zero-config deployments."
+    "category": "CI and CD",
+    "tools": [
+      {
+        "name": "AccessLint",
+        "url": "https://www.accesslint.com",
+        "description": "GitHub Action that audits pull requests for web-accessibility issues and posts inline comments."
+      },
+      {
+        "name": "Appcircle",
+        "url": "https://appcircle.io",
+        "description": "Mobile CI/CD platform automating build, test and distribution for iOS and Android apps."
+      },
+      {
+        "name": "AppVeyor",
+        "url": "https://www.appveyor.com",
+        "description": "Continuous-integration service for Windows, Linux and macOS with artifact hosting and deployment."
+      },
+      {
+        "name": "LocalOps",
+        "url": "https://localops.com",
+        "description": "Self-hosted pipeline runner that keeps CI workloads on your own infrastructure while using GitHub-like UX."
+      },
+      {
+        "name": "Argonaut",
+        "url": "https://argonaut.dev",
+        "description": "Deploy apps and infra to AWS or GCP via Git-push; includes cost dashboards and rollback triggers."
+      },
+      {
+        "name": "Bitrise",
+        "url": "https://bitrise.io",
+        "description": "CI/CD tailored for mobile—build, test and ship iOS/Android apps using 300+ workflow steps."
+      },
+      {
+        "name": "Buddy",
+        "url": "https://buddy.works",
+        "description": "Docker-based CI/CD with visual pipeline editor and 150+ prebuilt actions for web, Docker and serverless."
+      },
+      {
+        "name": "Buildkite",
+        "url": "https://buildkite.com",
+        "description": "Fast, secure CI/CD that runs agents on your own infrastructure while orchestrating via SaaS dashboards."
+      },
+      {
+        "name": "Bytebase",
+        "url": "https://bytebase.com",
+        "description": "Database CI/CD and change-management platform with GitOps-style schema migrations and reviews."
+      },
+      {
+        "name": "CircleCI",
+        "url": "https://circleci.com",
+        "description": "Cloud-native CI/CD supporting Docker, macOS and GPU runners with 2 400+ orb integrations."
+      },
+      {
+        "name": "Cirrus CI",
+        "url": "https://cirrus-ci.org",
+        "description": "Container and VM-based CI for GitHub with per-second billing and native FreeBSD support."
+      },
+      {
+        "name": "Cirun",
+        "url": "https://cirun.io",
+        "description": "Spin up on-demand GitHub Actions runners on your own cloud (AWS, GCP, Azure) with GPU or ARM."
+      },
+      {
+        "name": "Codefresh",
+        "url": "https://codefresh.io",
+        "description": "Kubernetes-native CI/CD with GitOps dashboard, built-in image registry and progressive delivery."
+      },
+      {
+        "name": "Codemagic",
+        "url": "https://codemagic.io",
+        "description": "CI/CD purpose-built for Flutter, React Native and mobile apps—build, test and publish to stores."
+      },
+      {
+        "name": "Codeship",
+        "url": "https://codeship.com",
+        "description": "Simple hosted CI/CD with parallel pipelines and native Docker support for web apps."
+      },
+      {
+        "name": "DeployBot",
+        "url": "https://deploybot.com",
+        "description": "Push-to-deploy service that ships code from Git repos to FTP, SSH, S3 and cloud hosts."
+      },
+      {
+        "name": "DeployHQ",
+        "url": "https://deployhq.com",
+        "description": "Automated deployment from Git/SVN to servers via SFTP, SSH, FTP or cloud APIs with rollbacks."
+      },
+      {
+        "name": "Drone",
+        "url": "https://drone.io",
+        "description": "Self-hosted container-native CI/CD platform configured via simple YAML pipelines."
+      },
+      {
+        "name": "LayerCI",
+        "url": "https://layerci.com",
+        "description": "Reproducible VMs per PR that boot in seconds with snapshot reuse—great for E2E tests."
+      },
+      {
+        "name": "Semaphore",
+        "url": "https://semaphoreci.com",
+        "description": "Fast CI/CD for cloud-native apps with Docker, Kubernetes and monorepo support."
+      },
+      {
+        "name": "Squash",
+        "url": "https://squash.io",
+        "description": "Spin up full-stack test environments for every branch with automatic DNS and SSL."
+      },
+      {
+        "name": "StyleCI",
+        "url": "https://styleci.io",
+        "description": "Automated PHP, JS and CSS linting and code-style fixes integrated into GitHub PRs."
+      },
+      {
+        "name": "Mergify",
+        "url": "https://mergify.com",
+        "description": "Automated merge, backport and queue management for GitHub PRs driven by rules."
+      },
+      {
+        "name": "Make",
+        "url": "https://www.make.com",
+        "description": "Visual no-code workflow automation connecting 1 600+ apps with triggers, routers and error handling."
+      },
+      {
+        "name": "ShipFox",
+        "url": "https://shipfox.com",
+        "description": "Cloud CI/CD for Salesforce deployments with scratch-org management and static analysis."
+      },
+      {
+        "name": "Spacelift",
+        "url": "https://spacelift.io",
+        "description": "Collaborative infrastructure CI/CD for Terraform, CloudFormation and Pulumi with policy-as-code."
+      },
+      {
+        "name": "Microtica",
+        "url": "https://microtica.com",
+        "description": "Serverless-first CI/CD for AWS that packages infra and app code into reusable templates."
+      },
+      {
+        "name": "Nx Cloud",
+        "url": "https://nx.app",
+        "description": "Distributed computation caching and remote builds for Nx monorepos with GitHub integration."
+      },
+      {
+        "name": "Blacksmith",
+        "url": "https://blacksmith.sh",
+        "description": "Blazing-fast GitHub Actions runners on bare-metal with per-second pricing and instant scaling."
+      },
+      {
+        "name": "Terramate",
+        "url": "https://terramate.io",
+        "description": "Open-source orchestrator for Terraform that adds stacks, globals and change detection to IaCD workflows."
+      },
+      {
+        "name": "Terrateam",
+        "url": "https://terrateam.io",
+        "description": "GitHub-native Terraform CI/CD with plan/apply in PR comments and policy enforcement."
+      }
+    ]
+  },
+  {
+    "category": "Testing",
+    "tools": [
+      {
+        "name": "Applitools",
+        "url": "https://applitools.com",
+        "description": "Visual AI testing platform that detects UI regressions across browsers, devices and screen sizes."
+      },
+      {
+        "name": "Appetize",
+        "url": "https://appetize.io",
+        "description": "Stream iOS/Android apps in browsers for manual testing, demos and CI via device emulators."
+      },
+      {
+        "name": "AppTim",
+        "url": "https://apptim.com",
+        "description": "Mobile performance testing tool that captures crashes, ANRs and resource metrics on real devices."
+      },
+      {
+        "name": "Argos",
+        "url": "https://argos-ci.com",
+        "description": "Visual regression testing for GitHub PRs—generates diffs and posts them as PR comments."
+      },
+      {
+        "name": "Bencher",
+        "url": "https://bencher.dev",
+        "description": "Continuous benchmarking suite that tracks performance changes in CI/CD with alerting."
+      },
+      {
+        "name": "BrowserStack",
+        "url": "https://browserstack.com",
+        "description": "Cloud of 3 000+ real browsers and devices for live and automated cross-browser testing."
+      },
+      {
+        "name": "BugBug",
+        "url": "https://bugbug.io",
+        "description": "Codeless web-test recorder that auto-heals selectors and runs tests in the cloud."
+      },
+      {
+        "name": "Checkly",
+        "url": "https://checklyhq.com",
+        "description": "Synthetic monitoring and E2E testing via headless Chrome with alerting and dashboards."
+      },
+      {
+        "name": "Checkbot",
+        "url": "https://checkbot.io",
+        "description": "Chrome extension that audits SEO, speed and security issues across entire sites in one click."
+      },
+      {
+        "name": "CORS Tester",
+        "url": "https://cors-tester.com",
+        "description": "Simple online tool to verify CORS headers and pre-flight responses for any endpoint."
+      },
+      {
+        "name": "Cypress",
+        "url": "https://cypress.io",
+        "description": "Fast, reliable end-to-end testing framework running in real browsers with time-travel debugging."
+      },
+      {
+        "name": "Preflight",
+        "url": "https://preflight.com",
+        "description": "No-code test automation platform that records user flows and auto-heals selectors on UI changes."
+      },
+      {
+        "name": "EveryStep Automation",
+        "url": "https://everystep-automation.com",
+        "description": "Desktop recorder to create web-app monitors and synthetic transactions without scripting."
+      },
+      {
+        "name": "Gremlin",
+        "url": "https://www.gremlin.com",
+        "description": "Chaos-engineering platform for controlled experiments on Kubernetes, cloud and bare-metal systems."
+      },
+      {
+        "name": "Gridlastic",
+        "url": "https://www.gridlastic.com",
+        "description": "Selenium Grid in the cloud—spin up auto-scaling browser clusters for parallel test execution."
+      },
+      {
+        "name": "Katalon",
+        "url": "https://katalon.com",
+        "description": "Unified low-code test-automation solution for web, API, mobile and desktop applications."
+      },
+      {
+        "name": "Keploy",
+        "url": "https://keploy.io",
+        "description": "Open-source API test-case generator that records real traffic and replays it as mocks and tests."
+      },
+      {
+        "name": "Knapsack Pro",
+        "url": "https://knapsackpro.com",
+        "description": "Splits CI test suites across parallel machines for optimal speed in Ruby, JavaScript and more."
+      },
+      {
+        "name": "LambdaTest",
+        "url": "https://lambdatest.com",
+        "description": "Cross-browser testing cloud supporting 3 000+ browsers, devices and geolocations with Selenium, Cypress and Appium."
+      },
+      {
+        "name": "Loadmill",
+        "url": "https://loadmill.com",
+        "description": "AI-driven load and API testing that auto-generates test scenarios from user sessions."
+      },
+      {
+        "name": "Lost Pixel",
+        "url": "https://lost-pixel.com",
+        "description": "Open-source visual regression testing for Storybook and Next.js apps integrated in CI."
+      },
+      {
+        "name": "Octomind",
+        "url": "https://octomind.dev",
+        "description": "AI-powered web-testing platform that auto-creates and maintains end-to-end tests from user flows."
+      },
+      {
+        "name": "Percy",
+        "url": "https://percy.io",
+        "description": "Visual testing and review platform that captures UI snapshots and highlights pixel-level changes."
+      },
+      {
+        "name": "Qase",
+        "url": "https://qase.io",
+        "description": "Modern test-management system linking manual, automated and exploratory testing in one workspace."
+      },
+      {
+        "name": "Repeato",
+        "url": "https://repeato.app",
+        "description": "No-code Android UI-testing tool that records and replays tests on real devices without root."
+      },
+      {
+        "name": "Requestly",
+        "url": "https://requestly.io",
+        "description": "Browser extension and desktop proxy to mock, modify and throttle HTTP requests for testing."
+      },
+      {
+        "name": "SEO Tester",
+        "url": "https://seotest.me",
+        "description": "Instant SEO audit tool analyzing titles, meta, speed and mobile-friendliness with actionable tips."
+      },
+      {
+        "name": "UILicious Snippets",
+        "url": "https://snippets.uilicious.com",
+        "description": "Shareable, runnable E2E test snippets for web apps that can be embedded in docs or tickets."
+      },
+      {
+        "name": "SSRF Checker",
+        "url": "https://ssrchecker.com",
+        "description": "Online tool to test server-side request forgery vulnerabilities by issuing crafted URLs."
+      },
+      {
+        "name": "TestCollab",
+        "url": "https://testcollab.com",
+        "description": "Test-management platform integrating with Jira, GitHub and CI to plan, execute and report tests."
+      },
+      {
+        "name": "TestingBot",
+        "url": "https://testingbot.com",
+        "description": "Cross-browser testing grid providing 3 000+ browser/OS combos plus real-device cloud."
+      },
+      {
+        "name": "Testspace",
+        "url": "https://www.testspace.com",
+        "description": "Analytics dashboard aggregating test results from any CI system with trend and health metrics."
+      },
+      {
+        "name": "Tesults",
+        "url": "https://tesults.com",
+        "description": "Cloud test-results reporting that collects, trends and notifies on pass/fail data from any framework."
+      },
+      {
+        "name": "UseWebhook",
+        "url": "https://usewebhook.com",
+        "description": "Receive and forward webhooks to any endpoint for load-testing or debugging external services."
+      },
+      {
+        "name": "Vaadin TestBench",
+        "url": "https://vaadin.com",
+        "description": "Java-based E2E testing framework optimized for Vaadin web apps with parallel grid execution."
+      },
+      {
+        "name": "WebsitePulse",
+        "url": "https://www.websitepulse.com",
+        "description": "External monitoring service checking uptime, page speed and SSL certificates from 40 global nodes."
+      },
+      {
+        "name": "Webhook Test",
+        "url": "https://webhook-test.com",
+        "description": "Disposable endpoint to inspect incoming webhooks with JSON prettify and replay options."
+      },
+      {
+        "name": "Webhook Site",
+        "url": "https://webhook.site",
+        "description": "Instant, unique URL to capture and inspect HTTP requests—ideal for webhook debugging."
+      },
+      {
+        "name": "Webhook Beam",
+        "url": "https://webhookbeam.com",
+        "description": "Webhook routing service that filters, transforms and forwards events to multiple endpoints."
+      }
+    ]
+  },
+  {
+    "category": "Security and PKI",
+    "tools": [
+      {
+        "name": "Aikido",
+        "url": "https://aikido.dev",
+        "description": "All-in-one DevSecOps platform scanning code, containers and clouds for vulnerabilities and compliance."
+      },
+      {
+        "name": "AlienVault",
+        "url": "https://www.alienvault.com",
+        "description": "Unified security management with OSSIM SIEM and threat-intelligence feeds (now AT&T Cybersecurity)."
+      },
+      {
+        "name": "Altcha",
+        "url": "https://altcha.org",
+        "description": "Open-source CAPTCHA alternative using proof-of-work to block spam without user friction."
+      },
+      {
+        "name": "Atomist",
+        "url": "https://atomist.com",
+        "description": "Policy-as-code platform that continuously monitors repos and containers for security drift."
+      },
+      {
+        "name": "CloudSploit",
+        "url": "https://cloudsploit.com",
+        "description": "Continuous cloud-security scanning for AWS, Azure and GCP generating compliance reports."
+      },
+      {
+        "name": "CodeNotary",
+        "url": "https://www.codenotary.io",
+        "description": "Immutable ledger for signing and verifying code, containers and SBOMs with zero-trust provenance."
+      },
+      {
+        "name": "Crypteron",
+        "url": "https://www.crypteron.com",
+        "description": "Drop-in .NET encryption library securing data at rest and in transit with field-level encryption."
+      },
+      {
+        "name": "CyberChef",
+        "url": "https://cyberchef.io",
+        "description": "Browser-based “Swiss-army knife” for encryption, encoding, compression and data-analysis recipes."
+      },
+      {
+        "name": "Styra",
+        "url": "https://www.styra.com",
+        "description": "Policy-as-code platform powered by Open Policy Agent for Kubernetes, microservices and APIs."
+      },
+      {
+        "name": "Datree",
+        "url": "https://datree.io",
+        "description": "Git-based policy engine preventing misconfigurations in Kubernetes manifests and Helm charts."
+      },
+      {
+        "name": "Dependabot",
+        "url": "https://dependabot.com",
+        "description": "Automated dependency-update PRs for npm, Maven, Docker and more—now built into GitHub."
+      },
+      {
+        "name": "DJ Checkup",
+        "url": "https://djcheckup.com",
+        "description": "Security linter for Django settings detecting unsafe defaults, exposed secrets and missing headers."
+      },
+      {
+        "name": "Doppler",
+        "url": "https://www.doppler.com",
+        "description": "Universal secrets manager syncing environment variables across CI/CD, servers and local dev."
+      },
+      {
+        "name": "Dotenv",
+        "url": "https://www.dotenv.org",
+        "description": "Hosted service that encrypts and injects .env secrets into any runtime without file management."
+      },
+      {
+        "name": "GitGuardian",
+        "url": "https://gitguardian.com",
+        "description": "Real-time secrets-detection platform scanning commits, PRs and repos for leaked credentials."
+      },
+      {
+        "name": "Have I Been Pwned",
+        "url": "https://haveibeenpwned.com",
+        "description": "Free breach-notification service letting users and APIs check if emails/passwords were compromised."
+      },
+      {
+        "name": "HostedScan",
+        "url": "https://hostedscan.com",
+        "description": "Cloud vulnerability scanner auditing networks, web apps and APIs with OWASP and CIS benchmarks."
+      },
+      {
+        "name": "Infisical",
+        "url": "https://infisical.com",
+        "description": "Open-source secret-management platform offering end-to-end encrypted .env sync and dynamic secrets."
+      },
+      {
+        "name": "Internet.nl",
+        "url": "https://internet.nl",
+        "description": "Dutch government tool testing websites and email servers for modern security standards (TLS, DNSSEC, IPv6)."
+      },
+      {
+        "name": "KeyChest",
+        "url": "https://keychest.net",
+        "description": "Certificate expiry monitoring and full PKI lifecycle management with REST API and alerts."
+      },
+      {
+        "name": "Let's Encrypt",
+        "url": "https://letsencrypt.org",
+        "description": "Free, automated and open certificate authority issuing trusted SSL/TLS certificates via ACME."
+      },
+      {
+        "name": "Meterian",
+        "url": "https://meterian.io",
+        "description": "Continuous security scanner for open-source dependencies revealing CVEs and license risks."
+      },
+      {
+        "name": "Mozilla Observatory",
+        "url": "https://observatory.mozilla.org",
+        "description": "Grades web-security headers, TLS and CSP configurations with actionable remediation guidance."
+      },
+      {
+        "name": "OPSWAT",
+        "url": "https://www.opswat.com",
+        "description": "Multiscanning and device-compliance platform securing file uploads and removable media."
+      },
+      {
+        "name": "OpenAPI Security",
+        "url": "https://openapi.security",
+        "description": "Static analysis of OpenAPI specs to detect authentication gaps, injection and schema issues."
+      },
+      {
+        "name": "Pixee",
+        "url": "https://pixee.ai",
+        "description": "AI-driven security auto-remediation that opens PRs fixing code-level vulnerabilities."
+      },
+      {
+        "name": "PyUp",
+        "url": "https://pyup.io",
+        "description": "Monitors Python dependencies and opens PRs with safe upgrade pins and CVE advisories."
+      },
+      {
+        "name": "Qualys",
+        "url": "https://www.qualys.com",
+        "description": "Cloud-based vulnerability management, compliance and web-application scanning suite."
+      },
+      {
+        "name": "Report URI",
+        "url": "https://report-uri.com",
+        "description": "Collects and aggregates CSP, HSTS and other browser security-policy violation reports in real time."
+      },
+      {
+        "name": "SecLookup",
+        "url": "https://seclookup.com",
+        "description": "Threat-intelligence API providing IP, domain and file reputation with blocklist feeds."
+      },
+      {
+        "name": "Snyk",
+        "url": "https://snyk.io",
+        "description": "Developer-first security platform finding and fixing vulnerabilities in open-source libs, containers and IaC."
+      },
+      {
+        "name": "SSL Labs",
+        "url": "https://www.ssllabs.com",
+        "description": "Comprehensive SSL/TLS server testing tool grading configuration, protocols and cipher suites."
+      },
+      {
+        "name": "SOOS",
+        "url": "https://soos.io",
+        "description": "SCA and vulnerability-management solution for open-source dependencies with license compliance."
+      },
+      {
+        "name": "StackHawk",
+        "url": "https://www.stackhawk.com",
+        "description": "Dynamic application security testing (DAST) in CI/CD for APIs and SPAs with remediation tips."
+      },
+      {
+        "name": "Sucuri SiteCheck",
+        "url": "https://sitecheck.sucuri.net",
+        "description": "Free remote website scanner detecting malware, blocklists and out-of-date CMS versions."
+      },
+      {
+        "name": "Protectumus",
+        "url": "https://protectumus.com",
+        "description": "Cloud WAF and DDoS protection with real-time bot mitigation and OWASP rule sets."
+      },
+      {
+        "name": "TestTLS",
+        "url": "https://testtls.com",
+        "description": "Command-line and web tool to audit TLS configuration and certificate chains against best practices."
+      },
+      {
+        "name": "ThreatConnect",
+        "url": "https://threatconnect.com",
+        "description": "Threat-intelligence platform aggregating indicators of compromise with playbook-driven response."
+      },
+      {
+        "name": "Tinfoil Security",
+        "url": "https://tinfoilsecurity.com",
+        "description": "Automated web-application security scanner with DevOps integrations and compliance reporting."
+      },
+      {
+        "name": "Ubiq Security",
+        "url": "https://ubiqsecurity.com",
+        "description": "Developer-friendly SDKs for client-side encryption and key management without cryptography expertise."
+      },
+      {
+        "name": "Virgil Security",
+        "url": "https://virgilsecurity.com",
+        "description": "End-to-end encryption toolkits for passwordless auth, secure data and HIPAA-compliant messaging."
+      },
+      {
+        "name": "Vulert",
+        "url": "https://vulert.com",
+        "description": "Vulnerability-alert service that monitors package-lock or manifest files and emails new CVEs."
+      },
+      {
+        "name": "Escape",
+        "url": "https://escape.tech",
+        "description": "GraphQL security scanner uncovering schema leaks, injection and rate-limit issues in CI."
+      },
+      {
+        "name": "HasMySecretLeaked",
+        "url": "https://hasmysecretleaked.com",
+        "description": "Search engine for exposed secrets—upload hashes to check if credentials appear in breach dumps."
+      },
+      {
+        "name": "Project Gatekeeper",
+        "url": "https://projectgatekeeper.com",
+        "description": "Policy engine for Kubernetes admission control enforcing security, resource and compliance rules."
+      }
+    ]
+  },
+  {
+    "category": "Authentication, Authorization, and User Management",
+    "tools": [
+      {
+        "name": "Aserto",
+        "url": "https://www.aserto.com",
+        "description": "Fine-grained authorization as a service using OPA policies and real-time decision logs."
+      },
+      {
+        "name": "Asgardeo",
+        "url": "https://asgardeo.io",
+        "description": "WSO2’s cloud identity platform for customer IAM with passwordless, MFA and social logins."
+      },
+      {
+        "name": "Auth0",
+        "url": "https://auth0.com",
+        "description": "Extensible identity platform providing universal login, MFA, RBAC and B2B/B2C flows via SDKs."
+      },
+      {
+        "name": "Authgear",
+        "url": "https://www.authgear.com",
+        "description": "Headless auth API with passwordless, biometric login and HIPAA/SOC2 compliance out of the box."
+      },
+      {
+        "name": "Authress",
+        "url": "https://authress.io",
+        "description": "Fine-grained access-control API that scales to millions of users with policy-as-code and audits."
+      },
+      {
+        "name": "Authy",
+        "url": "https://authy.com",
+        "description": "Twilio’s TOTP-based two-factor authentication app and API for protecting user accounts."
+      },
+      {
+        "name": "Cerbos",
+        "url": "https://cerbos.dev",
+        "description": "Open-source, stateless authorization engine exposing decoupled RBAC/ABAC policies via gRPC/REST."
+      },
+      {
+        "name": "Clerk",
+        "url": "https://clerk.com",
+        "description": "Drop-in React components and APIs for complete user management—sign-up, MFA, sessions and orgs."
+      },
+      {
+        "name": "Cloud-IAM",
+        "url": "https://cloud-iam.com",
+        "description": "Managed Keycloak hosting for SSO, SAML, OAuth2 and identity brokering with 99.9% SLA."
+      },
+      {
+        "name": "Corbado",
+        "url": "https://www.corbado.com",
+        "description": "Passkeys-as-a-Service enabling FIDO2 passwordless login across web and mobile apps."
+      },
+      {
+        "name": "Descope",
+        "url": "https://descope.com",
+        "description": "Drag-and-drop identity flows builder for magic links, biometrics and social logins with no code."
+      },
+      {
+        "name": "Duo",
+        "url": "https://duo.com",
+        "description": "Cisco’s zero-trust access platform combining MFA, device trust and adaptive policies."
+      },
+      {
+        "name": "Kinde",
+        "url": "https://kinde.com",
+        "description": "Modern auth platform for SaaS apps offering multi-tenant, RBAC and self-service portals."
+      },
+      {
+        "name": "LoginTC",
+        "url": "https://www.logintc.com",
+        "description": "MFA solution with push, SMS, voice and hardware tokens plus risk-based step-up auth."
+      },
+      {
+        "name": "MojoAuth",
+        "url": "https://mojoauth.com",
+        "description": "Passwordless authentication API with email magic links, OTP and social login widgets."
+      },
+      {
+        "name": "Okta",
+        "url": "https://developer.okta.com",
+        "description": "Universal identity and access-management suite with SSO, MFA and lifecycle automation APIs."
+      },
+      {
+        "name": "OneLogin",
+        "url": "https://www.onelogin.com",
+        "description": "Enterprise IAM delivering SSO, MFA, directory integration and adaptive authentication."
+      },
+      {
+        "name": "Ory",
+        "url": "https://www.ory.sh",
+        "description": "Open-source identity, OAuth2 and permission services (Kratos, Hydra, Keto) cloud-hosted or self-run."
+      },
+      {
+        "name": "Permit.io",
+        "url": "https://permit.io",
+        "description": "Policy-as-code authorization platform with real-time enforcement and an embeddable policy editor."
+      },
+      {
+        "name": "PhaseTwo",
+        "url": "https://phasetwo.io",
+        "description": "Cloud-native Keycloak extensions adding multi-tenant SSO, admin portals and analytics."
+      },
+      {
+        "name": "SSOJet",
+        "url": "https://ssojet.com",
+        "description": "Headless SSO provider with SAML, OAuth2 and magic links—configurable via REST API."
+      },
+      {
+        "name": "Stytch",
+        "url": "https://stytch.com",
+        "description": "Passwordless auth APIs for email magic links, OTP, biometrics and session management."
+      },
+      {
+        "name": "Stack Auth",
+        "url": "https://stack-auth.com",
+        "description": "Plug-and-play auth service for Next.js apps featuring magic links, providers and RBAC."
+      },
+      {
+        "name": "SuperTokens",
+        "url": "https://supertokens.com",
+        "description": "Open-source auth solution with managed backend and pre-built React, Vue and mobile SDKs."
+      },
+      {
+        "name": "Warrant",
+        "url": "https://warrant.dev",
+        "description": "Fine-grained authorization API supporting hierarchical RBAC and ABAC with millisecond latency."
+      },
+      {
+        "name": "Zitadel",
+        "url": "https://zitadel.com",
+        "description": "Cloud-native identity platform combining B2B/B2C auth, SSO and lifecycle management with audit trails."
+      },
+      {
+        "name": "PropelAuth",
+        "url": "https://propelauth.com",
+        "description": "Multi-tenant auth built for B2B SaaS with org management, customer SSO and usage analytics."
+      },
+      {
+        "name": "Logto",
+        "url": "https://logto.io",
+        "description": "Open-source identity and access management with ready-made UIs and enterprise-grade extensibility."
+      },
+      {
+        "name": "WorkOS",
+        "url": "https://workos.com",
+        "description": "APIs for adding enterprise SSO, directory sync and audit logs to SaaS applications."
+      }
+    ]
+  },
+  {
+    "category": "Developer Journey",
+    "description": "Essential tools and platforms for every stage of the developer journey - from learning to building to scaling.",
+    "tools": [
+      {
+        "id": "github",
+        "name": "GitHub",
+        "description": "The world's leading software development platform where millions of developers collaborate on code.",
+        "category": "Developer Journey",
+        "subcategory": "Version Control",
+        "url": "https://github.com",
+        "pricing": "Free with paid plans",
+        "tags": ["version-control", "collaboration", "open-source", "git"],
+        "growthFunnelStage": "Build",
+        "rating": 4.8,
+        "usageDescription": "Essential for version control, code collaboration, and project management in software development.",
+        "featured": true
+      },
+      {
+        "id": "vscode",
+        "name": "Visual Studio Code",
+        "description": "A lightweight but powerful source code editor with rich ecosystem of extensions.",
+        "category": "Developer Journey",
+        "subcategory": "Code Editors",
+        "url": "https://code.visualstudio.com",
+        "pricing": "Free",
+        "tags": ["code-editor", "microsoft", "extensions", "debugging"],
+        "growthFunnelStage": "Build",
+        "rating": 4.7,
+        "usageDescription": "Primary code editor for most developers with extensive customization options.",
+        "featured": true
+      },
+      {
+        "id": "stackoverflow",
+        "name": "Stack Overflow",
+        "description": "The largest online community for programmers to learn, share knowledge, and build careers.",
+        "category": "Developer Journey",
+        "subcategory": "Learning",
+        "url": "https://stackoverflow.com",
+        "pricing": "Free",
+        "tags": ["q&a", "community", "learning", "problem-solving"],
+        "growthFunnelStage": "Learn",
+        "rating": 4.6,
+        "usageDescription": "Go-to platform for finding solutions to coding problems and learning from the community.",
+        "featured": false
+      },
+      {
+        "id": "docker",
+        "name": "Docker",
+        "description": "Platform for developing, shipping, and running applications using containerization technology.",
+        "category": "Developer Journey",
+        "subcategory": "DevOps",
+        "url": "https://docker.com",
+        "pricing": "Free with paid plans",
+        "tags": ["containers", "devops", "deployment", "virtualization"],
+        "growthFunnelStage": "Scale",
+        "rating": 4.5,
+        "usageDescription": "Streamlines application deployment and ensures consistency across different environments.",
+        "featured": true
+      },
+      {
+        "id": "postman",
+        "name": "Postman",
+        "description": "Collaboration platform for API development with tools for testing, documenting, and monitoring APIs.",
+        "category": "Developer Journey",
+        "subcategory": "API Testing",
+        "url": "https://postman.com",
+        "pricing": "Free with paid plans",
+        "tags": ["api", "testing", "documentation", "collaboration"],
+        "growthFunnelStage": "Build",
+        "rating": 4.4,
+        "usageDescription": "Essential for API development, testing, and documentation workflows.",
+        "featured": false
+      },
+      {
+        "id": "figma",
+        "name": "Figma",
+        "description": "Collaborative interface design tool that runs in the browser with real-time collaboration.",
+        "category": "Developer Journey",
+        "subcategory": "Design",
+        "url": "https://figma.com",
+        "pricing": "Free with paid plans",
+        "tags": ["design", "ui-ux", "collaboration", "prototyping"],
+        "growthFunnelStage": "Build",
+        "rating": 4.6,
+        "usageDescription": "Bridge between design and development with developer-friendly features.",
+        "featured": true
+      },
+      {
+        "id": "netlify",
+        "name": "Netlify",
+        "description": "Platform for deploying and hosting modern web applications with continuous deployment from Git.",
+        "category": "Developer Journey",
+        "subcategory": "Hosting",
+        "url": "https://netlify.com",
+        "pricing": "Free with paid plans",
+        "tags": ["hosting", "deployment", "jamstack", "cdn"],
+        "growthFunnelStage": "Launch",
+        "rating": 4.5,
+        "usageDescription": "Simplifies web deployment with automatic builds and global CDN distribution.",
+        "featured": false
+      },
+      {
+        "id": "vercel",
+        "name": "Vercel",
+        "description": "Frontend cloud platform for static sites and serverless functions with zero-config deployments.",
+        "category": "Developer Journey",
+        "subcategory": "Hosting",
+        "url": "https://vercel.com",
+        "pricing": "Free with paid plans",
+        "tags": ["hosting", "serverless", "nextjs", "deployment"],
+        "growthFunnelStage": "Launch",
+        "rating": 4.6,
+        "usageDescription": "Optimized for React and Next.js applications with excellent developer experience.",
+        "featured": true
+      }
+    ]
   }
 ]
