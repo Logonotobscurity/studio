@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Coffee } from 'lucide-react';
+import { Coffee, Newspaper, Code } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
@@ -35,12 +35,18 @@ export default function Footer() {
             <p className="text-muted-foreground text-sm max-w-xs">
               Open platform for growth enthusiasts to find recommended Solutions to Curiosity.
             </p>
-            <Button asChild variant="outline">
-              <a href="https://www.buymeacoffee.com" target="_blank" rel="noopener noreferrer">
-                <Coffee className="mr-2 h-4 w-4" />
-                Support StartIT
-              </a>
-            </Button>
+             <div className="flex flex-wrap gap-2">
+                <Button asChild variant="outline">
+                  <a href="https://www.buymeacoffee.com" target="_blank" rel="noopener noreferrer">
+                    <Coffee className="mr-2 h-4 w-4" />
+                    Support StartIT
+                  </a>
+                </Button>
+                <Button variant="outline" disabled>
+                    <Newspaper className="mr-2 h-4 w-4" />
+                    Weekly Digest
+                </Button>
+             </div>
           </div>
           <div className="lg:col-span-2">
             <h3 className="text-lg font-semibold mb-4">Frequently Asked Questions</h3>
@@ -58,8 +64,10 @@ export default function Footer() {
         <div className="mt-12 border-t border-border pt-8 flex flex-col sm:flex-row justify-between items-center text-sm text-muted-foreground">
           <p>&copy; {new Date().getFullYear()} StartIT. All rights reserved.</p>
           <div className="flex flex-wrap gap-4 mt-4 sm:mt-0 items-center">
-            <span className="cursor-not-allowed hover:text-foreground transition-colors" title="Coming soon">Embed badge</span>
-            <span className="cursor-not-allowed hover:text-foreground transition-colors" title="Coming soon">Weekly digest</span>
+            <Button variant="ghost" size="sm" disabled>
+                <Code className="mr-2 h-4 w-4" />
+                Embed Badge
+            </Button>
             <Link href="/privacy" className="hover:text-foreground transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-foreground transition-colors">Terms of Service</Link>
           </div>

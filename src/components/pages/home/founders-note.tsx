@@ -41,11 +41,11 @@ export default function FoundersNote() {
               <p className="text-sm text-muted-foreground">Founder & Chief Curator</p>
             </div>
             <div className="lg:col-span-2">
-              <p className="text-lg text-foreground/90 mb-4 text-balance">
-                "Every great journey begins with curiosity. StartIT was born from my passion to bridge the gap between ambitious minds and the tools they need to transform their ideas into reality. As an entrepreneur and growth enthusiast, I know the challenge of finding the right solution. That's why I built StartIT."
+              <p className="text-lg text-foreground mb-4 text-balance">
+                "We're indie hackers who've been in the trenches, building startups and hunting for the right tools to accelerate our growth. After years of bookmarking, testing, and comparing hundreds of tools, we realized we had built something valuable - a curated collection of the best resources for every stage of the startup journey."
               </p>
-              <p className="text-lg text-foreground/90 font-semibold text-balance">
-                My Promise: StartIT will always remain a platform dedicated to your growth.
+              <p className="text-lg text-foreground font-semibold text-balance">
+                "StartIT is our way of giving back. Every tool here has been personally tested or comes highly recommended by founders we trust. No affiliate spam, no fake reviews - just honest recommendations from builders, for builders."
               </p>
             </div>
           </div>
