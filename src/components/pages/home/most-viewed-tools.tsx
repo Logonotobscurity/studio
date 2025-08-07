@@ -11,6 +11,10 @@ type MostViewedToolsProps = {
 };
 
 export default function MostViewedTools({ popularTools }: MostViewedToolsProps) {
+  if (!popularTools || popularTools.length === 0) {
+    return null;
+  }
+
   return (
     <motion.section 
       className="py-16"
@@ -27,30 +31,35 @@ export default function MostViewedTools({ popularTools }: MostViewedToolsProps) 
         <Card>
           <CardContent className="p-0">
             <ul className="divide-y divide-border">
-              {popularTools.map((tool) => (
-                <li key={tool.tool}>
-                  <Link href={tool.url} target="_blank" rel="noopener noreferrer" className="flex items-center p-4 hover:bg-muted/50 transition-colors group">
-                    <Image 
-                      src={`https://placehold.co/40x40`} 
-                      alt={`${tool.tool} logo`} 
-                      width={40} 
-                      height={40} 
-                      className="rounded-md" 
-                      data-ai-hint="logo"
-                      sizes="40px"
-                    />
-                    <div className="ml-4 flex-grow">
-                      <p className="font-semibold">{tool.tool}</p>
-                      <p className="text-sm text-muted-foreground font-inter">{tool.category}</p>
-                    </div>
-                    <div className="flex items-center text-sm text-muted-foreground">
-                      <Sparkles className="h-4 w-4 mr-1 text-orange-400" />
-                      Popular
-                    </div>
-                    <ArrowUpRight className="h-5 w-5 ml-4 text-muted-foreground transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
-                  </Link>
-                </li>
-              ))}
+              {popularTools.map((tool, index) => {
+                const toolName = tool.tool || tool.name || 'Unnamed Tool';
+                const toolUrl = tool.url || '#';
+                
+                return (
+                  <li key={`${toolName}-${index}`}>
+                    <Link href={toolUrl} target="_blank" rel="noopener noreferrer" className="flex items-center p-4 hover:bg-muted/50 transition-colors group">
+                      <Image 
+                        src={`https://placehold.co/40x40`} 
+                        alt={`${toolName} logo`} 
+                        width={40} 
+                        height={40} 
+                        className="rounded-md" 
+                        data-ai-hint="logo"
+                        sizes="40px"
+                      />
+                      <div className="ml-4 flex-grow">
+                        <p className="font-semibold">{toolName}</p>
+                        <p className="text-sm text-muted-foreground font-inter">{tool.category}</p>
+                      </div>
+                      <div className="flex items-center text-sm text-muted-foreground">
+                        <Sparkles className="h-4 w-4 mr-1 text-orange-400" />
+                        Popular
+                      </div>
+                      <ArrowUpRight className="h-5 w-5 ml-4 text-muted-foreground transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+                    </Link>
+                  </li>
+                )
+              })}
             </ul>
           </CardContent>
         </Card>

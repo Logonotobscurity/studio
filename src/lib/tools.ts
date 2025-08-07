@@ -3,78 +3,51 @@
 import fs from 'fs/promises';
 import path from 'path';
 import { categories as allCategories } from '@/data/categories';
-import type { Tool as PrebuiltTool } from './tool-schemas';
+import type { BaseMeta, CategoryTool, JsonLineTool, UrlTool } from './tool-schemas';
 
-// The prebuild step now generates multiple JSON files in src/data
-// We need a more flexible Tool type
-export type Tool = PrebuiltTool & {
+export type Tool = BaseMeta & {
   [key: string]: any;
 };
 
 const dataDir = path.join(process.cwd(), 'src', 'data');
 
 export const getAllTools = async (): Promise<Tool[]> => {
-    const files = await fs.readdir(dataDir);
-    const jsonFiles = files.filter((file) => file.endsWith('.json') && file !== 'tools.json');
-
-    const allTools: Tool[] = [];
-
-    for (const file of jsonFiles) {
-        const filePath = path.join(dataDir, file);
-        const fileContent = await fs.readFile(filePath, 'utf-8');
-        try {
-            const tools: any[] = JSON.parse(fileContent);
-            if (Array.isArray(tools)) {
-                allTools.push(...tools);
-            }
-        } catch (e) {
-            console.error(`Could not parse ${file}`);
-        }
-    }
-    return allTools;
-};
-
-
-export async function getToolsBySlug(slug: string): Promise<Tool[]> {
-  const category = allCategories.find(c => c.slug === slug);
-  const fileName = slug === 'all' ? '' : category?.slug;
-
-  if (slug !== 'all' && !category) {
-    console.warn(`No category found for slug: ${slug}`);
-    return [];
-  }
-
-  const filesToRead = slug === 'all' 
-    ? (await fs.readdir(dataDir)).filter(f => f.endsWith('.json') && f !== 'tools.json')
-    : [`${fileName}.json`];
+  const files = await fs.readdir(dataDir);
+  const jsonFiles = files.filter(file => file.endsWith('.json'));
 
   const allTools: Tool[] = [];
-  
-  for (const file of filesToRead) {
-    try {
-      const filePath = path.join(dataDir, file);
-      const jsonContent = await fs.readFile(filePath, 'utf-8');
-      const parsedData = JSON.parse(jsonContent);
 
-      if(Array.isArray(parsedData)) {
-        // This handles UrlTool and JsonLineTool which are arrays of objects
-        allTools.push(...parsedData);
-      } else if (typeof parsedData === 'object' && parsedData !== null && Array.isArray(parsedData.tools)) {
-        // This handles CategoryTool which has a 'tools' property
-        allTools.push(...parsedData.tools);
-      } else if (typeof parsedData === 'object' && parsedData !== null) {
-        // This can handle other structures like a single tool object.
-        allTools.push(parsedData);
+  for (const file of jsonFiles) {
+    const filePath = path.join(dataDir, file);
+    const fileContent = await fs.readFile(filePath, 'utf-8');
+    try {
+      const tools: Tool[] = JSON.parse(fileContent);
+      if (Array.isArray(tools)) {
+        // This handles UrlTool arrays, JsonLineTool arrays, and CategoryTool arrays
+        const flattenedTools = tools.flatMap(tool => {
+            if (tool._schema === 'CategoryTool' && Array.isArray((tool as CategoryTool).tools)) {
+                return (tool as CategoryTool).tools.map(t => ({...t, category: tool.category, ...tool, tools: undefined}));
+            }
+            return tool;
+        });
+        allTools.push(...flattenedTools);
       }
-      
-    } catch (error) {
-      if ( (error as NodeJS.ErrnoException).code !== 'ENOENT') {
-        console.error(`Error reading or parsing data file for slug ${slug}: ${file}`, error);
-      }
+    } catch (e) {
+      console.error(`Could not parse ${file}:`, e);
     }
   }
-
   return allTools;
+};
+
+export async function getToolsBySlug(slug: string): Promise<Tool[]> {
+  const allTools = await getAllTools();
+  if (slug === 'all') {
+    return allTools;
+  }
+  return allTools.filter(tool => {
+      const sourceFile = tool._sourceFile || '';
+      return path.basename(sourceFile, '.TXT').toLowerCase() === slug.toLowerCase();
+  });
 }
 
 function extractUniqueValues(tools: Tool[], key: string): string[] {
@@ -90,11 +63,10 @@ function extractUniqueValues(tools: Tool[], key: string): string[] {
   return Array.from(valueSet).sort();
 }
 
-
 export async function getCategoriesForSlug(tools: Tool[]): Promise<string[]> {
-    return extractUniqueValues(tools, 'category');
+  return extractUniqueValues(tools, 'category');
 }
 
 export async function getFunnelsForSlug(tools: Tool[]): Promise<string[]> {
-    return extractUniqueValues(tools, 'funnel');
+  return extractUniqueValues(tools, 'funnel');
 }

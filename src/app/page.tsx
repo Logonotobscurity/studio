@@ -8,7 +8,9 @@ import type { Tool } from '@/lib/tools';
 
 export default async function Home() {
   const allTools: Tool[] = await getAllTools();
-  const popularTools = allTools.filter(tool => tool.tags?.includes('*')).slice(0, 6);
+  const popularTools = allTools
+    .filter(tool => Array.isArray(tool.tags) && tool.tags.includes('*'))
+    .slice(0, 6);
 
   return (
     <div className="flex flex-col">
