@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 import { tools } from '@/lib/tools-data';
 
 // Get the top 6 most popular tools based on the "*" tag
-const popularTools = tools.filter(tool => tool.tags?.includes('*')).slice(0, 6);
+const popularTools = tools().filter(tool => tool.tags?.includes('*')).slice(0, 6);
 
 export default function MostViewedTools() {
   return (

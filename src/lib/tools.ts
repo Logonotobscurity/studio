@@ -2,7 +2,7 @@ import toolsJson from './tools.json';
 import { categories as allCategories } from '@/data/categories';
 
 // The interface is now derived from the JSON source of truth.
-export interface Tool extends (typeof toolsJson)[0] {}
+export type Tool = (typeof toolsJson)[0];
 
 export const getAllTools = (): Tool[] => {
   // The JSON is pre-processed at build time, so we can just type-assert it.
