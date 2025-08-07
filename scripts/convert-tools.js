@@ -1,11 +1,16 @@
-import { existsSync, writeFileSync, unlinkSync, readFileSync } from 'fs';
+import { existsSync, writeFileSync, unlinkSync, readFileSync, mkdirSync } from 'fs';
 import path from 'path';
 import { glob } from 'glob';
 import { atomicWrite } from './utils/atomicWrite.js';
 
 const LOCKFILE = './data/.convert.lock';
+const DATA_DIR = './data';
 
 function lock() {
+  // Ensure data directory exists before trying to write the lockfile
+  if (!existsSync(DATA_DIR)) {
+    mkdirSync(DATA_DIR, { recursive: true });
+  }
   if (existsSync(LOCKFILE)) {
     console.error('Conversion locked. Another process is running.');
     process.exit(1);
@@ -133,6 +138,12 @@ async function main() {
       files: {},
     };
     const schemas = [];
+
+    if (files.length === 0) {
+        console.log('No .TXT files found in data directory. Skipping conversion.');
+        await generateTypes([]); // Generate empty types file if no schemas found
+        return;
+    }
 
     for (const file of files) {
       const content = readFileSync(file, 'utf-8');
