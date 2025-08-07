@@ -21,20 +21,16 @@ async function readJsonFile(filename: string): Promise<Tool[]> {
     const filePath = path.join(dataDirectory, filename);
     const fileContents = await fs.readFile(filePath, 'utf8');
     const data = JSON.parse(fileContents);
+    
     // Ensure the data is always an array
     if (Array.isArray(data)) {
-      return data;
+      // For any tool object missing the benefit field, populate it from the description.
+      return data.map(tool => ({
+        ...tool,
+        benefit: tool.benefit || (tool.description ? tool.description.substring(0, 90) + (tool.description.length > 90 ? '...' : '') : "No benefit description available.")
+      }));
     }
-    // If the JSON is an object with a 'tools' array (like old startup-journey.json)
-    if (typeof data === 'object' && data !== null && Array.isArray(data.tools)) {
-      return data.tools;
-    }
-    // If the JSON is an array of objects with a 'tools' array (like old developer-journey.json)
-    if (Array.isArray(data) && data.every(item => typeof item === 'object' && item !== null && Array.isArray(item.tools))) {
-      return data.flatMap(category => 
-        (category.tools as any[]).map(tool => ({ ...tool, category: tool.category || category.category }))
-      );
-    }
+    
     return [];
   } catch (error) {
     console.error(`Error reading or parsing ${filename}:`, error);

@@ -1,8 +1,8 @@
 
 'use client';
 
-import { useState, useMemo, useEffect, useCallback } from 'react';
-import { SlidersHorizontal, List, ArrowLeft, ArrowRight } from 'lucide-react';
+import { useState, useEffect, useCallback } from 'react';
+import { SlidersHorizontal, List } from 'lucide-react';
 import type { Tool } from '@/lib/tools';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -11,9 +11,8 @@ import SidePanel from './side-panel';
 import ToolCard from './tool-card';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { categories } from '@/data/categories';
-import { usePathname, useRouter, useSearchParams } from 'next/navigation';
-import { cn } from '@/lib/utils';
 import Pagination from './pagination';
+import { useToolFilters } from '@/hooks/use-tool-filters';
 
 type ToolListingsProps = {
   slug: string;
@@ -23,8 +22,6 @@ type ToolListingsProps = {
   searchParams: { [key: string]: string | string[] | undefined };
 };
 
-const TOOLS_PER_PAGE = 12;
-
 export default function ToolListings({
   slug,
   tools,
@@ -32,68 +29,19 @@ export default function ToolListings({
   availableFunnels,
   searchParams,
 }: ToolListingsProps) {
-  const router = useRouter();
-  const pathname = usePathname();
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedTool, setSelectedTool] = useState<Tool | null>(null);
   const [isSidePanelOpen, setIsSidePanelOpen] = useState(false);
   const isMobile = useIsMobile();
   
-  const categoryInfo = useMemo(() => categories.find(c => c.slug === slug), [slug]);
+  const categoryInfo = categories.find(c => c.slug === slug);
+
+  const { paginatedTools, totalPages, currentPage, filteredToolCount } = useToolFilters({
+    tools,
+    searchParams,
+    searchTerm,
+  });
   
-  const currentPage = useMemo(() => {
-    const page = searchParams?.page;
-    const pageNumber = Number(page);
-    return isNaN(pageNumber) || pageNumber < 1 ? 1 : pageNumber;
-  }, [searchParams?.page]);
-
-
-  const selectedCategories = useMemo(() => {
-    const cats = searchParams?.categories;
-    return new Set(Array.isArray(cats) ? cats : (cats ? [cats] : []));
-  }, [searchParams?.categories]);
-
-  const selectedFunnels = useMemo(() => {
-    const funnels = searchParams?.funnels;
-    return new Set(Array.isArray(funnels) ? funnels : (funnels ? [funnels] : []));
-  }, [searchParams?.funnels]);
-
-  const selectedTags = useMemo(() => {
-    const tags = searchParams?.tags;
-    return new Set(Array.isArray(tags) ? tags : (tags ? [tags] : []));
-  }, [searchParams?.tags]);
-
-  const filteredTools = useMemo(() => {
-    return tools.filter(tool => {
-      const searchTermMatch = searchTerm === '' ||
-        tool.tool.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        tool.benefit.toLowerCase().includes(searchTerm.toLowerCase());
-
-      const categoryMatch = selectedCategories.size === 0 || selectedCategories.has(tool.category);
-      
-      const funnelMatch = selectedFunnels.size === 0 || (tool.funnel && tool.funnel.some(f => selectedFunnels.has(f)));
-      
-      const tagMatch = selectedTags.size === 0 || (tool.tags && tool.tags.some(t => selectedTags.has(t)));
-
-      return searchTermMatch && categoryMatch && funnelMatch && tagMatch;
-    });
-  }, [tools, searchTerm, selectedCategories, selectedFunnels, selectedTags]);
-
-  const totalPages = Math.ceil(filteredTools.length / TOOLS_PER_PAGE);
-  const paginatedTools = useMemo(() => {
-    const start = (currentPage - 1) * TOOLS_PER_PAGE;
-    const end = start + TOOLS_PER_PAGE;
-    return filteredTools.slice(start, end);
-  }, [filteredTools, currentPage]);
-  
-  useEffect(() => {
-    if (currentPage > totalPages && totalPages > 0) {
-      const params = new URLSearchParams(searchParams as any);
-      params.set('page', String(totalPages));
-      router.push(`${pathname}?${params.toString()}`, { scroll: false });
-    }
-  }, [currentPage, totalPages, searchParams, pathname, router]);
-
   const handleSelectTool = (tool: Tool) => {
     setSelectedTool(tool);
     if (isMobile) {
@@ -115,16 +63,6 @@ export default function ToolListings({
       handleClearSelectedTool();
     }
   }, [isSidePanelOpen]);
-
-  useEffect(() => {
-    // Reset page to 1 when filters change
-    const params = new URLSearchParams(searchParams as any);
-    if (params.has('page') && params.get('page') !== '1') {
-      params.set('page', '1');
-      router.push(`${pathname}?${params.toString()}`, { scroll: false });
-    }
-  }, [searchParams, pathname, router]);
-
 
   const pageTitle = categoryInfo ? `${categoryInfo.title} Tools` : 'All Tools';
   const pageDescription = categoryInfo ? categoryInfo.description : 'Explore all tools to accelerate your growth.';
@@ -182,7 +120,7 @@ export default function ToolListings({
           </div>
           
           <div className="text-sm text-muted-foreground mb-4">
-            Showing {paginatedTools.length} of {filteredTools.length} tools
+            Showing {paginatedTools.length} of {filteredToolCount} tools
           </div>
           
           {paginatedTools.length > 0 ? (
@@ -205,4 +143,3 @@ export default function ToolListings({
     </div>
   );
 }
-

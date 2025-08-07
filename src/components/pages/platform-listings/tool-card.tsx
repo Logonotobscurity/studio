@@ -16,7 +16,7 @@ export default function ToolCard({ tool, onSelect }: ToolCardProps) {
     const totalStars = 5;
     const filledStars = Math.round(rating);
     return (
-      <div className="flex items-center gap-0.5 rating-glow" aria-label={`Rating: ${rating} out of 5 stars`}>
+      <div className="flex items-center gap-0.5 rating-glow p-2" aria-label={`Rating: ${rating} out of 5 stars`}>
         {[...Array(totalStars)].map((_, i) => (
           <Star
             key={i}
