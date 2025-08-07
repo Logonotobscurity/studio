@@ -27,7 +27,7 @@ export default function MostViewedTools() {
           <CardContent className="p-0">
             <ul className="divide-y divide-border">
               {popularTools.map((tool) => (
-                <li key={tool.name}>
+                <li key={tool.tool}>
                   <Link href={tool.url} target="_blank" rel="noopener noreferrer" className="flex items-center p-4 hover:bg-muted/50 transition-colors group">
                     <Image 
                       src={`https://placehold.co/40x40`} 
