@@ -264,8 +264,6 @@
     "funnel": ["Activation"],
     "rating": 4.5
   },
-_B_A_I_T_Content-Type: application/json
-_B_A_I_T_Content-Length: 172
   {
     "tool": "Slack",
     "url": "https://slack.com",
@@ -276,8 +274,6 @@ _B_A_I_T_Content-Length: 172
     "funnel": ["Activation", "Retention"],
     "rating": 4.4
   },
-_B_A_I_T_Content-Type: application/json
-_B_A_I_T_Content-Length: 153
   {
     "tool": "Zoom",
     "url": "https://zoom.us",
@@ -287,8 +283,6 @@ _B_A_I_T_Content-Length: 153
     "tags": ["FF"],
     "funnel": []
   },
-_B_A_I_T_Content-Type: application/json
-_B_A_I_T_Content-Length: 158
   {
     "tool": "Contentful",
     "url": "https://www.contentful.com",
