@@ -12,7 +12,7 @@ import { useIsMobile } from '@/hooks/use-mobile';
 import { categories } from '@/data/categories';
 import Pagination from './pagination';
 import { useToolFilters } from '@/hooks/use-tool-filters';
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 
 type ToolListingsProps = {
   slug: string;
