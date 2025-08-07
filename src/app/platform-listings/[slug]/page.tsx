@@ -27,16 +27,21 @@ export async function generateStaticParams() {
 export default async function PlatformListingsPage({ params, searchParams }: PlatformListingsPageProps) {
   const { slug } = params;
   const tools: Tool[] = await getToolsBySlug(slug);
-  const availableCategories = getCategoriesForSlug(tools);
-  const availableFunnels = getFunnelsForSlug(tools);
+  const availableCategories = await getCategoriesForSlug(tools);
+  const availableFunnels = await getFunnelsForSlug(tools);
+  
+  const pageTitle = categories.find(c => c.slug === slug)?.title || 'All Tools';
+  const pageDescription = categories.find(c => c.slug === slug)?.description || 'Explore all tools to accelerate your growth.';
 
   return (
     <ToolListings
       slug={slug}
-      tools={tools}
+      initialTools={tools}
       availableCategories={availableCategories}
       availableFunnels={availableFunnels}
       searchParams={searchParams}
+      pageTitle={pageTitle}
+      pageDescription={pageDescription}
     />
   );
 }

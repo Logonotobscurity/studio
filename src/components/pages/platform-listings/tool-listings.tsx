@@ -9,35 +9,36 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import SidePanel from './side-panel';
 import ToolCard from './tool-card';
 import { useIsMobile } from '@/hooks/use-mobile';
-import { categories } from '@/data/categories';
 import Pagination from './pagination';
 import { useToolFilters } from '@/hooks/use-tool-filters';
 import { AnimatePresence, motion } from 'framer-motion';
 
 type ToolListingsProps = {
   slug: string;
-  tools: Tool[];
+  initialTools: Tool[];
   availableCategories: string[];
   availableFunnels: string[];
   searchParams: { [key: string]: string | string[] | undefined };
+  pageTitle: string;
+  pageDescription: string;
 };
 
 export default function ToolListings({
   slug,
-  tools,
+  initialTools,
   availableCategories,
   availableFunnels,
   searchParams,
+  pageTitle,
+  pageDescription,
 }: ToolListingsProps) {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedTool, setSelectedTool] = useState<Tool | null>(null);
   const [isSidePanelOpen, setIsSidePanelOpen] = useState(false);
   const isMobile = useIsMobile();
   
-  const categoryInfo = categories.find(c => c.slug === slug);
-
   const { paginatedTools, totalPages, currentPage, filteredToolCount } = useToolFilters({
-    tools,
+    tools: initialTools,
     searchParams,
     searchTerm,
   });
@@ -64,9 +65,6 @@ export default function ToolListings({
       handleClearSelectedTool();
     }
   }, [isSidePanelOpen]);
-
-  const pageTitle = categoryInfo ? `${categoryInfo.title} Tools` : 'All Tools';
-  const pageDescription = categoryInfo ? categoryInfo.description : 'Explore all tools to accelerate your growth.';
 
   const sidePanelContent = (
     <SidePanel
@@ -131,7 +129,7 @@ export default function ToolListings({
               <>
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
                   {paginatedTools.map((tool, index) => (
-                    <ToolCard key={`${tool.tool}-${index}`} tool={tool} onSelect={handleSelectTool} />
+                    <ToolCard key={`${tool.id || tool.name}-${index}`} tool={tool} onSelect={handleSelectTool} />
                   ))}
                 </div>
                 <Pagination currentPage={currentPage} totalPages={totalPages} />
