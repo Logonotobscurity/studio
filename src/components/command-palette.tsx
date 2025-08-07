@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { ArrowUpRight, Loader2, Search } from 'lucide-react';
+import { ArrowUpRight, FileText, Folder, HardDrive, Loader2, Search } from 'lucide-react';
 import { CommandDialog, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from '@/components/ui/command';
 import { commandPaletteSearch, type CommandPaletteSearchOutput } from '@/ai/flows/command-palette-search';
 import { useRouter } from 'next/navigation';
@@ -12,16 +12,23 @@ type CommandPaletteProps = {
   setOpen: (open: boolean) => void;
 };
 
+const iconMap = {
+  tool: HardDrive,
+  page: FileText,
+  category: Folder,
+};
+
+
 export default function CommandPalette({ open, setOpen }: CommandPaletteProps) {
   const [query, setQuery] = React.useState('');
   const [results, setResults] = React.useState<CommandPaletteSearchOutput>([]);
   const [loading, setLoading] = React.useState(false);
   const router = useRouter();
-  const debouncedQuery = useDebounce(query, 300);
+  const debouncedQuery = useDebounce(query, 200);
 
   React.useEffect(() => {
     const search = async () => {
-      if (debouncedQuery.trim().length > 2) {
+      if (debouncedQuery.trim().length > 1) {
         setLoading(true);
         try {
           const searchResults = await commandPaletteSearch({ query: debouncedQuery });
@@ -41,10 +48,10 @@ export default function CommandPalette({ open, setOpen }: CommandPaletteProps) {
 
   const handleSelect = (url: string) => {
     setOpen(false);
-    if (url.startsWith('/')) {
-      router.push(url);
+    if (url.startsWith('http')) {
+      window.open(url, '_blank', 'noopener,noreferrer');
     } else {
-      window.open(url, '_blank');
+      router.push(url);
     }
   };
   
@@ -54,10 +61,19 @@ export default function CommandPalette({ open, setOpen }: CommandPaletteProps) {
     }
   }
 
+  const groupedResults = results.reduce((acc, result) => {
+    const key = result.type.charAt(0).toUpperCase() + result.type.slice(1) + 's';
+    if (!acc[key]) {
+      acc[key] = [];
+    }
+    acc[key].push(result);
+    return acc;
+  }, {} as Record<string, CommandPaletteSearchOutput>);
+
   return (
     <CommandDialog open={open} onOpenChange={setOpen}>
       <CommandInput 
-        placeholder="Search for tools or actions..." 
+        placeholder="Search for tools, categories, or pages..." 
         value={query}
         onValueChange={handleValueChange}
       />
@@ -67,24 +83,30 @@ export default function CommandPalette({ open, setOpen }: CommandPaletteProps) {
             <Loader2 className="h-6 w-6 animate-spin text-muted-foreground" />
           </div>
         )}
-        {!loading && debouncedQuery.length > 2 && results.length === 0 && (
+        {!loading && debouncedQuery.length > 1 && results.length === 0 && (
           <CommandEmpty>No results found for "{debouncedQuery}".</CommandEmpty>
         )}
-        {results.length > 0 && (
-          <CommandGroup heading="Tools">
-            {results.map((result) => (
-              <CommandItem key={result.url} onSelect={() => handleSelect(result.url)} value={result.tool}>
-                <div className="flex justify-between items-center w-full">
-                    <div className="flex flex-col">
-                        <span className="font-medium">{result.tool}</span>
-                        <span className="text-xs text-muted-foreground">{result.benefit}</span>
-                    </div>
-                    <ArrowUpRight className="h-4 w-4 text-muted-foreground" />
-                </div>
-              </CommandItem>
-            ))}
-          </CommandGroup>
-        )}
+        {Object.entries(groupedResults).map(([groupName, groupResults]) => (
+            <CommandGroup key={groupName} heading={groupName}>
+                {groupResults.map((result) => {
+                    const Icon = iconMap[result.type];
+                    return (
+                        <CommandItem key={result.id} onSelect={() => handleSelect(result.url)} value={`${result.name} ${result.description}`}>
+                            <div className="flex justify-between items-center w-full">
+                                <div className="flex items-center gap-3">
+                                    <Icon className="h-4 w-4 text-muted-foreground" />
+                                    <div className="flex flex-col">
+                                        <span className="font-medium">{result.name}</span>
+                                        <span className="text-xs text-muted-foreground">{result.description}</span>
+                                    </div>
+                                </div>
+                                {result.type === 'tool' && <ArrowUpRight className="h-4 w-4 text-muted-foreground" />}
+                            </div>
+                        </CommandItem>
+                    )
+                })}
+            </CommandGroup>
+        ))}
       </CommandList>
     </CommandDialog>
   );

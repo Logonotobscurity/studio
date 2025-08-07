@@ -4,6 +4,7 @@ import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import { ErrorBoundary } from '@/components/ui/error-boundary';
 import './globals.css';
+import FeedbackWidget from '@/components/feedback-widget';
 
 export const metadata: Metadata = {
   title: {
@@ -68,6 +69,7 @@ export default function RootLayout({
           </ErrorBoundary>
         </main>
         <Footer />
+        <FeedbackWidget />
         <Toaster />
       </body>
     </html>
