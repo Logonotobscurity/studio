@@ -5,6 +5,7 @@ import Footer from '@/components/layout/footer';
 import { ErrorBoundary } from '@/components/ui/error-boundary';
 import './globals.css';
 import FeedbackWidget from '@/components/feedback-widget';
+import MobileBottomNav from '@/components/layout/mobile-bottom-nav';
 
 export const metadata: Metadata = {
   title: {
@@ -63,13 +64,14 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased flex flex-col min-h-screen">
         <Header />
-        <main className="flex-grow">
+        <main className="flex-grow pb-20 md:pb-0">
           <ErrorBoundary>
             {children}
           </ErrorBoundary>
         </main>
         <Footer />
         <FeedbackWidget />
+        <MobileBottomNav />
         <Toaster />
       </body>
     </html>
