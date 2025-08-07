@@ -30,15 +30,13 @@ export default async function PlatformListingsPage({ params, searchParams }: Pla
   const availableCategories = await getCategoriesForSlug(slug);
   const availableFunnels = await getFunnelsForSlug(slug);
 
-  const categoryInfo = categories.find(c => c.slug === slug);
-
   return (
     <ToolListings
+      slug={slug}
       tools={tools}
       availableCategories={availableCategories}
       availableFunnels={availableFunnels}
       searchParams={searchParams}
-      categoryInfo={categoryInfo}
     />
   );
 }

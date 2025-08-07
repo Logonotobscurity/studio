@@ -9,32 +9,30 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import SidePanel from './side-panel';
 import ToolCard from './tool-card';
 import { useIsMobile } from '@/hooks/use-mobile';
-import { ScrollArea } from '@/components/ui/scroll-area';
+import { categories } from '@/data/categories';
 
 type ToolListingsProps = {
+  slug: string;
   tools: Tool[];
   availableCategories: string[];
   availableFunnels: string[];
   searchParams: { [key: string]: string | string[] | undefined };
-  categoryInfo?: {
-    title: string;
-    description: string;
-    slug: string;
-  };
 };
 
 export default function ToolListings({
+  slug,
   tools,
   availableCategories,
   availableFunnels,
   searchParams,
-  categoryInfo,
 }: ToolListingsProps) {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedTool, setSelectedTool] = useState<Tool | null>(null);
   const [isSidePanelOpen, setIsSidePanelOpen] = useState(false);
   const isMobile = useIsMobile();
   
+  const categoryInfo = useMemo(() => categories.find(c => c.slug === slug), [slug]);
+
   const selectedCategories = useMemo(() => {
     const cats = searchParams?.categories;
     return new Set(Array.isArray(cats) ? cats : (cats ? [cats] : []));
