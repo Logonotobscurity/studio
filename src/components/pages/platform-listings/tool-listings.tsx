@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState, useMemo, useEffect } from 'react';
@@ -147,8 +148,8 @@ export default function ToolListings({
           
           {filteredTools.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-              {filteredTools.map((tool) => (
-                <ToolCard key={tool.tool} tool={tool} onSelect={handleSelectTool} />
+              {filteredTools.map((tool, index) => (
+                <ToolCard key={`${tool.tool}-${index}`} tool={tool} onSelect={handleSelectTool} />
               ))}
             </div>
           ) : (
