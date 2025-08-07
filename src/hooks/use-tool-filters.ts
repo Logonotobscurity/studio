@@ -1,4 +1,5 @@
-import { useMemo, useEffect } from 'react';
+
+import { useMemo, useEffect, useState } from 'react';
 import { useRouter, usePathname, useSearchParams } from 'next/navigation';
 import type { Tool } from '@/lib/tools';
 
@@ -13,12 +14,7 @@ type UseToolFiltersProps = {
 export function useToolFilters({ tools, searchParams, searchTerm }: UseToolFiltersProps) {
   const router = useRouter();
   const pathname = usePathname();
-
-  const currentPage = useMemo(() => {
-    const page = searchParams?.page;
-    const pageNumber = Number(page);
-    return isNaN(pageNumber) || pageNumber < 1 ? 1 : pageNumber;
-  }, [searchParams?.page]);
+  const [isMounted, setIsMounted] = useState(false);
 
   const selectedCategories = useMemo(() => {
     const cats = searchParams?.categories;
@@ -53,29 +49,35 @@ export function useToolFilters({ tools, searchParams, searchTerm }: UseToolFilte
 
   const totalPages = Math.ceil(filteredTools.length / TOOLS_PER_PAGE);
 
+  const currentPage = useMemo(() => {
+    const page = searchParams?.page;
+    const pageNumber = Number(page);
+    const validPage = isNaN(pageNumber) || pageNumber < 1 ? 1 : pageNumber;
+    return Math.min(validPage, totalPages > 0 ? totalPages : 1);
+  }, [searchParams?.page, totalPages]);
+  
   const paginatedTools = useMemo(() => {
     const start = (currentPage - 1) * TOOLS_PER_PAGE;
     const end = start + TOOLS_PER_PAGE;
     return filteredTools.slice(start, end);
   }, [filteredTools, currentPage]);
-  
+
   useEffect(() => {
-    if (currentPage > totalPages && totalPages > 0) {
+    // This effect ensures we don't try to update the URL on the server
+    // or during the initial client render before hydration is complete.
+    setIsMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (isMounted) {
+      // When filters change, if the current page is no longer valid, reset to 1.
       const params = new URLSearchParams(searchParams as any);
-      params.set('page', String(totalPages));
-      router.push(`${pathname}?${params.toString()}`, { scroll: false });
+      if (currentPage > totalPages && totalPages > 0) {
+        params.set('page', '1');
+        router.replace(`${pathname}?${params.toString()}`, { scroll: false });
+      }
     }
-  }, [currentPage, totalPages, searchParams, pathname, router]);
-  
-  useEffect(() => {
-    // Reset page to 1 when filters change
-    const params = new URLSearchParams(searchParams as any);
-    if (params.has('page') && params.get('page') !== '1') {
-      params.set('page', '1');
-      router.push(`${pathname}?${params.toString()}`, { scroll: false });
-    }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [selectedCategories, selectedFunnels, selectedTags, searchTerm]);
+  }, [filteredTools.length, totalPages, currentPage, searchParams, pathname, router, isMounted]);
 
   return {
     paginatedTools,
