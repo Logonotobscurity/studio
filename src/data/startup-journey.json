@@ -1,0 +1,53 @@
+
+[
+  {
+    "tool": "Stripe Atlas",
+    "url": "https://stripe.com/atlas",
+    "benefit": "A simple, secure, and reliable way to incorporate your startup.",
+    "category": "Incorporation",
+    "tags": [],
+    "rating": 4.9,
+    "funnel": ["Activation"],
+    "description": "Stripe Atlas helps entrepreneurs start an internet business anywhere in the world. It provides a C Corporation in Delaware, an EIN from the IRS, a U.S. business bank account, and a Stripe account to accept payments."
+  },
+  {
+    "tool": "DocSend",
+    "url": "https://docsend.com/",
+    "benefit": "Securely share your pitch deck and track investor engagement.",
+    "category": "Fundraising",
+    "tags": ["NC"],
+    "rating": 4.7,
+    "funnel": ["Revenue"],
+    "description": "DocSend allows you to securely share documents with a link, get real-time feedback, and control who has access. It's essential for fundraising, sales, and business development."
+  },
+  {
+    "tool": "Notion",
+    "url": "https://www.notion.so/",
+    "benefit": "The all-in-one workspace for your notes, tasks, wikis, and databases.",
+    "category": "Productivity",
+    "tags": ["FF"],
+    "rating": 4.8,
+    "funnel": ["Activation", "Retention"],
+    "description": "Notion blends your everyday work apps into one. It's the all-in-one workspace for you and your team, perfect for managing projects, creating a company wiki, and keeping everything organized."
+  },
+  {
+    "tool": "Clerky",
+    "url": "https://www.clerky.com/",
+    "benefit": "The easiest way for startups to get legal paperwork done safely.",
+    "category": "Legal",
+    "tags": [],
+    "rating": 4.8,
+    "funnel": ["Activation"],
+    "description": "Clerky is designed specifically for startups and their attorneys to get legal paperwork done safely and easily. They help with incorporation, fundraising, hiring, and more."
+  },
+  {
+    "tool": "Gusto",
+    "url": "https://gusto.com/",
+    "benefit": "An all-in-one platform for payroll, benefits, and HR for modern teams.",
+    "category": "HR",
+    "tags": [],
+    "rating": 4.6,
+    "funnel": ["Activation", "Retention"],
+    "description": "Gusto is a modern, online HR and payroll that helps small businesses take care of their teams. Onboard, pay, insure, and support your hardworking team."
+  }
+]

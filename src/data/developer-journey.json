@@ -1,0 +1,53 @@
+
+[
+  {
+    "tool": "GitHub",
+    "url": "https://github.com/",
+    "benefit": "The world's leading software development platform.",
+    "category": "Version Control",
+    "tags": ["OS", "FF"],
+    "rating": 4.9,
+    "funnel": ["Activation"],
+    "description": "GitHub is where over 100 million developers shape the future of software, together. Contribute to the open source community, manage your Git repositories, review code like a pro, track bugs and features, power your CI/CD and DevOps workflows, and secure software before you ship it."
+  },
+  {
+    "tool": "VS Code",
+    "url": "https://code.visualstudio.com/",
+    "benefit": "A powerful, lightweight code editor for modern web development.",
+    "category": "IDE",
+    "tags": ["OS", "FF"],
+    "rating": 4.9,
+    "funnel": ["Activation"],
+    "description": "Visual Studio Code is a free source-code editor made by Microsoft for Windows, Linux and macOS. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git."
+  },
+  {
+    "tool": "Postman",
+    "url": "https://www.postman.com/",
+    "benefit": "The collaboration platform for API development.",
+    "category": "API",
+    "tags": ["FF"],
+    "rating": 4.7,
+    "funnel": ["Activation"],
+    "description": "Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster. It is used for API testing, design, and documentation."
+  },
+  {
+    "tool": "Docker",
+    "url": "https://www.docker.com/",
+    "benefit": "Securely build, share and run any application, anywhere.",
+    "category": "Containerization",
+    "tags": ["OS", "FF"],
+    "rating": 4.6,
+    "funnel": ["Activation"],
+    "description": "Docker helps developers build, share, and run applications anywhere. It provides a platform to develop, ship, and run applications in containers, which are lightweight and portable."
+  },
+  {
+    "tool": "Supabase",
+    "url": "https://supabase.com/",
+    "benefit": "The open source Firebase alternative.",
+    "category": "Backend",
+    "tags": ["OS", "FF"],
+    "rating": 4.8,
+    "funnel": ["Activation"],
+    "description": "Supabase provides a suite of tools to build your backend in a weekend. It includes a Postgres database, Authentication, instant APIs, Edge Functions, Realtime subscriptions, and Storage."
+  }
+]

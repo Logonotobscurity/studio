@@ -1,0 +1,64 @@
+
+[
+  {
+    "tool": "Google Analytics",
+    "url": "https://analytics.google.com/",
+    "benefit": "The industry standard for web analytics and user behavior tracking.",
+    "category": "Analytics",
+    "tags": ["FF", "NC"],
+    "rating": 4.8,
+    "funnel": ["Awareness", "Acquisition", "Activation", "Retention"],
+    "description": "Google Analytics is a powerful web analytics service that tracks and reports website traffic, currently as a platform inside the Google Marketing Platform brand. It provides invaluable insights into how users find and interact with your site."
+  },
+  {
+    "tool": "Hotjar",
+    "url": "https://www.hotjar.com/",
+    "benefit": "Visualize user behavior with heatmaps, session recordings, and surveys.",
+    "category": "CRO",
+    "tags": ["NC"],
+    "rating": 4.7,
+    "funnel": ["Activation", "Retention"],
+    "description": "Hotjar is an all-in-one analytics and feedback tool that helps you understand your users' behavior and get their feedback through tools like heatmaps, session recordings, and surveys."
+  },
+  {
+    "tool": "Vercel",
+    "url": "https://vercel.com",
+    "benefit": "Develop, Preview, and Ship with the best developer experience.",
+    "category": "Hosting",
+    "tags": ["OS", "FF"],
+    "rating": 4.9,
+    "funnel": ["Acquisition"],
+    "description": "Vercel is a platform for frontend frameworks and static sites, built to integrate with your headless content, commerce, or database. It makes development and deployment incredibly fast and easy.",
+    "seoMetaDescription": "Deploy your Next.js app with Vercel for the best performance and developer experience."
+  },
+  {
+    "tool": "Mailchimp",
+    "url": "https://mailchimp.com",
+    "benefit": "Engage your audience with powerful email marketing and automation.",
+    "category": "Email Marketing",
+    "tags": ["FF"],
+    "rating": 4.5,
+    "funnel": ["Acquisition", "Activation", "Retention", "Referral"],
+    "description": "Mailchimp is an all-in-one marketing platform for small businesses. They empower millions of customers around the world to start and grow their businesses with world-class marketing technology, award-winning support, and inspiring content."
+  },
+  {
+    "tool": "Buffer",
+    "url": "https://buffer.com",
+    "benefit": "Plan and schedule your social media content across multiple platforms.",
+    "category": "Social Media",
+    "tags": ["NC"],
+    "rating": 4.4,
+    "funnel": ["Awareness", "Acquisition"],
+    "description": "Buffer is a social media management platform for businesses and individuals to manage their social media presence. It allows users to schedule posts to various social media platforms."
+  },
+  {
+    "tool": "SEMrush",
+    "url": "https://www.semrush.com/",
+    "benefit": "All-in-one marketing toolkit for digital marketing professionals.",
+    "category": "SEO",
+    "tags": [],
+    "rating": 4.6,
+    "funnel": ["Awareness", "Acquisition"],
+    "description": "SEMrush is a popular and powerful all-in-one digital marketing suite of tools. This SEO software helps you with keyword research, competitor analysis, backlink analysis, site audits, and much more."
+  }
+]
