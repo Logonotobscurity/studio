@@ -44,7 +44,7 @@ export default function ToolDossier({ tool, onBack }: ToolDossierProps) {
                 <CardTitle className="text-2xl font-bold truncate">{tool.tool}</CardTitle>
                 {tool.rating && renderStars(tool.rating)}
               </div>
-              <CardDescription className="!mt-2 text-base">{tool.benefit}</CardDescription>
+              <CardDescription className="!mt-2 text-base truncate">{tool.benefit}</CardDescription>
             </CardHeader>
             <CardContent className="p-0 mt-4">
               {tool.description && <p className="text-sm text-foreground/80">{tool.description}</p>}

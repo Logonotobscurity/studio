@@ -15,7 +15,7 @@
     --secondary: 210 20% 94.1%;
     --secondary-foreground: 200 20% 12%;
     --muted: 210 20% 94.1%;
-    --muted-foreground: 200 20% 40%;
+    --muted-foreground: 200 20% 30%;
     --accent: 15 96% 53%;
     --accent-foreground: 210 40% 98%;
     --destructive: 0 84.2% 60.2%;
@@ -124,3 +124,5 @@
     animation: rating-glow 1.5s infinite ease-in-out;
   }
 }
+
+    

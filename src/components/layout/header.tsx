@@ -50,7 +50,7 @@ const MobileNav = ({
           <span className="sr-only">Open menu</span>
         </Button>
       </SheetTrigger>
-      <SheetContent side="right" className="w-3/4 bg-background">
+      <SheetContent side="right" className="w-3/4 bg-background p-0">
         <div className="p-6 h-full flex flex-col">
           <div className="flex justify-between items-center mb-8">
             <StartITLogo />
@@ -84,59 +84,59 @@ const MobileNav = ({
   </div>
 );
 
+
 export default function Header() {
-  const [scrolled, setScrolled] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isCommandPaletteOpen, setIsCommandPaletteOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
+      setIsScrolled(window.scrollY > 10);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
+  
   useEffect(() => {
-    const down = (e: KeyboardEvent) => {
-      if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.key === 'k' && (e.metaKey || e.ctrlKey))) {
         e.preventDefault();
         setIsCommandPaletteOpen((open) => !open);
       }
     };
-    document.addEventListener("keydown", down);
-    return () => document.removeEventListener("keydown", down);
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
+
 
   return (
     <>
       <header
         className={cn(
-          'sticky top-0 z-40 w-full transition-all duration-300',
-          scrolled
-            ? 'bg-background/80 shadow-md backdrop-blur-sm'
-            : 'bg-transparent'
+          'sticky top-0 z-50 w-full transition-all duration-300',
+          isScrolled ? 'bg-background/80 shadow-md backdrop-blur-sm' : 'bg-transparent'
         )}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
-            <div className="flex items-center gap-6">
-              <StartITLogo />
-              <DesktopNav />
-            </div>
+            <StartITLogo />
+            <DesktopNav />
             <div className="flex items-center gap-2">
-              <Button
-                variant="ghost"
-                size="icon"
+               <Button
+                variant="outline"
+                className="hidden md:flex items-center gap-2 text-muted-foreground text-sm"
                 onClick={() => setIsCommandPaletteOpen(true)}
-                aria-label="Open command palette"
-                className="text-foreground/60 hover:text-foreground"
               >
-                <Search className="h-5 w-5" />
+                <Search className="h-4 w-4" />
+                <span>Search...</span>
+                <kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100">
+                  <span className="text-xs">⌘</span>K
+                </kbd>
               </Button>
-              <Button asChild className="hidden sm:flex animate-pulse-subtle bg-accent hover:bg-accent/90 text-accent-foreground">
-                <Link href="/suggest">Suggest a Tool</Link>
-              </Button>
+               <Button className="hidden md:flex bg-accent hover:bg-accent/90" asChild>
+                  <Link href="/suggest">Suggest a Tool</Link>
+                </Button>
               <MobileNav isMobileMenuOpen={isMobileMenuOpen} setIsMobileMenuOpen={setIsMobileMenuOpen} />
             </div>
           </div>
