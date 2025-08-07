@@ -1,53 +1,656 @@
 
 [
   {
-    "tool": "GitHub",
-    "url": "https://github.com/",
-    "benefit": "The world's leading software development platform.",
-    "category": "Version Control",
-    "tags": ["OS", "FF"],
-    "rating": 4.9,
-    "funnel": ["Activation"],
-    "description": "GitHub is where over 100 million developers shape the future of software, together. Contribute to the open source community, manage your Git repositories, review code like a pro, track bugs and features, power your CI/CD and DevOps workflows, and secure software before you ship it."
+    "tool": "Google Cloud Free Tier",
+    "url": "https://cloud.google.com/free",
+    "benefit": "Compute, storage, databases and AI services.",
+    "description": "Google Cloud’s always-free tier plus $300 trial credits covering compute, storage, databases and AI services.",
+    "category": "Major Cloud Providers",
+    "tags": ["FF"],
+    "funnel": []
   },
   {
-    "tool": "VS Code",
-    "url": "https://code.visualstudio.com/",
-    "benefit": "A powerful, lightweight code editor for modern web development.",
-    "category": "IDE",
-    "tags": ["OS", "FF"],
-    "rating": 4.9,
+    "tool": "AWS Free Tier",
+    "url": "https://aws.amazon.com/free/",
+    "benefit": "750 hrs EC2, RDS, Lambda, S3 and 100+ other services.",
+    "description": "Amazon Web Services free tier with 750 hrs EC2, RDS, Lambda, S3 and 100+ other services for 12 months.",
+    "category": "Major Cloud Providers",
+    "tags": ["FF"],
+    "funnel": []
+  },
+  {
+    "tool": "Microsoft Azure Free Account",
+    "url": "https://azure.microsoft.com/free/",
+    "benefit": "$200 credit and 25+ always-free services.",
+    "description": "$200 credit and 25+ always-free services for new Azure accounts including Functions, Cosmos DB and App Service.",
+    "category": "Major Cloud Providers",
+    "tags": ["FF"],
+    "funnel": []
+  },
+  {
+    "tool": "Oracle Cloud Free Tier",
+    "url": "https://www.oracle.com/cloud/free/",
+    "benefit": "Always-free Ampere VMs, storage, and databases.",
+    "description": "Two always-free Ampere VMs, block & object storage, databases plus a 30-day $300 trial for extra services.",
+    "category": "Major Cloud Providers",
+    "tags": ["FF"],
+    "funnel": []
+  },
+  {
+    "tool": "IBM Cloud Free Tier",
+    "url": "https://www.ibm.com/cloud/free/",
+    "benefit": "Lite plans for Watson, Kubernetes, databases.",
+    "description": "Lite plans for Watson, Kubernetes, databases plus $200 credit over 30 days on IBM Cloud.",
+    "category": "Major Cloud Providers",
+    "tags": ["FF"],
+    "funnel": []
+  },
+  {
+    "tool": "Brainboard",
+    "url": "https://www.brainboard.co",
+    "benefit": "Drag-and-drop cloud architecture designer.",
+    "description": "Drag-and-drop cloud architecture designer that auto-generates Terraform & deploys multi-cloud infrastructure.",
+    "category": "Cloud Management Solutions",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "Cloud 66",
+    "url": "https://www.cloud66.com",
+    "benefit": "DevOps-as-a-service for any cloud.",
+    "description": "DevOps-as-a-service: build, deploy and maintain apps on any cloud or server with native Kubernetes support.",
+    "category": "Cloud Management Solutions",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "Pulumi",
+    "url": "https://www.pulumi.com",
+    "benefit": "Infrastructure-as-code using real programming languages.",
+    "description": "Infrastructure-as-code platform using real programming languages instead of DSLs for AWS, Azure, GCP & more.",
+    "category": "Cloud Management Solutions",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "Terraform",
+    "url": "https://www.terraform.io",
+    "benefit": "Open-source IaC tool for provisioning resources.",
+    "description": "Open-source IaC tool for provisioning and managing cloud, SaaS and on-prem resources via declarative configs.",
+    "category": "Cloud Management Solutions",
+    "tags": ["OS"],
+    "funnel": []
+  },
+  {
+    "tool": "Scalr",
+    "url": "https://www.scalr.com",
+    "benefit": "Terraform remote-state & operations platform.",
+    "description": "Terraform remote-state & operations platform with policy-as-code, cost controls and RBAC for enterprise teams.",
+    "category": "Cloud Management Solutions",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "Deployment.io",
+    "url": "https://www.deployment.io",
+    "benefit": "Zero-config continuous deployment for static sites.",
+    "description": "Zero-config continuous deployment that builds and ships static sites or containers to any provider.",
+    "category": "Cloud Management Solutions",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "Bitbucket",
+    "url": "https://bitbucket.org",
+    "benefit": "Atlassian’s Git hosting with free private repos.",
+    "description": "Atlassian’s Git hosting with free private repos, built-in CI/CD and deep Jira integration.",
+    "category": "Source Code Repositories",
+    "tags": ["FF"],
+    "funnel": []
+  },
+  {
+    "tool": "Codeberg",
+    "url": "https://codeberg.org",
+    "benefit": "Non-profit community-driven Gitea-based Git hosting.",
+    "description": "Non-profit community-driven Gitea-based Git hosting for open-source projects.",
+    "category": "Source Code Repositories",
+    "tags": ["OS"],
+    "funnel": []
+  },
+  {
+    "tool": "GitHub",
+    "url": "https://github.com",
+    "benefit": "World’s largest code host with collaboration tools.",
+    "description": "World’s largest code host providing Git repos, Actions CI/CD, Copilot AI and collaboration tools.",
+    "category": "Source Code Repositories",
+    "tags": ["FF", "OS"],
     "funnel": ["Activation"],
-    "description": "Visual Studio Code is a free source-code editor made by Microsoft for Windows, Linux and macOS. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git."
+    "rating": 4.8
+  },
+  {
+    "tool": "GitLab",
+    "url": "https://gitlab.com",
+    "benefit": "All-in-one DevOps platform: Git, CI/CD, security.",
+    "description": "All-in-one DevOps platform: Git repos, built-in CI/CD, security scanning, registry and project management.",
+    "category": "Source Code Repositories",
+    "tags": ["OS", "FF"],
+    "funnel": []
+  },
+  {
+    "tool": "JSON Grid",
+    "url": "https://jsongrid.com",
+    "benefit": "Turn any JSON endpoint into a spreadsheet-like grid.",
+    "description": "Instantly turn any JSON endpoint into a sortable, filterable spreadsheet-like grid.",
+    "category": "APIs, Data, and ML",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "Apify",
+    "url": "https://apify.com",
+    "benefit": "Serverless cloud platform for web scraping.",
+    "description": "Serverless cloud platform for web scraping, automation and running headless browsers at scale.",
+    "category": "APIs, Data, and ML",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "Canopy API",
+    "url": "https://canopyapi.co",
+    "benefit": "Real-time data API for Amazon products.",
+    "description": "Real-time data API for Amazon product listings, reviews and pricing.",
+    "category": "APIs, Data, and ML",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "Google Colab",
+    "url": "https://colab.research.google.com",
+    "benefit": "Free Jupyter notebook environment on Google GPUs.",
+    "description": "Free Jupyter notebook environment running on Google GPUs and TPUs.",
+    "category": "APIs, Data, and ML",
+    "tags": ["FF"],
+    "funnel": []
+  },
+  {
+    "tool": "Hugging Face",
+    "url": "https://huggingface.co",
+    "benefit": "Hub for 200k+ open-source ML models and datasets.",
+    "description": "Hub for 200k+ open-source ML models, datasets and inference APIs for NLP, vision and audio.",
+    "category": "APIs, Data, and ML",
+    "tags": ["OS", "FF"],
+    "funnel": []
   },
   {
     "tool": "Postman",
-    "url": "https://www.postman.com/",
-    "benefit": "The collaboration platform for API development.",
-    "category": "API",
+    "url": "https://www.postman.com",
+    "benefit": "Collaborative API platform for design and testing.",
+    "description": "Collaborative API platform for design, testing, mocking, monitoring and documentation.",
+    "category": "APIs, Data, and ML",
     "tags": ["FF"],
-    "rating": 4.7,
     "funnel": ["Activation"],
-    "description": "Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster. It is used for API testing, design, and documentation."
+    "rating": 4.4
+  },
+  {
+    "tool": "Insomnia",
+    "url": "https://insomnia.rest",
+    "benefit": "Open-source desktop REST/GraphQL client.",
+    "description": "Open-source desktop REST/GraphQL client with environment variables and code-gen.",
+    "category": "APIs, Data, and ML",
+    "tags": ["OS", "FF"],
+    "funnel": []
+  },
+  {
+    "tool": "JFrog Artifactory",
+    "url": "https://jfrog.com/artifactory",
+    "benefit": "Universal binary repository manager.",
+    "description": "Universal binary repository manager supporting Maven, npm, Docker, PyPI and more with fine-grained permissions.",
+    "category": "Artifact Repositories",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "Cloudsmith",
+    "url": "https://cloudsmith.io",
+    "benefit": "Cloud-native artifact and package management.",
+    "description": "Cloud-native artifact and package management platform for containers, Helm, deb, rpm and 28+ formats.",
+    "category": "Artifact Repositories",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "Bitwarden",
+    "url": "https://bitwarden.com",
+    "benefit": "Open-source password manager for teams.",
+    "description": "Open-source password manager for teams with secure sharing, SSO and audit logs.",
+    "category": "Tools for Teams and Collaboration",
+    "tags": ["OS", "FF"],
+    "funnel": []
+  },
+  {
+    "tool": "Calendly",
+    "url": "https://calendly.com",
+    "benefit": "Industry-standard scheduling automation.",
+    "description": "Industry-standard scheduling automation that syncs with calendars and sends reminders.",
+    "category": "Tools for Teams and Collaboration",
+    "tags": ["FF"],
+    "funnel": []
+  },
+  {
+    "tool": "Discord",
+    "url": "https://discord.com",
+    "benefit": "Voice, video and text platform for communities.",
+    "description": "Voice, video and text platform for communities and teams with rich integrations.",
+    "category": "Tools for Teams and Collaboration",
+    "tags": ["FF"],
+    "funnel": []
+  },
+  {
+    "tool": "Miro",
+    "url": "https://miro.com",
+    "benefit": "Online whiteboard for ideation and workshops.",
+    "description": "Online whiteboard for ideation, flowcharts, retros and workshops with real-time cursors.",
+    "category": "Tools for Teams and Collaboration",
+    "tags": ["FF"],
+    "funnel": []
+  },
+  {
+    "tool": "Notion",
+    "url": "https://notion.so",
+    "benefit": "All-in-one workspace for docs, wikis, and tasks.",
+    "description": "All-in-one workspace for docs, wikis, tasks and databases with powerful block-based editing.",
+    "category": "Tools for Teams and Collaboration",
+    "tags": ["FF"],
+    "funnel": ["Activation"],
+    "rating": 4.5
+  },
+_B_A_I_T_Content-Type: application/json
+_B_A_I_T_Content-Length: 172
+  {
+    "tool": "Slack",
+    "url": "https://slack.com",
+    "benefit": "Hub for team messaging, integrations and workflows.",
+    "description": "Hub for team messaging, integrations and workflows with 2 400+ app connections.",
+    "category": "Tools for Teams and Collaboration",
+    "tags": ["FF"],
+    "funnel": ["Activation", "Retention"],
+    "rating": 4.4
+  },
+_B_A_I_T_Content-Type: application/json
+_B_A_I_T_Content-Length: 153
+  {
+    "tool": "Zoom",
+    "url": "https://zoom.us",
+    "benefit": "Enterprise video conferencing with webinars.",
+    "description": "Enterprise video conferencing with webinars, phone and chat in one secure platform.",
+    "category": "Tools for Teams and Collaboration",
+    "tags": ["FF"],
+    "funnel": []
+  },
+_B_A_I_T_Content-Type: application/json
+_B_A_I_T_Content-Length: 158
+  {
+    "tool": "Contentful",
+    "url": "https://www.contentful.com",
+    "benefit": "Headless CMS that delivers structured content via API.",
+    "description": "Headless CMS that delivers structured content via GraphQL/REST APIs to any frontend or device.",
+    "category": "CMS",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "Directus",
+    "url": "https://directus.io",
+    "benefit": "Open-source data platform for SQL databases.",
+    "description": "Open-source data platform that instantly wraps SQL databases with dynamic REST+GraphQL APIs and an admin app.",
+    "category": "CMS",
+    "tags": ["OS"],
+    "funnel": []
+  },
+  {
+    "tool": "Sanity",
+    "url": "https://www.sanity.io",
+    "benefit": "Real-time headless CMS treating content as data.",
+    "description": "Real-time headless CMS treating content as data, with GROQ query language and portable text.",
+    "category": "CMS",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "Storyblok",
+    "url": "https://www.storyblok.com",
+    "benefit": "Visual headless CMS with component-based editing.",
+    "description": "Visual headless CMS with component-based editing and nestable content blocks for developers & marketers.",
+    "category": "CMS",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "Cody",
+    "url": "https://cody.dev",
+    "benefit": "AI code assistant that writes and refactors code.",
+    "description": "AI code assistant inside your IDE that writes, explains and refactors code using your own codebase as context.",
+    "category": "Code Generation",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "Tabnine",
+    "url": "https://www.tabnine.com",
+    "benefit": "AI code-completion plugin for all major IDEs.",
+    "description": "AI code-completion plugin for all major IDEs trained on permissive open-source data.",
+    "category": "Code Generation",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "v0.dev",
+    "url": "https://v0.dev",
+    "benefit": "Generative UI tool for shadcn/ui React components.",
+    "description": "Vercel’s generative UI tool that turns prompts into shadcn/ui React components ready for production.",
+    "category": "Code Generation",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "Browserling",
+    "url": "https://www.browserling.com",
+    "benefit": "Live interactive cross-browser testing in real VMs.",
+    "description": "Live interactive cross-browser testing in real VMs via your browser—no installs.",
+    "category": "Code Quality",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "Codacy",
+    "url": "https://www.codacy.com",
+    "benefit": "Automated code-quality and security analysis.",
+    "description": "Automated code-quality and security analysis for 40+ languages integrated into PR workflows.",
+    "category": "Code Quality",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "Codecov",
+    "url": "https://codecov.io",
+    "benefit": "Test-coverage reporting platform for CI/CD.",
+    "description": "Test-coverage reporting platform that posts insights directly into GitHub/GitLab/Bitbucket.",
+    "category": "Code Quality",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "GTmetrix",
+    "url": "https://gtmetrix.com",
+    "benefit": "Website speed-test tool with PageSpeed insights.",
+    "description": "Website speed-test tool providing PageSpeed and Web Vitals insights with filmstrip playback.",
+    "category": "Code Quality",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "SonarCloud",
+    "url": "https://sonarcloud.io",
+    "benefit": "Cloud-based static-analysis and security scanning.",
+    "description": "Cloud-based static-analysis and security scanning for 25+ languages integrated into CI/CD.",
+    "category": "Code Quality",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "Libraries.io",
+    "url": "https://libraries.io",
+    "benefit": "Open-source search engine indexing packages.",
+    "description": "Open-source search engine indexing packages across npm, Maven, PyPI, RubyGems and more with dependency graphs.",
+    "category": "Code Search and Browsing",
+    "tags": ["OS"],
+    "funnel": []
+  },
+  {
+    "tool": "Searchcode",
+    "url": "https://searchcode.com",
+    "benefit": "Search 75 billion lines of open-source code.",
+    "description": "Search 75 billion lines of open-source code across GitHub, Bitbucket and Google Code with regex support.",
+    "category": "Code Search and Browsing",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "AppVeyor",
+    "url": "https://www.appveyor.com",
+    "benefit": "Continuous-integration for Windows, Linux, macOS.",
+    "description": "Continuous-integration service for Windows, Linux and macOS with artifact hosting and deployment.",
+    "category": "CI and CD",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "Bitrise",
+    "url": "https://bitrise.io",
+    "benefit": "CI/CD tailored for mobile app development.",
+    "description": "CI/CD tailored for mobile—build, test and ship iOS/Android apps using 300+ workflow steps.",
+    "category": "CI and CD",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "Buddy",
+    "url": "https://buddy.works",
+    "benefit": "Docker-based CI/CD with visual pipeline editor.",
+    "description": "Docker-based CI/CD with visual pipeline editor and 150+ prebuilt actions for web, Docker and serverless.",
+    "category": "CI and CD",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "Buildkite",
+    "url": "https://buildkite.com",
+    "benefit": "Fast, secure CI/CD that runs agents on your infra.",
+    "description": "Fast, secure CI/CD that runs agents on your own infrastructure while orchestrating via SaaS dashboards.",
+    "category": "CI and CD",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "CircleCI",
+    "url": "https://circleci.com",
+    "benefit": "Cloud-native CI/CD supporting Docker and macOS.",
+    "description": "Cloud-native CI/CD supporting Docker, macOS and GPU runners with 2 400+ orb integrations.",
+    "category": "CI and CD",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "Drone",
+    "url": "https://drone.io",
+    "benefit": "Self-hosted container-native CI/CD platform.",
+    "description": "Self-hosted container-native CI/CD platform configured via simple YAML pipelines.",
+    "category": "CI and CD",
+    "tags": ["OS", "SH"],
+    "funnel": []
+  },
+  {
+    "tool": "Make",
+    "url": "https://www.make.com",
+    "benefit": "Visual no-code workflow automation for 1,600+ apps.",
+    "description": "Visual no-code workflow automation connecting 1 600+ apps with triggers, routers and error handling.",
+    "category": "CI and CD",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "BrowserStack",
+    "url": "https://browserstack.com",
+    "benefit": "Cloud of 3,000+ real browsers and devices for testing.",
+    "description": "Cloud of 3 000+ real browsers and devices for live and automated cross-browser testing.",
+    "category": "Testing",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "Cypress",
+    "url": "https://cypress.io",
+    "benefit": "Fast, reliable end-to-end testing framework.",
+    "description": "Fast, reliable end-to-end testing framework running in real browsers with time-travel debugging.",
+    "category": "Testing",
+    "tags": ["OS"],
+    "funnel": []
+  },
+  {
+    "tool": "Katalon",
+    "url": "https://katalon.com",
+    "benefit": "Unified low-code test-automation solution.",
+    "description": "Unified low-code test-automation solution for web, API, mobile and desktop applications.",
+    "category": "Testing",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "LambdaTest",
+    "url": "https://lambdatest.com",
+    "benefit": "Cross-browser testing cloud with 3,000+ browsers.",
+    "description": "Cross-browser testing cloud supporting 3 000+ browsers, devices and geolocations with Selenium, Cypress and Appium.",
+    "category": "Testing",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "Percy",
+    "url": "https://percy.io",
+    "benefit": "Visual testing and review platform.",
+    "description": "Visual testing and review platform that captures UI snapshots and highlights pixel-level changes.",
+    "category": "Testing",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "Doppler",
+    "url": "https://www.doppler.com",
+    "benefit": "Universal secrets manager for CI/CD and local dev.",
+    "description": "Universal secrets manager syncing environment variables across CI/CD, servers and local dev.",
+    "category": "Security and PKI",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "GitGuardian",
+    "url": "https://gitguardian.com",
+    "benefit": "Real-time secrets-detection platform for repos.",
+    "description": "Real-time secrets-detection platform scanning commits, PRs and repos for leaked credentials.",
+    "category": "Security and PKI",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "Let's Encrypt",
+    "url": "https://letsencrypt.org",
+    "benefit": "Free, automated, and open certificate authority.",
+    "description": "Free, automated and open certificate authority issuing trusted SSL/TLS certificates via ACME.",
+    "category": "Security and PKI",
+    "tags": ["FF", "OS"],
+    "funnel": []
+  },
+  {
+    "tool": "Snyk",
+    "url": "https://snyk.io",
+    "benefit": "Developer-first security platform.",
+    "description": "Developer-first security platform finding and fixing vulnerabilities in open-source libs, containers and IaC.",
+    "category": "Security and PKI",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "Auth0",
+    "url": "https://auth0.com",
+    "benefit": "Extensible identity platform for universal login.",
+    "description": "Extensible identity platform providing universal login, MFA, RBAC and B2B/B2C flows via SDKs.",
+    "category": "Authentication, Authorization, and User Management",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "Clerk",
+    "url": "https://clerk.com",
+    "benefit": "Drop-in React components and APIs for user management.",
+    "description": "Drop-in React components and APIs for complete user management—sign-up, MFA, sessions and orgs.",
+    "category": "Authentication, Authorization, and User Management",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "Okta",
+    "url": "https://developer.okta.com",
+    "benefit": "Universal identity and access-management suite.",
+    "description": "Universal identity and access-management suite with SSO, MFA and lifecycle automation APIs.",
+    "category": "Authentication, Authorization, and User Management",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "SuperTokens",
+    "url": "https://supertokens.com",
+    "benefit": "Open-source auth with managed backend.",
+    "description": "Open-source auth solution with managed backend and pre-built React, Vue and mobile SDKs.",
+    "category": "Authentication, Authorization, and User Management",
+    "tags": ["OS"],
+    "funnel": []
+  },
+  {
+    "tool": "Visual Studio Code",
+    "url": "https://code.visualstudio.com",
+    "benefit": "A lightweight but powerful source code editor.",
+    "description": "A lightweight but powerful source code editor with rich ecosystem of extensions.",
+    "category": "Code Editors",
+    "tags": ["FF", "OS"],
+    "funnel": ["Activation"],
+    "rating": 4.7
+  },
+  {
+    "tool": "Stack Overflow",
+    "url": "https://stackoverflow.com",
+    "benefit": "The largest online community for programmers.",
+    "description": "The largest online community for programmers to learn, share knowledge, and build careers.",
+    "category": "Learning",
+    "tags": ["FF"],
+    "funnel": [],
+    "rating": 4.6
   },
   {
     "tool": "Docker",
-    "url": "https://www.docker.com/",
-    "benefit": "Securely build, share and run any application, anywhere.",
-    "category": "Containerization",
-    "tags": ["OS", "FF"],
-    "rating": 4.6,
+    "url": "https://docker.com",
+    "benefit": "Platform for developing and running applications.",
+    "description": "Platform for developing, shipping, and running applications using containerization technology.",
+    "category": "DevOps",
+    "tags": ["FF", "OS"],
     "funnel": ["Activation"],
-    "description": "Docker helps developers build, share, and run applications anywhere. It provides a platform to develop, ship, and run applications in containers, which are lightweight and portable."
+    "rating": 4.5
   },
   {
-    "tool": "Supabase",
-    "url": "https://supabase.com/",
-    "benefit": "The open source Firebase alternative.",
-    "category": "Backend",
-    "tags": ["OS", "FF"],
-    "rating": 4.8,
+    "tool": "Figma",
+    "url": "https://figma.com",
+    "benefit": "Collaborative interface design tool.",
+    "description": "Collaborative interface design tool that runs in the browser with real-time collaboration.",
+    "category": "Design",
+    "tags": ["FF"],
     "funnel": ["Activation"],
-    "description": "Supabase provides a suite of tools to build your backend in a weekend. It includes a Postgres database, Authentication, instant APIs, Edge Functions, Realtime subscriptions, and Storage."
+    "rating": 4.6
+  },
+  {
+    "tool": "Netlify",
+    "url": "https://netlify.com",
+    "benefit": "Platform for deploying modern web applications.",
+    "description": "Platform for deploying and hosting modern web applications with continuous deployment from Git.",
+    "category": "Hosting",
+    "tags": ["FF"],
+    "funnel": []
+  },
+  {
+    "tool": "Vercel",
+    "url": "https://vercel.com",
+    "benefit": "Frontend cloud platform for static sites.",
+    "description": "Frontend cloud platform for static sites and serverless functions with zero-config deployments.",
+    "category": "Hosting",
+    "tags": ["FF"],
+    "funnel": []
   }
 ]
