@@ -7,7 +7,6 @@ const LOCKFILE = './data/.convert.lock';
 const DATA_DIR = './data';
 
 function lock() {
-  // Ensure data directory exists before trying to write the lockfile
   if (!existsSync(DATA_DIR)) {
     mkdirSync(DATA_DIR, { recursive: true });
   }
@@ -26,7 +25,7 @@ function unlock() {
 
 function inferSchema(lines) {
   const firstFive = lines.slice(0, 5).map(l => l.trim());
-  if (firstFive.every(l => l.startsWith('https://'))) {
+  if (firstFive.every(l => l.startsWith('https://') || l.startsWith('http://'))) {
     return 'UrlTool';
   }
   if (firstFive.every(l => l.startsWith('{'))) {
@@ -38,9 +37,15 @@ function inferSchema(lines) {
   return 'unknown';
 }
 
+function toTitleCase(str) {
+    return str.replace(/-/g, ' ').replace(/\w\S*/g, (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());
+}
+
 function parseTxt(content, schema, sourceFile) {
   const lines = content.split('\n').filter(l => l.trim() !== '');
   const now = new Date().toISOString();
+  const baseName = path.basename(sourceFile, path.extname(sourceFile));
+  const categoryName = toTitleCase(baseName);
   const baseMeta = { _schema: schema, _sourceFile: sourceFile, _convertedAt: now };
 
   if (lines.length < 150) {
@@ -51,36 +56,34 @@ function parseTxt(content, schema, sourceFile) {
     case 'UrlTool':
       return lines.map((line, i) => ({
         ...baseMeta,
-        id: `u-${String(i).padStart(3, '0')}`,
+        id: `u-${baseName}-${String(i).padStart(3, '0')}`,
+        name: new URL(line.trim()).hostname.replace('www.',''),
         url: line.trim(),
-        description: '',
+        description: `A tool for ${categoryName}.`,
         tags: ['url'],
+        category: categoryName
       }));
     case 'JsonLineTool':
-      return lines.map(line => ({ ...JSON.parse(line), ...baseMeta }));
+      return lines.map(line => ({ ...JSON.parse(line), ...baseMeta, category: categoryName }));
     case 'CategoryTool':
         const result = [];
         let currentCategory = null;
         lines.forEach(line => {
             if (line.startsWith('### ')) {
-                if (currentCategory) {
-                    result.push(currentCategory);
-                }
-                currentCategory = { category: line.substring(4).trim(), tools: [], ...baseMeta };
+                currentCategory = line.substring(4).trim();
             } else if (currentCategory && line.trim().length > 0) {
                 const match = line.match(/- \[(.*?)\]\((.*?)\) - (.*)/);
                 if (match) {
-                    currentCategory.tools.push({
+                    result.push({
                         name: match[1],
                         url: match[2],
                         description: match[3],
+                        category: currentCategory,
+                        ...baseMeta
                     });
                 }
             }
         });
-        if (currentCategory) {
-            result.push(currentCategory);
-        }
         return result;
     default:
       throw new Error(`Unknown schema for ${sourceFile}`);
@@ -103,12 +106,14 @@ export interface BaseMeta {
   url: string;
   description?: string;
   tags: string[];
+  category: string;
 }
 `;
     }
     if (uniqueSchemas.includes('JsonLineTool')) {
         content += `export interface JsonLineTool extends BaseMeta {
   [key: string]: unknown;
+  category: string;
 }
 `;
     }
@@ -123,8 +128,15 @@ export interface BaseMeta {
 }
 `;
     }
-    const outPath = path.join(process.cwd(), 'src', 'lib', 'tool-schemas.ts');
-    atomicWrite(outPath, content.replace(/\\/g, '/'), false);
+    
+    const outDir = path.join(process.cwd(), 'src', 'lib');
+    if (!existsSync(outDir)) {
+      mkdirSync(outDir, { recursive: true });
+    }
+    const outPath = path.join(outDir, 'tool-schemas.ts');
+    
+    // Use atomicWrite but tell it the content is not JSON
+    atomicWrite(outPath, content, false); 
     console.log(`✅ Generated TypeScript interfaces in ${outPath}`);
 }
 
@@ -132,6 +144,11 @@ export interface BaseMeta {
 async function main() {
   lock();
   try {
+    const dataOutDir = path.join(process.cwd(), 'src', 'data');
+    if (!existsSync(dataOutDir)) {
+      mkdirSync(dataOutDir, { recursive: true });
+    }
+      
     const files = await glob('data/**/*.TXT', { case: 'i' });
     const report = {
       timestamp: new Date().toISOString(),
@@ -141,7 +158,7 @@ async function main() {
 
     if (files.length === 0) {
         console.log('No .TXT files found in data directory. Skipping conversion.');
-        await generateTypes([]); // Generate empty types file if no schemas found
+        await generateTypes([]);
         return;
     }
 
@@ -157,7 +174,7 @@ async function main() {
       schemas.push(schema);
 
       const jsonData = parseTxt(content, schema, file);
-      const outPath = path.join(process.cwd(), 'src', 'data', `${path.basename(file, path.extname(file))}.json`);
+      const outPath = path.join(dataOutDir, `${path.basename(file, path.extname(file))}.json`);
       
       const { sha256 } = atomicWrite(outPath, jsonData);
 
