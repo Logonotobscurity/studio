@@ -1,8 +1,8 @@
 
 'use client';
 
-import { useState, useMemo, useEffect } from 'react';
-import { SlidersHorizontal, List } from 'lucide-react';
+import { useState, useMemo, useEffect, useCallback } from 'react';
+import { SlidersHorizontal, List, ArrowLeft, ArrowRight } from 'lucide-react';
 import type { Tool } from '@/lib/tools';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -11,6 +11,9 @@ import SidePanel from './side-panel';
 import ToolCard from './tool-card';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { categories } from '@/data/categories';
+import { usePathname, useRouter, useSearchParams } from 'next/navigation';
+import { cn } from '@/lib/utils';
+import Pagination from './pagination';
 
 type ToolListingsProps = {
   slug: string;
@@ -20,6 +23,8 @@ type ToolListingsProps = {
   searchParams: { [key: string]: string | string[] | undefined };
 };
 
+const TOOLS_PER_PAGE = 12;
+
 export default function ToolListings({
   slug,
   tools,
@@ -27,12 +32,21 @@ export default function ToolListings({
   availableFunnels,
   searchParams,
 }: ToolListingsProps) {
+  const router = useRouter();
+  const pathname = usePathname();
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedTool, setSelectedTool] = useState<Tool | null>(null);
   const [isSidePanelOpen, setIsSidePanelOpen] = useState(false);
   const isMobile = useIsMobile();
   
   const categoryInfo = useMemo(() => categories.find(c => c.slug === slug), [slug]);
+  
+  const currentPage = useMemo(() => {
+    const page = searchParams?.page;
+    const pageNumber = Number(page);
+    return isNaN(pageNumber) || pageNumber < 1 ? 1 : pageNumber;
+  }, [searchParams?.page]);
+
 
   const selectedCategories = useMemo(() => {
     const cats = searchParams?.categories;
@@ -65,6 +79,21 @@ export default function ToolListings({
     });
   }, [tools, searchTerm, selectedCategories, selectedFunnels, selectedTags]);
 
+  const totalPages = Math.ceil(filteredTools.length / TOOLS_PER_PAGE);
+  const paginatedTools = useMemo(() => {
+    const start = (currentPage - 1) * TOOLS_PER_PAGE;
+    const end = start + TOOLS_PER_PAGE;
+    return filteredTools.slice(start, end);
+  }, [filteredTools, currentPage]);
+  
+  useEffect(() => {
+    if (currentPage > totalPages && totalPages > 0) {
+      const params = new URLSearchParams(searchParams as any);
+      params.set('page', String(totalPages));
+      router.push(`${pathname}?${params.toString()}`, { scroll: false });
+    }
+  }, [currentPage, totalPages, searchParams, pathname, router]);
+
   const handleSelectTool = (tool: Tool) => {
     setSelectedTool(tool);
     if (isMobile) {
@@ -86,6 +115,16 @@ export default function ToolListings({
       handleClearSelectedTool();
     }
   }, [isSidePanelOpen]);
+
+  useEffect(() => {
+    // Reset page to 1 when filters change
+    const params = new URLSearchParams(searchParams as any);
+    if (params.has('page') && params.get('page') !== '1') {
+      params.set('page', '1');
+      router.push(`${pathname}?${params.toString()}`, { scroll: false });
+    }
+  }, [searchParams, pathname, router]);
+
 
   const pageTitle = categoryInfo ? `${categoryInfo.title} Tools` : 'All Tools';
   const pageDescription = categoryInfo ? categoryInfo.description : 'Explore all tools to accelerate your growth.';
@@ -143,15 +182,18 @@ export default function ToolListings({
           </div>
           
           <div className="text-sm text-muted-foreground mb-4">
-            Showing {filteredTools.length} of {tools.length} tools
+            Showing {paginatedTools.length} of {filteredTools.length} tools
           </div>
           
-          {filteredTools.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-              {filteredTools.map((tool, index) => (
-                <ToolCard key={`${tool.tool}-${index}`} tool={tool} onSelect={handleSelectTool} />
-              ))}
-            </div>
+          {paginatedTools.length > 0 ? (
+            <>
+              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                {paginatedTools.map((tool, index) => (
+                  <ToolCard key={`${tool.tool}-${index}`} tool={tool} onSelect={handleSelectTool} />
+                ))}
+              </div>
+              <Pagination currentPage={currentPage} totalPages={totalPages} />
+            </>
           ) : (
             <div className="text-center py-16 border-2 border-dashed rounded-lg">
               <p className="font-semibold text-lg">No tools found</p>
@@ -163,3 +205,4 @@ export default function ToolListings({
     </div>
   );
 }
+

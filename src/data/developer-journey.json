@@ -4,189 +4,189 @@
     "url": "https://cloud.google.com/free",
     "benefit": "Google Cloud’s always-free tier plus $300 trial credits covering compute, storage, databases and AI services.",
     "category": "Major Cloud Providers",
-    "tags": ["FF", "NC"],
-    "funnel": ["Activation"]
+    "description": "Google Cloud’s always-free tier plus $300 trial credits covering compute, storage, databases and AI services."
   },
   {
     "tool": "AWS Free Tier",
     "url": "https://aws.amazon.com/free/",
     "benefit": "Amazon Web Services free tier with 750 hrs EC2, RDS, Lambda, S3 and 100+ other services for 12 months.",
     "category": "Major Cloud Providers",
-    "tags": ["FF"],
-    "funnel": ["Activation"]
+    "description": "Amazon Web Services free tier with 750 hrs EC2, RDS, Lambda, S3 and 100+ other services for 12 months."
   },
   {
     "tool": "Microsoft Azure Free Account",
     "url": "https://azure.microsoft.com/free/",
     "benefit": "$200 credit and 25+ always-free services for new Azure accounts including Functions, Cosmos DB and App Service.",
     "category": "Major Cloud Providers",
-    "tags": ["FF", "NC"],
-    "funnel": ["Activation"]
+    "description": "$200 credit and 25+ always-free services for new Azure accounts including Functions, Cosmos DB and App Service."
   },
   {
     "tool": "Oracle Cloud Free Tier",
     "url": "https://www.oracle.com/cloud/free/",
     "benefit": "Two always-free Ampere VMs, block & object storage, databases plus a 30-day $300 trial for extra services.",
     "category": "Major Cloud Providers",
-    "tags": ["FF", "NC"],
-    "funnel": ["Activation"]
+    "description": "Two always-free Ampere VMs, block & object storage, databases plus a 30-day $300 trial for extra services."
   },
   {
     "tool": "IBM Cloud Free Tier",
     "url": "https://www.ibm.com/cloud/free/",
     "benefit": "Lite plans for Watson, Kubernetes, databases plus $200 credit over 30 days on IBM Cloud.",
     "category": "Major Cloud Providers",
-    "tags": ["FF", "NC"],
-    "funnel": ["Activation"]
+    "description": "Lite plans for Watson, Kubernetes, databases plus $200 credit over 30 days on IBM Cloud."
   },
   {
     "tool": "Brainboard",
     "url": "https://www.brainboard.co",
     "benefit": "Drag-and-drop cloud architecture designer that auto-generates Terraform & deploys multi-cloud infrastructure.",
-    "category": "Cloud Management Solutions"
+    "category": "Cloud Management Solutions",
+    "description": "Drag-and-drop cloud architecture designer that auto-generates Terraform & deploys multi-cloud infrastructure."
   },
   {
     "tool": "Cloud 66",
     "url": "https://www.cloud66.com",
     "benefit": "DevOps-as-a-service: build, deploy and maintain apps on any cloud or server with native Kubernetes support.",
-    "category": "Cloud Management Solutions"
+    "category": "Cloud Management Solutions",
+    "description": "DevOps-as-a-service: build, deploy and maintain apps on any cloud or server with native Kubernetes support."
   },
   {
     "tool": "Pulumi",
     "url": "https://www.pulumi.com",
     "benefit": "Infrastructure-as-code platform using real programming languages instead of DSLs for AWS, Azure, GCP & more.",
     "category": "Cloud Management Solutions",
-    "tags": ["OS"]
+    "description": "Infrastructure-as-code platform using real programming languages instead of DSLs for AWS, Azure, GCP & more."
   },
   {
     "tool": "Terraform",
     "url": "https://www.terraform.io",
     "benefit": "Open-source IaC tool for provisioning and managing cloud, SaaS and on-prem resources via declarative configs.",
     "category": "Cloud Management Solutions",
-    "tags": ["OS"]
+    "description": "Open-source IaC tool for provisioning and managing cloud, SaaS and on-prem resources via declarative configs."
   },
   {
     "tool": "Scalr",
     "url": "https://www.scalr.com",
     "benefit": "Terraform remote-state & operations platform with policy-as-code, cost controls and RBAC for enterprise teams.",
-    "category": "Cloud Management Solutions"
+    "category": "Cloud Management Solutions",
+    "description": "Terraform remote-state & operations platform with policy-as-code, cost controls and RBAC for enterprise teams."
   },
   {
     "tool": "Deployment.io",
     "url": "https://www.deployment.io",
     "benefit": "Zero-config continuous deployment that builds and ships static sites or containers to any provider.",
-    "category": "Cloud Management Solutions"
+    "category": "Cloud Management Solutions",
+    "description": "Zero-config continuous deployment that builds and ships static sites or containers to any provider."
   },
   {
     "tool": "Bitbucket",
     "url": "https://bitbucket.org",
     "benefit": "Atlassian’s Git hosting with free private repos, built-in CI/CD and deep Jira integration.",
     "category": "Source Code Repositories",
-    "tags": ["FF"]
+    "description": "Atlassian’s Git hosting with free private repos, built-in CI/CD and deep Jira integration."
   },
   {
     "tool": "Codeberg",
     "url": "https://codeberg.org",
     "benefit": "Non-profit community-driven Gitea-based Git hosting for open-source projects.",
     "category": "Source Code Repositories",
-    "tags": ["OS", "FF"]
+    "description": "Non-profit community-driven Gitea-based Git hosting for open-source projects."
   },
   {
     "tool": "GitHub",
     "url": "https://github.com",
     "benefit": "World’s largest code host providing Git repos, Actions CI/CD, Copilot AI and collaboration tools.",
     "category": "Source Code Repositories",
-    "rating": 4.8,
-    "tags": ["FF", "*"]
+    "description": "World’s largest code host providing Git repos, Actions CI/CD, Copilot AI and collaboration tools."
   },
   {
     "tool": "GitLab",
     "url": "https://gitlab.com",
     "benefit": "All-in-one DevOps platform: Git repos, built-in CI/CD, security scanning, registry and project management.",
     "category": "Source Code Repositories",
-    "tags": ["FF", "OS"]
+    "description": "All-in-one DevOps platform: Git repos, built-in CI/CD, security scanning, registry and project management."
   },
   {
     "tool": "Framagit",
     "url": "https://framagit.org",
     "benefit": "French non-profit GitLab instance offering free public/private repositories for open-source initiatives.",
     "category": "Source Code Repositories",
-    "tags": ["OS", "FF"]
+    "description": "French non-profit GitLab instance offering free public/private repositories for open-source initiatives."
   },
   {
     "tool": "Heptapod",
     "url": "https://heptapod.net",
     "benefit": "GitLab fork with first-class Mercurial support maintained by Octobus and Clever Cloud.",
     "category": "Source Code Repositories",
-    "tags": ["OS"]
+    "description": "GitLab fork with first-class Mercurial support maintained by Octobus and Clever Cloud."
   },
   {
     "tool": "NotABug",
     "url": "https://notabug.org",
     "benefit": "Peer-to-peer-friendly Gitea hosting emphasizing software freedom and decentralized workflows.",
     "category": "Source Code Repositories",
-    "tags": ["OS", "FF"]
+    "description": "Peer-to-peer-friendly Gitea hosting emphasizing software freedom and decentralized workflows."
   },
   {
     "tool": "OSDN",
     "url": "https://osdn.net",
     "benefit": "Japanese open-source hub providing Git/SVN/CVS hosting, file releases, mailing lists and forums.",
     "category": "Source Code Repositories",
-    "tags": ["OS", "FF"]
+    "description": "Japanese open-source hub providing Git/SVN/CVS hosting, file releases, mailing lists and forums."
   },
   {
     "tool": "Pagure",
     "url": "https://pagure.io",
     "benefit": "Light-weight self-hosted Git forge written in Python; used by Fedora.",
     "category": "Source Code Repositories",
-    "tags": ["OS", "SH"]
+    "description": "Light-weight self-hosted Git forge written in Python; used by Fedora."
   },
   {
     "tool": "Perforce Helix Core",
     "url": "https://www.perforce.com",
     "benefit": "Enterprise-grade version control for large binaries; free for up to 5 users and 20 workspaces.",
     "category": "Source Code Repositories",
-    "tags": ["FF"]
+    "description": "Enterprise-grade version control for large binaries; free for up to 5 users and 20 workspaces."
   },
   {
     "tool": "Plastic SCM",
     "url": "https://www.plasticscm.com",
     "benefit": "Distributed VCS optimized for game dev and large repos; free for personal/open-source use.",
     "category": "Source Code Repositories",
-    "tags": ["FF", "OS"]
+    "description": "Distributed VCS optimized for game dev and large repos; free for personal/open-source use."
   },
   {
     "tool": "Savannah GNU",
     "url": "https://savannah.gnu.org",
     "benefit": "Official GNU hosting platform offering CVS, Git, mailing lists and download mirrors.",
     "category": "Source Code Repositories",
-    "tags": ["OS", "FF"]
+    "description": "Official GNU hosting platform offering CVS, Git, mailing lists and download mirrors."
   },
   {
     "tool": "Savannah Non-GNU",
     "url": "https://savannah.nongnu.org",
     "benefit": "Sister site hosting free software projects that are not part of the GNU Project.",
     "category": "Source Code Repositories",
-    "tags": ["OS", "FF"]
+    "description": "Sister site hosting free software projects that are not part of the GNU Project."
   },
   {
     "tool": "JSON Grid",
     "url": "https://jsongrid.com",
     "benefit": "Instantly turn any JSON endpoint into a sortable, filterable spreadsheet-like grid.",
-    "category": "APIs, Data, and ML"
+    "category": "APIs, Data, and ML",
+    "description": "Instantly turn any JSON endpoint into a sortable, filterable spreadsheet-like grid."
   },
   {
     "tool": "ZeroSheets",
     "url": "https://zerosheets.com",
     "benefit": "Turn Google Sheets into instant JSON APIs without code.",
     "category": "APIs, Data, and ML",
-    "tags": ["FF"]
+    "description": "Turn Google Sheets into instant JSON APIs without code."
   },
   {
     "tool": "ip.city",
     "url": "https://ip.city",
     "benefit": "Simple IP geolocation API returning city, country and ASN data.",
-    "category": "APIs, Data, and ML"
+    "category": "APIs, Data, and ML",
+    "description": "Simple IP geolocation API returning city, country and ASN data."
   },
   {
     "tool": "Visual Studio Code",
@@ -194,7 +194,11 @@
     "benefit": "A lightweight but powerful source code editor with rich ecosystem of extensions.",
     "category": "Code Editors",
     "rating": 4.7,
-    "tags": ["FF", "OS", "*"]
+    "tags": [
+      "FF",
+      "OS",
+      "*"
+    ]
   },
   {
     "tool": "Docker",
