@@ -1,118 +1,82 @@
-{
-  "category": "Startup Journey",
-  "description": "Comprehensive toolkit for entrepreneurs at every stage - from ideation to scaling your startup.",
-  "tools": [
-    {
-      "id": "notion",
-      "name": "Notion",
-      "description": "All-in-one workspace for notes, docs, wikis, and project management with powerful database features.",
-      "category": "Startup Journey",
-      "subcategory": "Productivity",
-      "url": "https://notion.so",
-      "pricing": "Free with paid plans",
-      "tags": ["productivity", "documentation", "project-management", "collaboration"],
-      "growthFunnelStage": "Plan",
-      "rating": 4.5,
-      "usageDescription": "Central hub for startup documentation, planning, and team collaboration.",
-      "featured": true
-    },
-    {
-      "id": "stripe",
-      "name": "Stripe",
-      "description": "Complete payments platform with APIs for online businesses to accept and manage payments.",
-      "category": "Startup Journey",
-      "subcategory": "Payments",
-      "url": "https://stripe.com",
-      "pricing": "Pay per transaction",
-      "tags": ["payments", "api", "e-commerce", "subscriptions"],
-      "growthFunnelStage": "Monetize",
-      "rating": 4.7,
-      "usageDescription": "Industry-standard payment processing with developer-friendly integration.",
-      "featured": true
-    },
-    {
-      "id": "mailchimp",
-      "name": "Mailchimp",
-      "description": "Marketing automation platform for email marketing, audience management, and campaign analytics.",
-      "category": "Startup Journey",
-      "subcategory": "Email Marketing",
-      "url": "https://mailchimp.com",
-      "pricing": "Free with paid plans",
-      "tags": ["email-marketing", "automation", "analytics", "campaigns"],
-      "growthFunnelStage": "Grow",
-      "rating": 4.3,
-      "usageDescription": "Build and nurture customer relationships through targeted email campaigns.",
-      "featured": false
-    },
-    {
-      "id": "canva",
-      "name": "Canva",
-      "description": "Graphic design platform with templates and tools for creating professional visual content.",
-      "category": "Startup Journey",
-      "subcategory": "Design",
-      "url": "https://canva.com",
-      "pricing": "Free with paid plans",
-      "tags": ["design", "templates", "branding", "social-media"],
-      "growthFunnelStage": "Brand",
-      "rating": 4.4,
-      "usageDescription": "Create professional marketing materials and brand assets without design expertise.",
-      "featured": true
-    },
-    {
-      "id": "typeform",
-      "name": "Typeform",
-      "description": "Interactive form builder for surveys, quizzes, and data collection with engaging user experience.",
-      "category": "Startup Journey",
-      "subcategory": "Forms",
-      "url": "https://typeform.com",
-      "pricing": "Free with paid plans",
-      "tags": ["forms", "surveys", "data-collection", "user-experience"],
-      "growthFunnelStage": "Validate",
-      "rating": 4.2,
-      "usageDescription": "Gather customer feedback and validate ideas through engaging interactive forms.",
-      "featured": false
-    },
-    {
-      "id": "slack",
-      "name": "Slack",
-      "description": "Business communication platform with channels, direct messaging, and extensive app integrations.",
-      "category": "Startup Journey",
-      "subcategory": "Communication",
-      "url": "https://slack.com",
-      "pricing": "Free with paid plans",
-      "tags": ["communication", "team-chat", "integrations", "collaboration"],
-      "growthFunnelStage": "Build",
-      "rating": 4.4,
-      "usageDescription": "Central communication hub for distributed teams and project coordination.",
-      "featured": true
-    },
-    {
-      "id": "airtable",
-      "name": "Airtable",
-      "description": "Cloud collaboration service that combines the simplicity of a spreadsheet with database functionality.",
-      "category": "Startup Journey",
-      "subcategory": "Database",
-      "url": "https://airtable.com",
-      "pricing": "Free with paid plans",
-      "tags": ["database", "spreadsheet", "collaboration", "project-management"],
-      "growthFunnelStage": "Organize",
-      "rating": 4.3,
-      "usageDescription": "Organize and track everything from customer data to product roadmaps.",
-      "featured": false
-    },
-    {
-      "id": "zapier",
-      "name": "Zapier",
-      "description": "Automation platform that connects apps and automates workflows without coding.",
-      "category": "Startup Journey",
-      "subcategory": "Automation",
-      "url": "https://zapier.com",
-      "pricing": "Free with paid plans",
-      "tags": ["automation", "integrations", "workflows", "productivity"],
-      "growthFunnelStage": "Scale",
-      "rating": 4.4,
-      "usageDescription": "Automate repetitive tasks and connect different tools in your startup stack.",
-      "featured": true
-    }
-  ]
-}
+[
+  {
+    "tool": "Notion",
+    "url": "https://notion.so",
+    "benefit": "All-in-one workspace for notes, docs, wikis, and project management.",
+    "category": "Productivity",
+    "tags": ["FF", "*"],
+    "funnel": ["Activation"],
+    "rating": 4.5,
+    "description": "All-in-one workspace for notes, docs, wikis, and project management with powerful database features."
+  },
+  {
+    "tool": "Stripe",
+    "url": "https://stripe.com",
+    "benefit": "Complete payments platform with APIs for online businesses.",
+    "category": "Payments",
+    "tags": ["*"],
+    "funnel": ["Revenue"],
+    "rating": 4.7,
+    "description": "Complete payments platform with APIs for online businesses to accept and manage payments."
+  },
+  {
+    "tool": "Mailchimp",
+    "url": "https://mailchimp.com",
+    "benefit": "Marketing automation platform for email marketing and audience management.",
+    "category": "Email Marketing",
+    "tags": ["FF"],
+    "funnel": ["Acquisition", "Retention"],
+    "rating": 4.3,
+    "description": "Marketing automation platform for email marketing, audience management, and campaign analytics."
+  },
+  {
+    "tool": "Canva",
+    "url": "https://canva.com",
+    "benefit": "Graphic design platform with templates for professional visual content.",
+    "category": "Design",
+    "tags": ["FF", "*"],
+    "funnel": ["Awareness"],
+    "rating": 4.4,
+    "description": "Graphic design platform with templates and tools for creating professional visual content."
+  },
+  {
+    "tool": "Typeform",
+    "url": "https://typeform.com",
+    "benefit": "Interactive form builder for surveys, quizzes, and data collection.",
+    "category": "Forms",
+    "tags": ["FF"],
+    "funnel": ["Activation"],
+    "rating": 4.2,
+    "description": "Interactive form builder for surveys, quizzes, and data collection with engaging user experience."
+  },
+  {
+    "tool": "Slack",
+    "url": "https://slack.com",
+    "benefit": "Business communication platform with channels and app integrations.",
+    "category": "Communication",
+    "tags": ["FF", "*"],
+    "funnel": ["Activation"],
+    "rating": 4.4,
+    "description": "Business communication platform with channels, direct messaging, and extensive app integrations."
+  },
+  {
+    "tool": "Airtable",
+    "url": "https://airtable.com",
+    "benefit": "Cloud collaboration service combining spreadsheet simplicity with database functionality.",
+    "category": "Database",
+    "tags": ["FF"],
+    "funnel": ["Activation"],
+    "rating": 4.3,
+    "description": "Cloud collaboration service that combines the simplicity of a spreadsheet with database functionality."
+  },
+  {
+    "tool": "Zapier",
+    "url": "https://zapier.com",
+    "benefit": "Automation platform that connects apps and automates workflows without coding.",
+    "category": "Automation",
+    "tags": ["FF", "*"],
+    "funnel": ["Activation", "Retention"],
+    "rating": 4.4,
+    "description": "Automation platform that connects apps and automates workflows without coding."
+  }
+]

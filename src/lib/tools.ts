@@ -15,13 +15,27 @@ export interface Tool {
 }
 
 const dataDirectory = path.join(process.cwd(), 'src', 'data');
-const toolFiles = ['growth-hacking.json', 'startup-journey.json', 'developer-journey.json'];
 
 async function readJsonFile(filename: string): Promise<Tool[]> {
   try {
     const filePath = path.join(dataDirectory, filename);
     const fileContents = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(fileContents);
+    const data = JSON.parse(fileContents);
+    // Ensure the data is always an array
+    if (Array.isArray(data)) {
+      return data;
+    }
+    // If the JSON is an object with a 'tools' array (like old startup-journey.json)
+    if (typeof data === 'object' && data !== null && Array.isArray(data.tools)) {
+      return data.tools;
+    }
+    // If the JSON is an array of objects with a 'tools' array (like old developer-journey.json)
+    if (Array.isArray(data) && data.every(item => typeof item === 'object' && item !== null && Array.isArray(item.tools))) {
+      return data.flatMap(category => 
+        (category.tools as any[]).map(tool => ({ ...tool, category: tool.category || category.category }))
+      );
+    }
+    return [];
   } catch (error) {
     console.error(`Error reading or parsing ${filename}:`, error);
     return [];
@@ -29,10 +43,14 @@ async function readJsonFile(filename: string): Promise<Tool[]> {
 }
 
 async function getAllTools(): Promise<Tool[]> {
-  const allToolPromises = toolFiles.map(file => readJsonFile(file));
+  const allToolPromises = (await fs.readdir(dataDirectory))
+    .filter(file => file.endsWith('.json'))
+    .map(file => readJsonFile(file));
+  
   const allToolArrays = await Promise.all(allToolPromises);
   const allTools = allToolArrays.flat();
-  // Simple deduplication based on tool name
+  
+  // Deduplicate based on tool name, giving priority to later entries
   const uniqueTools = Array.from(new Map(allTools.map(tool => [tool.tool, tool])).values());
   return uniqueTools;
 }
@@ -43,11 +61,15 @@ export async function getToolsBySlug(slug: string): Promise<Tool[]> {
   }
 
   const filename = `${slug}.json`;
-  if (toolFiles.includes(filename)) {
+  try {
+    // Check if file exists before reading
+    await fs.access(path.join(dataDirectory, filename));
     return readJsonFile(filename);
+  } catch (error) {
+    // File doesn't exist for the slug
+    console.warn(`No data file found for slug: ${slug}`);
+    return [];
   }
-  
-  return [];
 }
 
 export async function getCategoriesForSlug(slug: string): Promise<string[]> {
