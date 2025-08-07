@@ -19,6 +19,10 @@ export default function ToolCard({ tool, onSelect }: ToolCardProps) {
     visible: { opacity: 1, y: 0 },
   };
 
+  const toolName = tool.tool || tool.name || 'Unnamed Tool';
+  const benefit = tool.benefit || tool.description || 'No description available.';
+  const description = tool.description || '';
+
   return (
     <motion.div
       variants={cardVariants}
@@ -31,15 +35,15 @@ export default function ToolCard({ tool, onSelect }: ToolCardProps) {
         <div onClick={() => onSelect(tool)} className="flex flex-col flex-grow cursor-pointer">
           <CardHeader>
             <div className="flex justify-between items-start">
-                <CardTitle className="text-xl font-bold">{tool.tool}</CardTitle>
+                <CardTitle className="text-xl font-bold">{toolName}</CardTitle>
                 {tool.rating && <Rating rating={tool.rating} />}
             </div>
-            <CardDescription className="font-inter !mt-2">{tool.benefit}</CardDescription>
+            <CardDescription className="font-inter !mt-2">{benefit}</CardDescription>
           </CardHeader>
           <CardContent className="flex-grow">
-              {tool.description && <p className="text-sm text-muted-foreground line-clamp-3">{tool.description}</p>}
+              {description && <p className="text-sm text-muted-foreground line-clamp-3">{description}</p>}
               <div className="mt-4 flex flex-wrap gap-2">
-                {tool.tags?.map(tag => {
+                {tool.tags?.map((tag: string) => {
                     const tagInfo = tagMap[tag];
                     return tagInfo ? <Badge key={tag} variant={tagInfo.variant} className="font-figtree">{tagInfo.label}</Badge> : null;
                 })}

@@ -1,4 +1,3 @@
-
 import { useMemo, useEffect, useState } from 'react';
 import { useRouter, usePathname, useSearchParams } from 'next/navigation';
 import type { Tool } from '@/lib/tools';
@@ -33,15 +32,18 @@ export function useToolFilters({ tools, searchParams, searchTerm }: UseToolFilte
 
   const filteredTools = useMemo(() => {
     return tools.filter(tool => {
+      const toolName = tool.tool || tool.name || '';
+      const benefit = tool.benefit || tool.description || '';
+      
       const searchTermMatch = searchTerm === '' ||
-        tool.tool.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        tool.benefit.toLowerCase().includes(searchTerm.toLowerCase());
+        toolName.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        benefit.toLowerCase().includes(searchTerm.toLowerCase());
 
-      const categoryMatch = selectedCategories.size === 0 || selectedCategories.has(tool.category);
+      const categoryMatch = selectedCategories.size === 0 || (tool.category && selectedCategories.has(tool.category));
       
-      const funnelMatch = selectedFunnels.size === 0 || (tool.funnel && tool.funnel.some(f => selectedFunnels.has(f)));
+      const funnelMatch = selectedFunnels.size === 0 || (tool.funnel && tool.funnel.some((f: string) => selectedFunnels.has(f)));
       
-      const tagMatch = selectedTags.size === 0 || (tool.tags && tool.tags.some(t => selectedTags.has(t)));
+      const tagMatch = selectedTags.size === 0 || (tool.tags && tool.tags.some((t: string) => selectedTags.has(t)));
 
       return searchTermMatch && categoryMatch && funnelMatch && tagMatch;
     });

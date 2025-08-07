@@ -27,8 +27,8 @@ export async function generateStaticParams() {
 export default async function PlatformListingsPage({ params, searchParams }: PlatformListingsPageProps) {
   const { slug } = params;
   const tools: Tool[] = await getToolsBySlug(slug);
-  const availableCategories = await getCategoriesForSlug(slug);
-  const availableFunnels = await getFunnelsForSlug(slug);
+  const availableCategories = getCategoriesForSlug(tools);
+  const availableFunnels = getFunnelsForSlug(tools);
 
   return (
     <ToolListings

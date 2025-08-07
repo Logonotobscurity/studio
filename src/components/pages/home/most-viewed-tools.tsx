@@ -4,12 +4,13 @@ import { Sparkles, ArrowUpRight } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { tools } from '@/lib/tools-data';
+import type { Tool } from '@/lib/tools';
 
-// Get the top 6 most popular tools based on the "*" tag
-const popularTools = tools().filter(tool => tool.tags?.includes('*')).slice(0, 6);
+type MostViewedToolsProps = {
+  popularTools: Tool[];
+};
 
-export default function MostViewedTools() {
+export default function MostViewedTools({ popularTools }: MostViewedToolsProps) {
   return (
     <motion.section 
       className="py-16"
