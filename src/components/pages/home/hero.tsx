@@ -21,6 +21,7 @@ export default function Hero() {
           quality={80}
           className="object-cover bg-gradient-to-br from-background via-orange-50 to-rose-100 dark:from-gray-900 dark:via-orange-950/20 dark:to-rose-950/20"
           data-ai-hint="gradient background"
+          sizes="100vw"
         />
       </div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
