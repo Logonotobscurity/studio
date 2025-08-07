@@ -35,7 +35,6 @@ export default function Pagination({ currentPage, totalPages }: PaginationProps)
   const renderPageNumbers = () => {
     const pageNumbers = [];
     const maxPagesToShow = 5;
-    const ellipsis = <span className="px-4 py-2">...</span>;
 
     if (totalPages <= maxPagesToShow + 2) {
       for (let i = 1; i <= totalPages; i++) {
@@ -66,7 +65,7 @@ export default function Pagination({ currentPage, totalPages }: PaginationProps)
       );
 
       if (currentPage > 3) {
-        pageNumbers.push(ellipsis);
+        pageNumbers.push(<span key="ellipsis-start" className="px-4 py-2">...</span>);
       }
 
       const startPage = Math.max(2, currentPage - 1);
@@ -88,7 +87,7 @@ export default function Pagination({ currentPage, totalPages }: PaginationProps)
       }
 
       if (currentPage < totalPages - 2) {
-        pageNumbers.push(ellipsis);
+        pageNumbers.push(<span key="ellipsis-end" className="px-4 py-2">...</span>);
       }
 
       pageNumbers.push(
