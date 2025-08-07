@@ -1,81 +1,43 @@
-import 'server-only';
-import { promises as fs } from 'fs';
-import path from 'path';
+import toolsJson from './tools.json';
+import { categories as allCategories } from '@/data/categories';
 
-export interface Tool {
-  tool: string;
-  url: string;
-  benefit: string;
-  category: string;
-  tags?: ('OS' | 'SH' | 'CC' | 'β' | '*' | 'FF' | 'NC')[];
-  rating?: number;
-  funnel?: ('Awareness' | 'Acquisition' | 'Activation' | 'Revenue' | 'Retention' | 'Referral')[];
-  description?: string;
-  seoMetaDescription?: string;
-}
+// The interface is now derived from the JSON source of truth.
+export interface Tool extends (typeof toolsJson)[0] {}
 
-const dataDirectory = path.join(process.cwd(), 'src', 'data');
+export const getAllTools = (): Tool[] => {
+  // The JSON is pre-processed at build time, so we can just type-assert it.
+  return toolsJson as Tool[];
+};
 
-async function readJsonFile(filename: string): Promise<Tool[]> {
-  try {
-    const filePath = path.join(dataDirectory, filename);
-    const fileContents = await fs.readFile(filePath, 'utf8');
-    const data = JSON.parse(fileContents);
-    
-    // Ensure the data is always an array
-    if (Array.isArray(data)) {
-      // For any tool object missing the benefit field, populate it from the description.
-      return data.map(tool => ({
-        ...tool,
-        benefit: tool.benefit || (tool.description ? tool.description.substring(0, 90) + (tool.description.length > 90 ? '...' : '') : "No benefit description available.")
-      }));
-    }
-    
-    return [];
-  } catch (error) {
-    console.error(`Error reading or parsing ${filename}:`, error);
-    return [];
-  }
-}
-
-async function getAllTools(): Promise<Tool[]> {
-  const allToolPromises = (await fs.readdir(dataDirectory))
-    .filter(file => file.endsWith('.json'))
-    .map(file => readJsonFile(file));
-  
-  const allToolArrays = await Promise.all(allToolPromises);
-  const allTools = allToolArrays.flat();
-  
-  // Deduplicate based on tool name, giving priority to later entries
-  const uniqueTools = Array.from(new Map(allTools.map(tool => [tool.tool, tool])).values());
-  return uniqueTools;
-}
-
-export async function getToolsBySlug(slug: string): Promise<Tool[]> {
+export function getToolsBySlug(slug: string): Tool[] {
+  const allTools = getAllTools();
   if (slug === 'all') {
-    return getAllTools();
+    return allTools;
   }
-
-  const filename = `${slug}.json`;
-  try {
-    // Check if file exists before reading
-    await fs.access(path.join(dataDirectory, filename));
-    return readJsonFile(filename);
-  } catch (error) {
-    // File doesn't exist for the slug
-    console.warn(`No data file found for slug: ${slug}`);
-    return [];
+  
+  const category = allCategories.find(c => c.slug === slug);
+  if (!category) {
+      console.warn(`No data file found for slug: ${slug}`);
+      return [];
   }
+  
+  // Filter tools based on the main category title from categories.ts
+  return allTools.filter(tool => {
+      // Find the category object for the tool.
+      const toolCategory = allCategories.find(c => c.title === tool.category);
+      // Check if the tool's category slug matches the requested slug.
+      return toolCategory?.slug === slug;
+  });
 }
 
-export async function getCategoriesForSlug(slug: string): Promise<string[]> {
-  const tools = await getToolsBySlug(slug);
+export function getCategoriesForSlug(slug: string): string[] {
+  const tools = getToolsBySlug(slug);
   const categories = new Set(tools.map(tool => tool.category));
   return Array.from(categories).sort();
 }
 
-export async function getFunnelsForSlug(slug: string): Promise<string[]> {
-    const tools = await getToolsBySlug(slug);
+export function getFunnelsForSlug(slug: string): string[] {
+    const tools = getToolsBySlug(slug);
     const funnels = new Set(tools.flatMap(tool => tool.funnel || []));
     return Array.from(funnels).sort();
 }
