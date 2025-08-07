@@ -6,6 +6,7 @@ import { ErrorBoundary } from '@/components/ui/error-boundary';
 import './globals.css';
 import FeedbackWidget from '@/components/feedback-widget';
 import MobileBottomNav from '@/components/layout/mobile-bottom-nav';
+import NewsletterPopup from '@/components/newsletter-popup';
 
 export const metadata: Metadata = {
   title: {
@@ -73,6 +74,7 @@ export default function RootLayout({
         <FeedbackWidget />
         <MobileBottomNav />
         <Toaster />
+        <NewsletterPopup />
       </body>
     </html>
   );
