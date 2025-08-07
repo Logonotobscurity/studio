@@ -55,7 +55,6 @@ export default function CommandPalette({ open, setOpen }: CommandPaletteProps) {
         placeholder="Search for tools or actions..." 
         value={query}
         onValueChange={setQuery}
-        icon={<Search className="mr-2 h-4 w-4 shrink-0 opacity-50" />}
       />
       <CommandList>
         {loading && (
