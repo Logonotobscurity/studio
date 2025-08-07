@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle, Users, Sparkles } from 'lucide-react';
 import Image from "next/image";
+import { motion } from 'framer-motion';
 
 const pillars = [
   {
@@ -22,7 +23,13 @@ const pillars = [
 
 export default function FoundersNote() {
   return (
-    <section className="py-16">
+    <motion.section 
+      className="py-16"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.5 }}
+    >
       <Card className="bg-muted/30 border">
         <CardContent className="p-8 md:p-12">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
@@ -50,18 +57,25 @@ export default function FoundersNote() {
             </div>
           </div>
           <div className="mt-12 pt-8 border-t border-border grid grid-cols-1 md:grid-cols-3 gap-8">
-            {pillars.map((pillar) => (
-              <div key={pillar.title} className="flex flex-col items-center text-center">
+            {pillars.map((pillar, index) => (
+              <motion.div 
+                key={pillar.title} 
+                className="flex flex-col items-center text-center"
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.3, delay: index * 0.1 }}
+              >
                 <div className="flex items-center justify-center h-12 w-12 rounded-full bg-background border mb-4">
                   <pillar.icon className="h-6 w-6 text-accent" />
                 </div>
                 <h3 className="font-semibold">{pillar.title}</h3>
                 <p className="text-sm text-muted-foreground mt-1 text-balance">{pillar.description}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </CardContent>
       </Card>
-    </section>
+    </motion.section>
   );
 }

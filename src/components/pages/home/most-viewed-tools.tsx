@@ -2,6 +2,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Sparkles, ArrowUpRight } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 const popularTools = [
   { name: 'Vercel', category: 'Hosting', href: 'https://vercel.com', logo: 'https://placehold.co/40x40' },
@@ -14,7 +15,13 @@ const popularTools = [
 
 export default function MostViewedTools() {
   return (
-    <section className="py-16">
+    <motion.section 
+      className="py-16"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="text-center">
         <h2 className="text-3xl font-bold tracking-tight font-headline">Most Viewed Tools</h2>
         <p className="mt-2 text-lg text-muted-foreground">Discover what the community is excited about.</p>
@@ -51,6 +58,6 @@ export default function MostViewedTools() {
           </CardContent>
         </Card>
       </div>
-    </section>
+    </motion.section>
   );
 }

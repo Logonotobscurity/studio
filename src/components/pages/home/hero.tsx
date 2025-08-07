@@ -2,6 +2,7 @@
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
@@ -24,7 +25,12 @@ export default function Hero() {
           sizes="100vw"
         />
       </div>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="container mx-auto px-4 sm:px-6 lg:px-8"
+      >
         <div className="text-center py-24 md:py-32">
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-balance font-headline">
             We are With You in Every Step in Accelerating your Growth
@@ -38,12 +44,14 @@ export default function Hero() {
             </span>.
           </p>
           <div className="mt-10 flex justify-center">
-            <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground animate-pulse-subtle">
-              <Link href="/solutions">Explore Solutions</Link>
-            </Button>
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground animate-pulse-subtle">
+                <Link href="/solutions">Explore Solutions</Link>
+              </Button>
+            </motion.div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
