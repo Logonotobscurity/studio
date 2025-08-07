@@ -198,34 +198,39 @@
       "FF",
       "OS",
       "*"
-    ]
+    ],
+    "description": "A lightweight but powerful source code editor with a rich ecosystem of extensions for debugging, Git control, and more."
   },
   {
     "tool": "Docker",
     "url": "https://docker.com",
     "benefit": "Platform for developing, shipping, and running applications using containerization technology.",
     "category": "DevOps",
-    "rating": 4.5
+    "rating": 4.5,
+    "description": "A platform for developing, shipping, and running applications using containerization technology, ensuring consistency across environments."
   },
   {
     "tool": "Postman",
     "url": "https://postman.com",
     "benefit": "Collaboration platform for API development with tools for testing, documenting, and monitoring APIs.",
     "category": "API Testing",
-    "rating": 4.4
+    "rating": 4.4,
+    "description": "A collaboration platform for API development, providing tools for designing, testing, documenting, and monitoring APIs."
   },
   {
     "tool": "Netlify",
     "url": "https://netlify.com",
     "benefit": "Platform for deploying and hosting modern web applications with continuous deployment from Git.",
     "category": "Hosting",
-    "rating": 4.5
+    "rating": 4.5,
+    "description": "A platform for deploying and hosting modern web applications with features like continuous deployment from Git, serverless functions, and more."
   },
   {
     "tool": "Vercel",
     "url": "https://vercel.com",
     "benefit": "Frontend cloud platform for static sites and serverless functions with zero-config deployments.",
     "category": "Hosting",
-    "rating": 4.6
+    "rating": 4.6,
+    "description": "A frontend cloud platform for static sites and serverless functions, optimized for frameworks like Next.js with zero-config deployments."
   }
 ]
