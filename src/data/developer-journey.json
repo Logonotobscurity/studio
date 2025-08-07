@@ -557,7 +557,7 @@
     "tool": "Auth0",
     "url": "https://auth0.com",
     "benefit": "Extensible identity platform for universal login.",
-    "description": "Extensible identity platform providing universal login, MFA, RBAC and B2B/B2C flows via SDKs.",
+    "description": "Extensible identity platform providing universal login, MFA, RBAC and B2B/C2B flows via SDKs.",
     "category": "Authentication, Authorization, and User Management",
     "tags": [],
     "funnel": []
@@ -644,6 +644,114 @@
     "benefit": "Frontend cloud platform for static sites.",
     "description": "Frontend cloud platform for static sites and serverless functions with zero-config deployments.",
     "category": "Hosting",
+    "tags": ["FF"],
+    "funnel": []
+  },
+  {
+    "tool": "Framagit",
+    "url": "https://framagit.org",
+    "benefit": "Free public/private repositories for open-source initiatives.",
+    "description": "French non-profit GitLab instance offering free public/private repositories for open-source initiatives.",
+    "category": "Source Code Repositories",
+    "tags": ["FF", "OS"],
+    "funnel": []
+  },
+  {
+    "tool": "Heptapod",
+    "url": "https://heptapod.net",
+    "benefit": "GitLab fork with first-class Mercurial support.",
+    "description": "GitLab fork with first-class Mercurial support maintained by Octobus and Clever Cloud.",
+    "category": "Source Code Repositories",
+    "tags": ["OS"],
+    "funnel": []
+  },
+  {
+    "tool": "NotABug",
+    "url": "https://notabug.org",
+    "benefit": "Peer-to-peer-friendly Gitea hosting.",
+    "description": "Peer-to-peer-friendly Gitea hosting emphasizing software freedom and decentralized workflows.",
+    "category": "Source Code Repositories",
+    "tags": ["OS"],
+    "funnel": []
+  },
+  {
+    "tool": "OSDN",
+    "url": "https://osdn.net",
+    "benefit": "Japanese open-source hub.",
+    "description": "Japanese open-source hub providing Git/SVN/CVS hosting, file releases, mailing lists and forums.",
+    "category": "Source Code Repositories",
+    "tags": ["OS"],
+    "funnel": []
+  },
+  {
+    "tool": "Pagure",
+    "url": "https://pagure.io",
+    "benefit": "Light-weight self-hosted Git forge.",
+    "description": "Light-weight self-hosted Git forge written in Python; used by Fedora.",
+    "category": "Source Code Repositories",
+    "tags": ["OS", "SH"],
+    "funnel": []
+  },
+  {
+    "tool": "Perforce Helix Core",
+    "url": "https://www.perforce.com",
+    "benefit": "Enterprise-grade version control for large binaries.",
+    "description": "Enterprise-grade version control for large binaries; free for up to 5 users and 20 workspaces.",
+    "category": "Source Code Repositories",
+    "tags": ["FF"],
+    "funnel": []
+  },
+  {
+    "tool": "Plastic SCM",
+    "url": "https://www.plasticscm.com",
+    "benefit": "Distributed VCS optimized for game dev.",
+    "description": "Distributed VCS optimized for game dev and large repos; free for personal/open-source use.",
+    "category": "Source Code Repositories",
+    "tags": ["FF", "OS"],
+    "funnel": []
+  },
+  {
+    "tool": "Savannah GNU",
+    "url": "https://savannah.gnu.org",
+    "benefit": "Official GNU hosting platform.",
+    "description": "Official GNU hosting platform offering CVS, Git, mailing lists and download mirrors.",
+    "category": "Source Code Repositories",
+    "tags": ["OS"],
+    "funnel": []
+  },
+  {
+    "tool": "Savannah Non-GNU",
+    "url": "https://savannah.nongnu.org",
+    "benefit": "Hosting for free software projects.",
+    "description": "Sister site hosting free software projects that are not part of the GNU Project.",
+    "category": "Source Code Repositories",
+    "tags": ["OS"],
+    "funnel": []
+  },
+  {
+    "tool": "ZeroSheets",
+    "url": "https://zerosheets.com",
+    "benefit": "Turn Google Sheets into instant JSON APIs.",
+    "description": "Turn Google Sheets into instant JSON APIs without code.",
+    "category": "APIs, Data, and ML",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "ip.city",
+    "url": "https://ip.city",
+    "benefit": "Simple IP geolocation API.",
+    "description": "Simple IP geolocation API returning city, country and ASN data.",
+    "category": "APIs, Data, and ML",
+    "tags": [],
+    "funnel": []
+  },
+  {
+    "tool": "Abstract API",
+    "url": "https://www.abstractapi.com",
+    "benefit": "Suite of developer APIs with generous free tiers.",
+    "description": "Suite of developer APIs (IP, email, phone, exchange rates, etc.) with generous free tiers.",
+    "category": "APIs, Data, and ML",
     "tags": ["FF"],
     "funnel": []
   }
