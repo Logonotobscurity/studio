@@ -1,17 +1,28 @@
 'use client';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Hero() {
   return (
     <div className="relative overflow-hidden">
       <div 
         aria-hidden="true" 
-        className="absolute inset-0 -z-10 bg-gradient-to-br from-background via-orange-50 to-rose-100 dark:from-gray-900 dark:via-orange-950/20 dark:to-rose-950/20 animate-[gradient-xy_10s_ease_infinite]"
+        className="absolute inset-0 -z-10 animate-[gradient-xy_10s_ease_infinite]"
         style={{
             backgroundSize: '400% 400%',
         }}
-      ></div>
+      >
+        <Image 
+          src="https://placehold.co/1200x630.png"
+          alt="Abstract background gradient"
+          fill
+          priority
+          quality={80}
+          className="object-cover bg-gradient-to-br from-background via-orange-50 to-rose-100 dark:from-gray-900 dark:via-orange-950/20 dark:to-rose-950/20"
+          data-ai-hint="gradient background"
+        />
+      </div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center py-24 md:py-32">
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-balance font-headline">

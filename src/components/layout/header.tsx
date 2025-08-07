@@ -97,7 +97,7 @@ export default function Header() {
               <span className="sr-only">Open menu</span>
             </Button>
           </SheetTrigger>
-          <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-background">
+          <SheetContent side="right" className="w-3/4 bg-background">
             <div className="p-6 h-full flex flex-col">
               <div className="flex justify-between items-center mb-8">
                 <StartITLogo />

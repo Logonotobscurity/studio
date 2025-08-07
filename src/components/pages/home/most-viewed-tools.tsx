@@ -26,7 +26,15 @@ export default function MostViewedTools() {
               {popularTools.map((tool) => (
                 <li key={tool.name}>
                   <Link href={tool.href} target="_blank" rel="noopener noreferrer" className="flex items-center p-4 hover:bg-muted/50 transition-colors group">
-                    <Image src={tool.logo} alt={`${tool.name} logo`} width={40} height={40} className="rounded-md" data-ai-hint="logo" />
+                    <Image 
+                      src={tool.logo} 
+                      alt={`${tool.name} logo`} 
+                      width={40} 
+                      height={40} 
+                      className="rounded-md" 
+                      data-ai-hint="logo"
+                      sizes="40px"
+                    />
                     <div className="ml-4 flex-grow">
                       <p className="font-semibold">{tool.name}</p>
                       <p className="text-sm text-muted-foreground font-inter">{tool.category}</p>

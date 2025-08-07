@@ -27,7 +27,15 @@ export default function FoundersNote() {
         <CardContent className="p-8 md:p-12">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
             <div className="lg:col-span-1 flex flex-col items-center lg:items-start text-center lg:text-left">
-              <Image src="https://placehold.co/80x80" alt="Founder's Signature" width={80} height={80} className="rounded-full mb-4" data-ai-hint="logo abstract" />
+              <Image 
+                src="https://placehold.co/80x80" 
+                alt="Logo Oluwamayowa, Founder of StartIT" 
+                width={80} 
+                height={80} 
+                className="rounded-full mb-4" 
+                data-ai-hint="logo abstract"
+                sizes="80px"
+              />
               <h2 className="text-2xl font-bold font-headline">Founder's Note</h2>
               <p className="font-semibold mt-1">Logo Oluwamayowa</p>
               <p className="text-sm text-muted-foreground">Founder & Chief Curator</p>

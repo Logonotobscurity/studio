@@ -21,7 +21,7 @@ export default function CommandPalette({ open, setOpen }: CommandPaletteProps) {
 
   React.useEffect(() => {
     const search = async () => {
-      if (debouncedQuery.length > 2) {
+      if (debouncedQuery.trim().length > 2) {
         setLoading(true);
         try {
           const searchResults = await commandPaletteSearch({ query: debouncedQuery });
@@ -41,20 +41,25 @@ export default function CommandPalette({ open, setOpen }: CommandPaletteProps) {
 
   const handleSelect = (url: string) => {
     setOpen(false);
-    // Check if it's an internal or external link
     if (url.startsWith('/')) {
       router.push(url);
     } else {
       window.open(url, '_blank');
     }
   };
+  
+  const handleValueChange = (value: string) => {
+    if (value.length < 100) {
+      setQuery(value);
+    }
+  }
 
   return (
     <CommandDialog open={open} onOpenChange={setOpen}>
       <CommandInput 
         placeholder="Search for tools or actions..." 
         value={query}
-        onValueChange={setQuery}
+        onValueChange={handleValueChange}
       />
       <CommandList>
         {loading && (

@@ -30,7 +30,7 @@ export default function ToolDossier({ tool, onBack }: ToolDossierProps) {
 
   return (
     <div className="h-full flex flex-col">
-      <div className="p-4 border-b flex items-center gap-2 flex-shrink-0">
+      <div className="p-4 border-b flex items-center gap-2 flex-shrink-0 min-w-0">
         <Button variant="ghost" size="icon" onClick={onBack} aria-label="Back to filters">
           <ArrowLeft className="h-4 w-4" />
         </Button>
@@ -41,7 +41,7 @@ export default function ToolDossier({ tool, onBack }: ToolDossierProps) {
           <Card className="bg-transparent border-0 shadow-none">
             <CardHeader className="p-0">
               <div className="flex justify-between items-start">
-                <CardTitle className="text-2xl font-bold">{tool.tool}</CardTitle>
+                <CardTitle className="text-2xl font-bold truncate">{tool.tool}</CardTitle>
                 {tool.rating && renderStars(tool.rating)}
               </div>
               <CardDescription className="!mt-2 text-base">{tool.benefit}</CardDescription>
