@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Coffee, Newspaper, Code } from 'lucide-react';
+import { Coffee, Newspaper, Code, Badge } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
@@ -42,9 +42,11 @@ export default function Footer() {
                     Support StartIT
                   </a>
                 </Button>
-                <Button variant="outline" disabled>
+                <Button asChild variant="outline">
+                  <Link href="/digest">
                     <Newspaper className="mr-2 h-4 w-4" />
                     Weekly Digest
+                  </Link>
                 </Button>
              </div>
           </div>
@@ -64,9 +66,11 @@ export default function Footer() {
         <div className="mt-12 border-t border-border pt-8 flex flex-col sm:flex-row justify-between items-center text-sm text-muted-foreground">
           <p>&copy; {new Date().getFullYear()} StartIT. All rights reserved.</p>
           <div className="flex flex-wrap gap-4 mt-4 sm:mt-0 items-center">
-            <Button variant="ghost" size="sm" disabled>
-                <Code className="mr-2 h-4 w-4" />
-                Embed Badge
+             <Button asChild variant="ghost" size="sm">
+                <Link href="/badge">
+                    <Code className="mr-2 h-4 w-4" />
+                    Embed Badge
+                </Link>
             </Button>
             <Link href="/privacy" className="hover:text-foreground transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-foreground transition-colors">Terms of Service</Link>

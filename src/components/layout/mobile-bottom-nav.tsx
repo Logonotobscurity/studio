@@ -5,7 +5,8 @@ import { usePathname } from 'next/navigation';
 import { Home, Compass, PlusCircle, Search } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import CommandPalette from '@/components/command-palette';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 
 const navLinks = [
   { href: '/', label: 'Home', icon: Home },
@@ -15,10 +16,29 @@ const navLinks = [
 export default function MobileBottomNav() {
   const pathname = usePathname();
   const [isCommandPaletteOpen, setIsCommandPaletteOpen] = useState(false);
+  const [hidden, setHidden] = useState(false);
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = scrollY.getPrevious();
+    if (latest > previous && latest > 150) {
+      setHidden(true);
+    } else {
+      setHidden(false);
+    }
+  })
 
   return (
     <>
-      <div className="md:hidden fixed bottom-0 left-0 right-0 h-16 bg-background/80 backdrop-blur-sm border-t border-border z-50">
+      <motion.div 
+        variants={{
+          visible: { y: 0 },
+          hidden: { y: "100%" },
+        }}
+        animate={hidden ? "hidden" : "visible"}
+        transition={{ duration: 0.35, ease: "easeInOut" }}
+        className="md:hidden fixed bottom-0 left-0 right-0 h-16 bg-background/80 backdrop-blur-sm border-t border-border z-50"
+      >
         <nav className="h-full">
           <ul className="flex justify-around items-center h-full">
             {navLinks.map(({ href, label, icon: Icon }) => (
@@ -56,7 +76,7 @@ export default function MobileBottomNav() {
               </li>
           </ul>
         </nav>
-      </div>
+      </motion.div>
       <CommandPalette open={isCommandPaletteOpen} setOpen={setIsCommandPaletteOpen} />
     </>
   );

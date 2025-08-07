@@ -36,8 +36,8 @@ export default function FoundersNote() {
                 data-ai-hint="logo abstract"
                 sizes="80px"
               />
-              <h2 className="text-2xl font-bold font-headline">Founder's Note</h2>
-              <p className="font-semibold mt-1">Logo Oluwamayowa</p>
+              <h2 className="text-2xl font-bold font-headline text-foreground">Founder's Note</h2>
+              <p className="font-semibold mt-1 text-foreground">Logo Oluwamayowa</p>
               <p className="text-sm text-muted-foreground">Founder & Chief Curator</p>
             </div>
             <div className="lg:col-span-2">
