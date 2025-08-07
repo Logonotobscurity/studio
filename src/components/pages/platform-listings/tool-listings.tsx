@@ -1,7 +1,6 @@
-
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import { SlidersHorizontal, List } from 'lucide-react';
 import type { Tool } from '@/lib/tools';
 import { Button } from '@/components/ui/button';
@@ -13,6 +12,7 @@ import { useIsMobile } from '@/hooks/use-mobile';
 import { categories } from '@/data/categories';
 import Pagination from './pagination';
 import { useToolFilters } from '@/hooks/use-tool-filters';
+import { AnimatePresence } from 'framer-motion';
 
 type ToolListingsProps = {
   slug: string;
@@ -54,11 +54,12 @@ export default function ToolListings({
   };
   
   const handleOpenFilters = () => {
-    setSelectedTool(null);
+    setSelectedTool(null); // Ensure we're showing the filter list, not a specific tool
     setIsSidePanelOpen(true);
   };
 
   useEffect(() => {
+    // When the mobile side panel is closed, also clear any selected tool
     if (!isSidePanelOpen) {
       handleClearSelectedTool();
     }
@@ -79,14 +80,16 @@ export default function ToolListings({
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex">
-        {/* Desktop Side Panel */}
+        {/* Desktop Side Panel: Sticky */}
         {!isMobile && (
           <aside className="w-80 flex-shrink-0 pr-8 py-10 sticky top-16 h-[calc(100vh-4rem)]">
-            {sidePanelContent}
+            <div className="border rounded-lg h-full overflow-hidden">
+              {sidePanelContent}
+            </div>
           </aside>
         )}
         
-        <div className="flex-1 py-10 min-w-0">
+        <main className="flex-1 py-10 min-w-0">
           <header className="mb-8">
             <h1 className="text-4xl font-extrabold tracking-tight font-headline">{pageTitle}</h1>
             <p className="mt-2 text-lg text-muted-foreground">{pageDescription}</p>
@@ -113,7 +116,7 @@ export default function ToolListings({
                   </Button>
                 </SheetTrigger>
                 <SheetContent className="w-full max-w-sm p-0">
-                    {sidePanelContent}
+                  {sidePanelContent}
                 </SheetContent>
               </Sheet>
             )}
@@ -123,22 +126,29 @@ export default function ToolListings({
             Showing {paginatedTools.length} of {filteredToolCount} tools
           </div>
           
-          {paginatedTools.length > 0 ? (
-            <>
-              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-                {paginatedTools.map((tool, index) => (
-                  <ToolCard key={`${tool.tool}-${index}`} tool={tool} onSelect={handleSelectTool} />
-                ))}
-              </div>
-              <Pagination currentPage={currentPage} totalPages={totalPages} />
-            </>
-          ) : (
-            <div className="text-center py-16 border-2 border-dashed rounded-lg">
-              <p className="font-semibold text-lg">No tools found</p>
-              <p className="text-muted-foreground mt-2">Try adjusting your search or filters.</p>
-            </div>
-          )}
-        </div>
+          <AnimatePresence>
+            {paginatedTools.length > 0 ? (
+              <>
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                  {paginatedTools.map((tool, index) => (
+                    <ToolCard key={`${tool.tool}-${index}`} tool={tool} onSelect={handleSelectTool} />
+                  ))}
+                </div>
+                <Pagination currentPage={currentPage} totalPages={totalPages} />
+              </>
+            ) : (
+              <motion.div 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="text-center py-16 border-2 border-dashed rounded-lg"
+              >
+                <p className="font-semibold text-lg">No tools found</p>
+                <p className="text-muted-foreground mt-2">Try adjusting your search or filters.</p>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </main>
       </div>
     </div>
   );

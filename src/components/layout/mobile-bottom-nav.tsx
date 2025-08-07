@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 import { Home, Compass, PlusCircle, Search } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import CommandPalette from '@/components/command-palette';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 
 const navLinks = [
@@ -21,7 +21,7 @@ export default function MobileBottomNav() {
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious();
-    if (latest > previous && latest > 150) {
+    if (typeof previous === 'number' && latest > previous && latest > 150) {
       setHidden(true);
     } else {
       setHidden(false);
@@ -37,7 +37,7 @@ export default function MobileBottomNav() {
         }}
         animate={hidden ? "hidden" : "visible"}
         transition={{ duration: 0.35, ease: "easeInOut" }}
-        className="md:hidden fixed bottom-0 left-0 right-0 h-16 bg-background/80 backdrop-blur-sm border-t border-border z-50"
+        className="md:hidden fixed bottom-0 left-0 right-0 h-16 bg-background/80 backdrop-blur-sm border-t border-border z-40"
       >
         <nav className="h-full">
           <ul className="flex justify-around items-center h-full">

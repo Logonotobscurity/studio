@@ -6,6 +6,7 @@ import { ArrowLeft, ArrowUpRight, Star } from "lucide-react";
 import Link from "next/link";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { tagMap } from "@/lib/constants";
+import { motion } from "framer-motion";
 
 type ToolDossierProps = {
   tool: Tool;
@@ -29,11 +30,13 @@ export default function ToolDossier({ tool, onBack }: ToolDossierProps) {
   };
 
   return (
-    <div className="h-full flex flex-col">
+    <div className="h-full flex flex-col bg-background">
       <div className="p-4 border-b flex items-center gap-2 flex-shrink-0 min-w-0">
-        <Button variant="ghost" size="icon" onClick={onBack} aria-label="Back to filters">
-          <ArrowLeft className="h-4 w-4" />
-        </Button>
+        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          <Button variant="ghost" size="icon" onClick={onBack} aria-label="Back to filters">
+            <ArrowLeft className="h-4 w-4" />
+          </Button>
+        </motion.div>
         <h2 className="text-lg font-semibold truncate">{tool.tool}</h2>
       </div>
       <ScrollArea className="flex-grow">
@@ -74,12 +77,14 @@ export default function ToolDossier({ tool, onBack }: ToolDossierProps) {
         </div>
       </ScrollArea>
        <div className="p-6 mt-auto border-t flex-shrink-0">
-          <Button asChild className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
-            <Link href={tool.url} target="_blank" rel="noopener noreferrer">
-                Visit Website
-                <ArrowUpRight className="ml-2 h-4 w-4" />
-            </Link>
-          </Button>
+          <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+            <Button asChild className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
+              <Link href={tool.url} target="_blank" rel="noopener noreferrer">
+                  Visit Website
+                  <ArrowUpRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+          </motion.div>
        </div>
     </div>
   );
