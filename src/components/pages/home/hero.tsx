@@ -9,19 +9,16 @@ export default function Hero() {
     <div className="relative overflow-hidden">
       <div 
         aria-hidden="true" 
-        className="absolute inset-0 -z-10 animate-[gradient-xy_10s_ease_infinite]"
-        style={{
-            backgroundSize: '400% 400%',
-        }}
+        className="absolute inset-0 -z-10"
       >
         <Image 
-          src="https://placehold.co/1200x630.png"
-          alt="Abstract background gradient"
+          src="https://storage.googleapis.com/project-1-426801-files/681729221147.png"
+          alt="Abstract sphere background"
           fill
           priority
           quality={80}
-          className="object-cover bg-gradient-to-br from-background via-orange-50 to-rose-100 dark:from-gray-900 dark:via-orange-950/20 dark:to-rose-950/20"
-          data-ai-hint="gradient background"
+          className="object-cover"
+          data-ai-hint="abstract sphere"
           sizes="100vw"
         />
       </div>
