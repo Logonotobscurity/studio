@@ -6,8 +6,8 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <div className="relative overflow-hidden isolate">
-      <div 
+    <div className="relative overflow-hidden">
+       <div 
         aria-hidden="true" 
         className="absolute inset-0 -z-10"
       >
@@ -27,7 +27,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="container mx-auto px-4 sm:px-6 lg:px-8"
+        className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8"
       >
         <div className="text-center py-24 md:py-32">
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-balance font-headline">
