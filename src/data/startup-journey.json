@@ -1,0 +1,580 @@
+[
+  {
+    "category": "Problems & Need-Gaps",
+    "items": [
+      {
+        "name": "NeedGap",
+        "url": "https://needgap.com",
+        "description": "Community-curated list of real-world problems waiting for solutions.",
+        "tags": "problems, community, mvp"
+      },
+      {
+        "name": "80,000 Hours Problem Profiles",
+        "url": "https://80000hours.org/problem-profiles",
+        "description": "In-depth analyses of high-impact global problems.",
+        "tags": "impact, research, social"
+      }
+    ]
+  },
+  {
+    "category": "Startup Idea & MVP",
+    "items": [
+      {
+        "name": "NeedGap (again)",
+        "url": "https://needgap.com",
+        "description": "Validate ideas by discovering pains people will pay to solve.",
+        "tags": "validation, pain-points"
+      }
+    ]
+  },
+  {
+    "category": "School & Accelerators",
+    "items": [
+      {
+        "name": "Y Combinator Startup School",
+        "url": "https://startupschool.org",
+        "description": "Free online course + community for early-stage founders.",
+        "tags": "yc, accelerator, education"
+      }
+    ]
+  },
+  {
+    "category": "Blogs & Reading Lists",
+    "items": [
+      { "name": "Paul Graham Essays", "url": "https://paulgraham.com", "description": "Classic essays on startups & life.", "tags": "essays, yc" },
+      { "name": "Stratechery", "url": "https://stratechery.com", "description": "Daily analysis of tech & strategy.", "tags": "strategy, tech" },
+      { "name": "The Money Illusion", "url": "https://themoneyillusion.com", "description": "Macro-economics insights by Scott Sumner.", "tags": "economics" },
+      { "name": "Bayesian Investor", "url": "https://www.bayesianinvestor.com", "description": "Data-driven investment thoughts.", "tags": "investing, data" },
+      { "name": "Seth’s Blog", "url": "https://seths.blog", "description": "Daily nuggets on marketing & leadership.", "tags": "marketing, leadership" },
+      { "name": "Hit Startup", "url": "https://hitstartup.com", "description": "Curated articles for bootstrappers.", "tags": "bootstrapping" },
+      { "name": "Charlax Reading List", "url": "https://github.com/charlax/reading-list", "description": "Engineering-manager reading list.", "tags": "engineering, management" },
+      { "name": "The Architecture of Open Source Applications", "url": "https://aosabook.org", "description": "Deep dives into OSS design choices.", "tags": "architecture, oss" }
+    ]
+  },
+  {
+    "category": "Software Architecture & Patterns",
+    "items": [
+      { "name": "Refactoring Guru", "url": "https://refactoring.guru", "description": "Visual explanations of design patterns & refactoring.", "tags": "patterns, refactoring" },
+      { "name": "Architecture Notes", "url": "https://github.com/kettanaito/architecture-notes", "description": "Practical system-design cheat-sheets.", "tags": "design, notes" }
+    ]
+  },
+  {
+    "category": "Communities & People",
+    "items": [
+      { "name": "r/startups", "url": "https://reddit.com/r/startups", "description": "Ask, share & learn from founders.", "tags": "reddit, founders" },
+      { "name": "r/SaaS", "url": "https://reddit.com/r/SaaS", "description": "Discussions on SaaS growth & ops.", "tags": "reddit, saas" },
+      { "name": "Hacker News Ask", "url": "https://news.ycombinator.com/ask", "description": "Crowd-sourced founder advice.", "tags": "hackernews" },
+      { "name": "r/hwstartups", "url": "https://reddit.com/r/hwstartups", "description": "Hardware startup community.", "tags": "hardware" },
+      { "name": "FounderList", "url": "https://founderlist.com", "description": "Curated founder network & deals.", "tags": "network, founders" },
+      { "name": "CoFoundersLab", "url": "https://cofounderslab.com", "description": "Match with co-founders & advisors.", "tags": "cofounder, matching" },
+      { "name": "YC Co-Founder Matching", "url": "https://cofounder-matching.ycombinator.com", "description": "YC-backed co-founder search.", "tags": "yc, matching" },
+      { "name": "AngelList Recruit", "url": "https://angel.co/recruit", "description": "Hire early employees with equity.", "tags": "recruiting, equity" },
+      { "name": "LinkedIn", "url": "https://linkedin.com", "description": "Professional network & recruiting.", "tags": "networking, hiring" },
+      { "name": "GitHub", "url": "https://github.com", "description": "Source talent via open-source.", "tags": "talent, oss" },
+      { "name": "Stack Overflow", "url": "https://stackoverflow.com", "description": "Q&A & job board for devs.", "tags": "qa, hiring" }
+    ]
+  },
+  {
+    "category": "Professionals & Freelance",
+    "items": [
+      { "name": "Fiverr", "url": "https://fiverr.com", "description": "Gig marketplace for quick tasks.", "tags": "gigs, marketplace" },
+      { "name": "FlexJobs", "url": "https://flexjobs.com", "description": "Curated remote & flexible jobs.", "tags": "remote, jobs" },
+      { "name": "Dribbble", "url": "https://dribbble.com", "description": "Hire top designers & creatives.", "tags": "design, portfolio" },
+      { "name": "Hatchways", "url": "https://hatchways.io", "description": "Practical developer hiring tests.", "tags": "hiring, tests" },
+      { "name": "Upwork", "url": "https://upwork.com", "description": "Global freelance marketplace.", "tags": "freelance, marketplace" },
+      { "name": "Flexiple", "url": "https://flexiple.com", "description": "Pre-vetted tech freelancers.", "tags": "freelance, vetting" },
+      { "name": "Toptal", "url": "https://toptal.com", "description": "Top 3 % freelance talent network.", "tags": "elite, freelance" }
+    ]
+  },
+  {
+    "category": "Salary & Equity Benchmarking",
+    "items": [
+      { "name": "Levels.fyi", "url": "https://levels.fyi", "description": "Tech compensation crowdsourced data.", "tags": "salary, equity" },
+      { "name": "Stack Overflow Salary", "url": "https://stackoverflow.com/jobs/salary", "description": "Dev salary calculator.", "tags": "salary, dev" },
+      { "name": "TotalComp", "url": "https://totalcomp.io", "description": "Full-stack comp benchmarking.", "tags": "compensation" },
+      { "name": "Foundrs", "url": "https://foundrs.com", "description": "Founder equity split calculator.", "tags": "equity, calculator" }
+    ]
+  },
+  {
+    "category": "Naming & Domains",
+    "items": [
+      { "name": "WordSafety", "url": "https://wordsafety.com", "description": "Check name safety across languages.", "tags": "naming, safety" },
+      { "name": "Naming Tools", "url": "https://naming-tools.com", "description": "Curated naming generators.", "tags": "naming, generator" },
+      { "name": "NameMesh", "url": "https://namemesh.com", "description": "Instant domain & social handle search.", "tags": "domains, social" },
+      { "name": "Namelix", "url": "https://namelix.com", "description": "AI-powered brand name generator.", "tags": "ai, naming" },
+      { "name": "NameChk", "url": "https://namechk.com", "description": "Username availability checker.", "tags": "username, social" },
+      { "name": "Namify", "url": "https://namify.com", "description": "Smart brand & domain name generator.", "tags": "naming, brand" }
+    ]
+  },
+  {
+    "category": "Compliance & Legal",
+    "items": [
+      { "name": "Capbase", "url": "https://capbase.com", "description": "Legal & equity management for startups.", "tags": "legal, equity" },
+      { "name": "AvoDocs", "url": "https://avodocs.com", "description": "Auto-generated legal docs.", "tags": "legal, docs" },
+      { "name": "Iubenda", "url": "https://iubenda.com", "description": "GDPR & CCPA compliance generator.", "tags": "gdpr, privacy" },
+      { "name": "Juro", "url": "https://juro.com", "description": "Contract automation platform.", "tags": "contracts, saas" }
+    ]
+  },
+  {
+    "category": "Company Formation",
+    "items": [
+      { "name": "Stripe Atlas", "url": "https://stripe.com/atlas", "description": "Incorporate a US C-corp in days.", "tags": "incorporation, usa" },
+      { "name": "StartFleet", "url": "https://startfleet.io", "description": "Global entity formation & banking.", "tags": "incorporation, banking" },
+      { "name": "Xolo", "url": "https://xolo.io", "description": "Launch & run a EU e-resident company.", "tags": "e-residency, eu" }
+    ]
+  },
+  {
+    "category": "Programming Languages",
+    "items": [
+      { "name": "Rust", "url": "https://rust-lang.org", "description": "Systems language for safety & speed.", "tags": "systems, safety" },
+      { "name": "C++", "url": "https://isocpp.org", "description": "High-performance language standard.", "tags": "performance" },
+      { "name": "Go", "url": "https://golang.org", "description": "Simple, fast, cloud-native language.", "tags": "cloud, concurrency" },
+      { "name": "Java", "url": "https://java.com", "description": "Enterprise-grade runtime & ecosystem.", "tags": "enterprise" },
+      { "name": "HTML Living Standard", "url": "https://html.spec.whatwg.org", "description": "Official HTML spec.", "tags": "web, spec" },
+      { "name": "TypeScript", "url": "https://typescriptlang.org", "description": "Typed superset of JavaScript.", "tags": "javascript, types" },
+      { "name": "JavaScript", "url": "https://javascript.com", "description": "Ubiquitous web scripting language.", "tags": "web, scripting" },
+      { "name": "WebAssembly", "url": "https://webassembly.org", "description": "Binary format for near-native web apps.", "tags": "web, performance" },
+      { "name": "PHP", "url": "https://php.net", "description": "Server-side scripting for web.", "tags": "web" },
+      { "name": "Ruby", "url": "https://ruby-lang.org", "description": "Productive, object-oriented scripting.", "tags": "productivity" },
+      { "name": "Lua", "url": "https://lua.org", "description": "Lightweight embeddable scripting.", "tags": "embeddable" },
+      { "name": "Python", "url": "https://python.org", "description": "Versatile high-level language.", "tags": "versatile" },
+      { "name": "Julia", "url": "https://julialang.org", "description": "High-performance technical computing.", "tags": "scientific" },
+      { "name": "R", "url": "https://r-project.org", "description": "Statistical computing & graphics.", "tags": "statistics" },
+      { "name": "GraphQL", "url": "https://graphql.org", "description": "Query language for APIs.", "tags": "api, query" },
+      { "name": ".NET", "url": "https://dotnet.microsoft.com", "description": "Cross-platform developer platform.", "tags": "microsoft, cross-platform" },
+      { "name": "Kotlin", "url": "https://kotlinlang.org", "description": "Modern JVM/Android language.", "tags": "jvm, android" },
+      { "name": "Swift", "url": "https://swift.org", "description": "Apple’s safe, fast language.", "tags": "apple, ios" }
+    ]
+  },
+  {
+    "category": "Databases",
+    "items": [
+      { "name": "PostgreSQL", "url": "https://postgresql.org", "description": "Advanced open-source relational DB.", "tags": "sql, relational" },
+      { "name": "SQLite", "url": "https://sqlite.org", "description": "Lightweight serverless SQL DB.", "tags": "embedded, sql" },
+      { "name": "Memcached", "url": "https://memcached.org", "description": "In-memory key-value cache.", "tags": "cache, memory" },
+      { "name": "LevelDB", "url": "https://leveldb.org", "description": "Fast key-value storage library.", "tags": "embedded, kv" },
+      { "name": "Redis", "url": "https://redis.io", "description": "In-memory data structure store.", "tags": "cache, nosql" },
+      { "name": "MongoDB", "url": "https://mongodb.com", "description": "Document-oriented NoSQL DB.", "tags": "nosql, documents" },
+      { "name": "Couchbase", "url": "https://couchbase.com", "description": "Distributed NoSQL document DB.", "tags": "nosql, distributed" },
+      { "name": "Neo4j", "url": "https://neo4j.com", "description": "Graph database for connected data.", "tags": "graph, nosql" },
+      { "name": "Timescale", "url": "https://timescale.com", "description": "Time-series SQL DB on Postgres.", "tags": "timeseries, postgres" },
+      { "name": "CockroachDB", "url": "https://cockroachlabs.com", "description": "Distributed, resilient SQL DB.", "tags": "distributed, sql" },
+      { "name": "ScyllaDB", "url": "https://scylladb.com", "description": "High-performance Cassandra alternative.", "tags": "cassandra, performance" },
+      { "name": "Fly.io Postgres", "url": "https://fly.io", "description": "Globally-distributed Postgres clusters.", "tags": "postgres, global" },
+      { "name": "Splitgraph", "url": "https://splitgraph.com", "description": "Versioned SQL analytics hub.", "tags": "analytics, versioning" },
+      { "name": "RxDB", "url": "https://rxdb.info", "description": "Reactive client-side database.", "tags": "reactive, client" },
+      { "name": "Beekeeper Studio", "url": "https://beekeeperstudio.io", "description": "Modern SQL editor & manager.", "tags": "sql, gui" }
+    ]
+  },
+  {
+    "category": "Frameworks & Runtimes",
+    "items": [
+      { "name": "React", "url": "https://reactjs.org", "description": "UI library for web apps.", "tags": "ui, web" },
+      { "name": "Angular", "url": "https://angular.io", "description": "Full-featured web framework.", "tags": "spa, google" },
+      { "name": "Ember.js", "url": "https://emberjs.com", "description": "Opinionated JS framework.", "tags": "spa, conventions" },
+      { "name": "Vue.js", "url": "https://vuejs.org", "description": "Progressive JS framework.", "tags": "spa, progressive" },
+      { "name": "Svelte", "url": "https://svelte.dev", "description": "Compile-time reactive framework.", "tags": "compiler, reactive" },
+      { "name": "Marionette.js", "url": "https://marionettejs.com", "description": "Backbone-based composite apps.", "tags": "backbone, mvc" },
+      { "name": "MVP.css", "url": "https://andybrewer.github.io/mvp", "description": "Minimalist class-less CSS framework.", "tags": "css, minimal" },
+      { "name": "Tailwind CSS", "url": "https://tailwindcss.com", "description": "Utility-first CSS framework.", "tags": "css, utility" },
+      { "name": "Bootstrap", "url": "https://getbootstrap.com", "description": "Popular responsive CSS framework.", "tags": "css, responsive" },
+      { "name": "Radix UI", "url": "https://radix-ui.com", "description": "Unstyled accessible components.", "tags": "ui, a11y" },
+      { "name": "Tailwind UI", "url": "https://tailwindui.com", "description": "Ready-made Tailwind components.", "tags": "tailwind, ui-kit" },
+      { "name": "Tailwind Templates", "url": "https://tailwindtemplates.io", "description": "Free Tailwind landing pages.", "tags": "templates, tailwind" },
+      { "name": "Ruby on Rails", "url": "https://rubyonrails.org", "description": "Full-stack web MVC framework.", "tags": "ruby, mvc" },
+      { "name": "Laravel", "url": "https://laravel.com", "description": "Elegant PHP web framework.", "tags": "php, mvc" },
+      { "name": "Next.js", "url": "https://nextjs.org", "description": "React framework for production.", "tags": "react, ssr" },
+      { "name": "SvelteKit", "url": "https://kit.svelte.dev", "description": "Svelte app framework.", "tags": "svelte, ssr" },
+      { "name": "Remix", "url": "https://remix.run", "description": "Full-stack React framework.", "tags": "react, full-stack" },
+      { "name": "Deno", "url": "https://deno.land", "description": "Secure TypeScript runtime.", "tags": "typescript, runtime" },
+      { "name": "Node.js", "url": "https://nodejs.org", "description": "JavaScript runtime for servers.", "tags": "javascript, runtime" },
+      { "name": "Flutter", "url": "https://flutter.dev", "description": "UI toolkit for cross-platform apps.", "tags": "dart, mobile" },
+      { "name": "React Native", "url": "https://reactnative.dev", "description": "Build native mobile apps with React.", "tags": "react, mobile" },
+      { "name": "FlutterFlow", "url": "https://flutterflow.io", "description": "Low-code Flutter builder.", "tags": "flutter, low-code" },
+      { "name": "Adalo", "url": "https://adalo.com", "description": "No-code mobile app builder.", "tags": "nocode, mobile" },
+      { "name": "Judo", "url": "https://judo.app", "description": "Design-to-code for SwiftUI.", "tags": "swiftui, design" },
+      { "name": "Glide", "url": "https://glideapps.com", "description": "Turn spreadsheets into apps.", "tags": "nocode, sheets" },
+      { "name": "Bubble", "url": "https://bubble.io", "description": "Visual web-app builder.", "tags": "nocode, web" },
+      { "name": "Wix Velo", "url": "https://wix.com/velo", "description": "Full-stack development on Wix.", "tags": "nocode, wix" },
+      { "name": "Softr", "url": "https://softr.io", "description": "Build web apps on Airtable.", "tags": "nocode, airtable" },
+      { "name": "Utopia", "url": "https://utopia.app", "description": "Design-to-code React components.", "tags": "design, react" },
+      { "name": "Unflow", "url": "https://unflow.com", "description": "Mobile on-boarding flows without code.", "tags": "onboarding, nocode" },
+      { "name": "Jupyter", "url": "https://jupyter.org", "description": "Interactive notebooks for data science.", "tags": "notebooks, data-science" }
+    ]
+  },
+  {
+    "category": "API & Security",
+    "items": [
+      { "name": "Public APIs List", "url": "https://github.com/public-apis/public-apis", "description": "Curated list of free public APIs.", "tags": "api, list" },
+      { "name": "Hoppscotch", "url": "https://hoppscotch.io", "description": "Open-source API testing client.", "tags": "api, testing" },
+      { "name": "ShaderToy", "url": "https://shadertoy.com", "description": "Community GLSL shader showcase.", "tags": "shaders, webgl" },
+      { "name": "Tixy Land", "url": "https://tixy.land", "description": "Minimalist generative art canvas.", "tags": "generative, art" },
+      { "name": "Sliderland", "url": "https://sliderland.com", "description": "Interactive audio-visual playground.", "tags": "audio, visuals" },
+      { "name": "OWASP", "url": "https://owasp.org", "description": "Open-source security foundation.", "tags": "security, standards" },
+      { "name": "Sqreen", "url": "https://sqreen.com", "description": "App security monitoring & RASP.", "tags": "security, monitoring" },
+      { "name": "Frida", "url": "https://frida.re", "description": "Dynamic instrumentation toolkit.", "tags": "reverse, mobile" },
+      { "name": "Ghidra", "url": "https://ghidra.re", "description": "NSA open-source reverse-engineering suite.", "tags": "reverse, binary" },
+      { "name": "Qodana", "url": "https://jetbrains.com/qodana", "description": "JetBrains static analysis for CI.", "tags": "static-analysis, ci" }
+    ]
+  },
+  {
+    "category": "Testing & QA",
+    "items": [
+      { "name": "Appcircle", "url": "https://appcircle.io", "description": "Mobile CI/CD & testing platform.", "tags": "mobile, ci-cd" },
+      { "name": "Awesome Tunneling", "url": "https://github.com/anderspitman/awesome-tunneling", "description": "Curated list of network-tunnel tools.", "tags": "tunnel, network" }
+    ]
+  },
+  {
+    "category": "Training & Courses",
+    "items": [
+      { "name": "freeCodeCamp", "url": "https://freecodecamp.org", "description": "Free coding curriculum & certs.", "tags": "education, free" },
+      { "name": "CodeCrafters", "url": "https://codecrafters.io", "description": "Build complex projects step-by-step.", "tags": "hands-on, projects" }
+    ]
+  },
+  {
+    "category": "Cloud Platforms & Runtimes",
+    "items": [
+      { "name": "Fly.io", "url": "https://fly.io", "description": "Globally-distributed app runtime.", "tags": "global, containers" },
+      { "name": "Vercel", "url": "https://vercel.com", "description": "Frontend cloud with zero-config deploys.", "tags": "frontend, serverless" },
+      { "name": "Render", "url": "https://render.com", "description": "Unified cloud for web & workers.", "tags": "paas, web" },
+      { "name": "Railway", "url": "https://railway.app", "description": "Instant deploys from Git.", "tags": "paas, git" },
+      { "name": "Google App Engine", "url": "https://cloud.google.com/appengine", "description": "Fully-managed serverless platform.", "tags": "serverless, google" },
+      { "name": "Dokku", "url": "https://dokku.com", "description": "Mini-Heroku on your server.", "tags": "self-hosted, heroku" },
+      { "name": "Ledokku", "url": "https://ledokku.com", "description": "GUI for Dokku.", "tags": "dokku, gui" },
+      { "name": "CapRover", "url": "https://caprover.com", "description": "One-click Docker self-hosted PaaS.", "tags": "docker, self-hosted" },
+      { "name": "AWS Lambda", "url": "https://aws.amazon.com/lambda", "description": "Serverless functions on AWS.", "tags": "serverless, faas" },
+      { "name": "Azure Functions", "url": "https://azure.microsoft.com/functions", "description": "Event-driven serverless compute.", "tags": "serverless, azure" },
+      { "name": "Google Cloud Functions", "url": "https://cloud.google.com/functions", "description": "Lightweight serverless runtime.", "tags": "serverless, google" },
+      { "name": "Piku", "url": "https://github.com/piku/piku", "description": "Git-push-to-deploy for tiny clouds.", "tags": "git-push, minimal" },
+      { "name": "Supabase", "url": "https://supabase.com", "description": "Open-source Firebase alternative.", "tags": "baas, postgres" },
+      { "name": "PocketBase", "url": "https://pocketbase.io", "description": "One-file open-source backend.", "tags": "baas, go" },
+      { "name": "Firebase", "url": "https://firebase.google.com", "description": "Google’s mobile & web backend.", "tags": "baas, google" },
+      { "name": "Parse", "url": "https://parseplatform.org", "description": "Open-source backend framework.", "tags": "baas, open-source" },
+      { "name": "Appwrite", "url": "https://appwrite.io", "description": "End-to-end backend server for web & mobile.", "tags": "baas, oss" }
+    ]
+  },
+  {
+    "category": "Infrastructure as Code & DNS / CDN",
+    "items": [
+      { "name": "Terraform", "url": "https://terraform.io", "description": "Infrastructure as code for any cloud.", "tags": "iac, cloud" },
+      { "name": "Infracost", "url": "https://infracost.io", "description": "Cloud cost estimates for Terraform.", "tags": "cost, terraform" },
+      { "name": "Hetzner", "url": "https://hetzner.com", "description": "European cloud & bare metal.", "tags": "vps, europe" },
+      { "name": "DigitalOcean", "url": "https://digitalocean.com", "description": "Developer-friendly cloud VPS.", "tags": "vps, droplets" },
+      { "name": "Scaleway", "url": "https://scaleway.com", "description": "European cloud infrastructure.", "tags": "vps, eu" },
+      { "name": "Vultr", "url": "https://vultr.com", "description": "High-performance cloud compute.", "tags": "vps, performance" },
+      { "name": "OVHcloud", "url": "https://ovh.com", "description": "Global cloud & bare metal provider.", "tags": "cloud, bare-metal" },
+      { "name": "AWS EC2", "url": "https://aws.amazon.com/ec2", "description": "Scalable cloud compute.", "tags": "iaas, aws" },
+      { "name": "Azure VMs", "url": "https://azure.microsoft.com/virtual-machines", "description": "Microsoft cloud compute.", "tags": "iaas, azure" },
+      { "name": "Google Compute Engine", "url": "https://cloud.google.com/compute", "description": "Google’s scalable VMs.", "tags": "iaas, google" },
+      { "name": "Oracle Cloud", "url": "https://oracle.com/cloud", "description": "Enterprise cloud services.", "tags": "enterprise, iaas" },
+      { "name": "Lambda Labs", "url": "https://lambdalabs.com", "description": "GPU cloud for ML workloads.", "tags": "gpu, ml" },
+      { "name": "Cloudflare", "url": "https://cloudflare.com", "description": "Global CDN, DNS & security.", "tags": "cdn, dns, security" },
+      { "name": "Constellix", "url": "https://constellix.com", "description": "DNS traffic management.", "tags": "dns, traffic" },
+      { "name": "Bunny.net", "url": "https://bunny.net", "description": "Affordable CDN with global POPs.", "tags": "cdn, affordable" }
+    ]
+  },
+  {
+    "category": "Search & Analytics",
+    "items": [
+      { "name": "Algolia", "url": "https://algolia.com", "description": "Hosted search API with typo tolerance.", "tags": "search, hosted" },
+      { "name": "Typesense", "url": "https://typesense.org", "description": "Open-source typo-tolerant search.", "tags": "search, open-source" },
+      { "name": "Elasticsearch", "url": "https://elastic.co", "description": "Distributed search & analytics engine.", "tags": "search, analytics" },
+      { "name": "Swiftype", "url": "https://swiftype.com", "description": "Enterprise search solution.", "tags": "enterprise, search" },
+      { "name": "Fathom", "url": "https://usefathom.com", "description": "Privacy-first website analytics.", "tags": "analytics, privacy" },
+      { "name": "Plausible", "url": "https://plausible.io", "description": "Open-source privacy analytics.", "tags": "analytics, privacy" },
+      { "name": "HockeyStack", "url": "https://hockeystack.com", "description": "B2B SaaS product analytics.", "tags": "saas, analytics" },
+      { "name": "Google Analytics", "url": "https://analytics.google.com", "description": "Standard web & app analytics.", "tags": "analytics, google" },
+      { "name": "Mixpanel", "url": "https://mixpanel.com", "description": "Event-based product analytics.", "tags": "events, analytics" },
+      { "name": "GoAccess", "url": "https://goaccess.io", "description": "Real-time web log analyzer.", "tags": "logs, cli" },
+      { "name": "Matomo", "url": "https://matomo.org", "description": "Self-hosted web analytics.", "tags": "analytics, self-host" },
+      { "name": "UXWizz", "url": "https://uxwizz.com", "description": "Self-hosted user-analytics.", "tags": "analytics, self-host" }
+    ]
+  },
+  {
+    "category": "Monitoring & Logging",
+    "items": [
+      { "name": "Sentry", "url": "https://sentry.io", "description": "Error tracking & performance.", "tags": "errors, performance" },
+      { "name": "Prometheus", "url": "https://prometheus.io", "description": "Open-source metrics & alerting.", "tags": "metrics, alerting" },
+      { "name": "Confluent", "url": "https://confluent.io", "description": "Event streaming with Kafka.", "tags": "kafka, streaming" },
+      { "name": "Honeycomb", "url": "https://honeycomb.io", "description": "Observability for modern systems.", "tags": "observability" },
+      { "name": "Rookout", "url": "https://rookout.com", "description": "Live debugging for production.", "tags": "debugging, live" },
+      { "name": "UptimeRobot", "url": "https://uptimerobot.com", "description": "Free uptime monitoring.", "tags": "uptime, monitoring" },
+      { "name": "Fluentd", "url": "https://fluentd.org", "description": "Open-source data collector.", "tags": "logs, collector" },
+      { "name": "Logz.io", "url": "https://logz.io", "description": "ELK-based cloud logging.", "tags": "logs, elk" },
+      { "name": "lnav", "url": "https://lnav.org", "description": "Advanced terminal log viewer.", "tags": "logs, cli" }
+    ]
+  },
+  {
+    "category": "Design & Graphics Tools",
+    "items": [
+      { "name": "Canva", "url": "https://canva.com", "description": "Drag-and-drop design tool.", "tags": "design, templates" },
+      { "name": "Affinity Photo", "url": "https://affinity.serif.com/photo", "description": "Professional raster graphics editor.", "tags": "photo, editing" },
+      { "name": "Stencil", "url": "https://stencil.com", "description": "Quick social-media graphics.", "tags": "social, graphics" },
+      { "name": "Photopea", "url": "https://photopea.com", "description": "Free browser-based Photoshop clone.", "tags": "photo, web" },
+      { "name": "PicsArt", "url": "https://picsart.com", "description": "Photo & video editor with social.", "tags": "photo, video" },
+      { "name": "GIMP", "url": "https://gimp.org", "description": "Open-source image editor.", "tags": "photo, oss" },
+      { "name": "Motionity", "url": "https://motionity.app", "description": "Open-source web motion graphics.", "tags": "motion, oss" },
+      { "name": "Figma", "url": "https://figma.com", "description": "Collaborative interface design.", "tags": "ui, collaboration" },
+      { "name": "Stage", "url": "https://stage.so", "description": "Create 3D mockups & prototypes.", "tags": "3d, mockups" },
+      { "name": "MockRocket", "url": "https://mockrocket.com", "description": "Device mockup generator.", "tags": "mockups, 3d" },
+      { "name": "Screely", "url": "https://screely.com", "description": "Instant browser mockups.", "tags": "mockups, screenshots" },
+      { "name": "Overflow", "url": "https://overflow.io", "description": "User-flow diagrams & presentations.", "tags": "flows, ux" },
+      { "name": "Spline", "url": "https://spline.design", "description": "3D design tool for web.", "tags": "3d, web" },
+      { "name": "Krita", "url": "https://krita.org", "description": "Open-source digital painting.", "tags": "painting, oss" },
+      { "name": "Inkscape", "url": "https://inkscape.org", "description": "Open-source vector graphics.", "tags": "vector, oss" },
+      { "name": "Affinity Designer", "url": "https://affinity.serif.com/designer", "description": "Vector & raster design.", "tags": "vector, raster" },
+      { "name": "Aseprite", "url": "https://aseprite.org", "description": "Animated sprite & pixel art editor.", "tags": "pixel, animation" },
+      { "name": "Pixilart", "url": "https://pixilart.com", "description": "Pixel-art social platform.", "tags": "pixel, social" }
+    ]
+  },
+  {
+    "category": "Design Resources",
+    "items": [
+      { "name": "Color Hunt", "url": "https://colorhunt.co", "description": "Curated color palettes.", "tags": "color, palette" },
+      { "name": "Coolors", "url": "https://coolors.co", "description": "Generate color schemes instantly.", "tags": "color, generator" },
+      { "name": "Material Color Tool", "url": "https://material.io/resources/color", "description": "Material Design color palettes.", "tags": "material, color" },
+      { "name": "ColorDrop", "url": "https://colordrop.io", "description": "Hand-picked flat color combos.", "tags": "color, flat" },
+      { "name": "Lospec", "url": "https://lospec.com", "description": "Pixel-art palettes & tutorials.", "tags": "pixel, palettes" },
+      { "name": "Subtle Patterns", "url": "https://toptal.com/designers/subtlepatterns", "description": "Free tiling textures.", "tags": "textures, patterns" },
+      { "name": "Filters", "url": "https://filterss.com", "description": "CSS photo filters generator.", "tags": "css, filters" },
+      { "name": "UI Glass Generator", "url": "https://ui.glass/generator", "description": "Glassmorphism CSS generator.", "tags": "css, glass" },
+      { "name": "Android Asset Studio", "url": "https://romannurik.github.io/AndroidAssetStudio", "description": "Generate Android assets.", "tags": "android, assets" },
+      { "name": "Real Favicon Generator", "url": "https://realfavicongenerator.net", "description": "Cross-device favicons.", "tags": "favicon, pwa" },
+      { "name": "CSS3 Please", "url": "https://css3please.com", "description": "Interactive CSS3 rules.", "tags": "css3, playground" },
+      { "name": "Flexbox Please", "url": "https://flexboxplease.com", "description": "Flexbox playground.", "tags": "flexbox, playground" },
+      { "name": "Neumorphism.io", "url": "https://neumorphism.io", "description": "Neumorphic CSS generator.", "tags": "css, neumorphism" },
+      { "name": "Pexels", "url": "https://pexels.com", "description": "Free high-quality stock photos.", "tags": "stock, photos" },
+      { "name": "StockSnap", "url": "https://stocksnap.io", "description": "CC0 stock photography.", "tags": "stock, cc0" },
+      { "name": "Unsplash", "url": "https://unsplash.com", "description": "Free high-res images.", "tags": "stock, free" },
+      { "name": "Pixabay", "url": "https://pixabay.com", "description": "Free images & videos.", "tags": "stock, multimedia" },
+      { "name": "Freepik", "url": "https://freepik.com", "description": "Free vectors, photos, PSDs.", "tags": "vector, psd" },
+      { "name": "Flaticon", "url": "https://flaticon.com", "description": "Free vector icons.", "tags": "icons, vector" },
+      { "name": "The Noun Project", "url": "https://thenounproject.com", "description": "Icons for everything.", "tags": "icons, symbols" },
+      { "name": "IconFinder", "url": "https://iconfinder.com", "description": "Searchable icon marketplace.", "tags": "icons, marketplace" },
+      { "name": "LineIcons", "url": "https://lineicons.com", "description": "Hand-crafted line icons.", "tags": "icons, line" }
+    ]
+  },
+  {
+    "category": "Audio & Music",
+    "items": [
+      { "name": "One Man Band", "url": "https://onemanband.co", "description": "Instant AI background music.", "tags": "ai, music" },
+      { "name": "YouTube Audio Library", "url": "https://youtube.com/audiolibrary", "description": "Free music & sound effects.", "tags": "royalty-free, sfx" },
+      { "name": "NoCopyrightSounds", "url": "https://nocopyrightsounds.co.uk", "description": "Free music for creators.", "tags": "royalty-free, edm" },
+      { "name": "Riot Games Music", "url": "https://riotgamesmusic.com", "description": "Gaming soundtracks.", "tags": "gaming, music" },
+      { "name": "Earworm", "url": "https://earworm.app", "description": "AI music generator.", "tags": "ai, generator" },
+      { "name": "Freesound", "url": "https://freesound.org", "description": "Collaborative sound database.", "tags": "sfx, community" },
+      { "name": "FreePats", "url": "https://freepats.zenvoid.org", "description": "Open-source instrument samples.", "tags": "samples, oss" }
+    ]
+  },
+  {
+    "category": "Podcast & Voice",
+    "items": [
+      { "name": "Transistor", "url": "https://transistor.fm", "description": "Podcast hosting & analytics.", "tags": "podcast, hosting" }
+    ]
+  },
+  {
+    "category": "Project & Team Management",
+    "items": [
+      { "name": "Notion", "url": "https://notion.so", "description": "All-in-one workspace.", "tags": "docs, tasks, wiki" },
+      { "name": "Trello", "url": "https://trello.com", "description": "Kanban boards for teams.", "tags": "kanban, boards" },
+      { "name": "Basecamp", "url": "https://basecamp.com", "description": "Project management & communication.", "tags": "pm, chat" },
+      { "name": "Wrike", "url": "https://wrike.com", "description": "Enterprise work management.", "tags": "enterprise, pm" },
+      { "name": "Asana", "url": "https://asana.com", "description": "Task & project tracking.", "tags": "tasks, pm" },
+      { "name": "Smartsheet", "url": "https://smartsheet.com", "description": "Spreadsheet-like project mgmt.", "tags": "spreadsheets, pm" },
+      { "name": "Zoho Projects", "url": "https://zoho.com/projects", "description": "Online project management.", "tags": "pm, zoho" },
+      { "name": "Zenkit Base", "url": "https://zenkit.com/base", "description": "Unified team workspace.", "tags": "workspace, zenkit" },
+      { "name": "Hypercontext", "url": "https://hypercontext.com", "description": "One-on-one & team meeting tool.", "tags": "1-on-1, meetings" },
+      { "name": "Lattice", "url": "https://lattice.com", "description": "People management & OKRs.", "tags": "hr, okr" },
+      { "name": "Pause", "url": "https://pause.so", "description": "Time-off management.", "tags": "leave, hr" }
+    ]
+  },
+  {
+    "category": "CRM & Support",
+    "items": [
+      { "name": "Zoho CRM", "url": "https://zoho.com/crm", "description": "Sales pipeline management.", "tags": "crm, sales" },
+      { "name": "HubSpot CRM", "url": "https://hubspot.com/crm", "description": "Free CRM for growing teams.", "tags": "crm, free" },
+      { "name": "Freshsales", "url": "https://freshsales.com", "description": "Sales CRM with AI insights.", "tags": "sales, ai" },
+      { "name": "Salesforce Essentials", "url": "https://salesforce.com/essentials", "description": "Small-biz CRM by Salesforce.", "tags": "crm, smb" },
+      { "name": "Pipedrive", "url": "https://pipedrive.com", "description": "Pipeline-focused CRM.", "tags": "sales, pipeline" },
+      { "name": "Rocketlane", "url": "https://rocketlane.com", "description": "Customer onboarding platform.", "tags": "onboarding, customer" },
+      { "name": "Segment", "url": "https://segment.com", "description": "Customer data platform.", "tags": "cdp, data" },
+      { "name": "Jitsu", "url": "https://jitsu.com", "description": "Open-source Segment alternative.", "tags": "cdp, open-source" },
+      { "name": "Crisp Chat", "url": "https://crisp.chat", "description": "Multichannel customer chat.", "tags": "chat, support" },
+      { "name": "Zendesk", "url": "https://zendesk.com", "description": "Customer service & ticketing.", "tags": "support, ticketing" },
+      { "name": "Freshdesk", "url": "https://freshdesk.com", "description": "Cloud-based support software.", "tags": "support, cloud" },
+      { "name": "Help Scout", "url": "https://helpscout.com", "description": "Email-based support platform.", "tags": "email, support" },
+      { "name": "Intercom", "url": "https://intercom.com", "description": "Conversational customer engagement.", "tags": "chat, engagement" }
+    ]
+  },
+  {
+    "category": "Spreadsheets & Docs",
+    "items": [
+      { "name": "Airtable", "url": "https://airtable.com", "description": "Spreadsheet-database hybrid.", "tags": "database, low-code" },
+      { "name": "Collabora Online", "url": "https://collaboraoffice.com", "description": "Self-hosted office suite.", "tags": "office, self-host" },
+      { "name": "Coda", "url": "https://coda.io", "description": "Docs that act like apps.", "tags": "docs, apps" },
+      { "name": "Google Sheets", "url": "https://sheets.google.com", "description": "Cloud spreadsheets.", "tags": "sheets, cloud" }
+    ]
+  },
+  {
+    "category": "Presentation & Video",
+    "items": [
+      { "name": "Canva Presentations", "url": "https://canva.com/presentations", "description": "Designer-made slide templates.", "tags": "slides, templates" },
+      { "name": "Beautiful.ai", "url": "https://beautiful.ai", "description": "AI-powered slide design.", "tags": "slides, ai" },
+      { "name": "Pitch", "url": "https://pitch.com", "description": "Collaborative presentation software.", "tags": "slides, collaboration" },
+      { "name": "Loom", "url": "https://loom.com", "description": "Async video messages for teams.", "tags": "video, async" },
+      { "name": "DeckLinks", "url": "https://decklinks.co", "description": "Interactive presentation links.", "tags": "presentations, interactive" }
+    ]
+  },
+  {
+    "category": "Team Chat & Conferencing",
+    "items": [
+      { "name": "Slack", "url": "https://slack.com", "description": "Team messaging & integrations.", "tags": "chat, integrations" },
+      { "name": "Microsoft Teams", "url": "https://teams.microsoft.com", "description": "Chat, meetings & Office in one.", "tags": "chat, meetings" },
+      { "name": "Discord", "url": "https://discord.com", "description": "Voice & text for communities.", "tags": "voice, communities" },
+      { "name": "Zulip", "url": "https://zulip.com", "description": "Open-source threaded chat.", "tags": "chat, open-source" },
+      { "name": "Mattermost", "url": "https://mattermost.com", "description": "Self-hosted team messaging.", "tags": "chat, self-host" },
+      { "name": "Jitsi", "url": "https://jitsi.org", "description": "Secure open-source video calls.", "tags": "video, open-source" },
+      { "name": "Zoom", "url": "https://zoom.us", "description": "Enterprise video conferencing.", "tags": "video, enterprise" },
+      { "name": "Google Meet", "url": "https://meet.google.com", "description": "Simple browser video calls.", "tags": "video, browser" },
+      { "name": "Amazon Chime", "url": "https://chime.aws", "description": "AWS communication service.", "tags": "video, aws" },
+      { "name": "Daily.co", "url": "https://daily.co", "description": "Embed video calls with APIs.", "tags": "video, api" },
+      { "name": "Crowdcast", "url": "https://crowdcast.io", "description": "Live streaming & webinars.", "tags": "webinar, live" },
+      { "name": "Webex", "url": "https://webex.com", "description": "Cisco enterprise meetings.", "tags": "enterprise, cisco" },
+      { "name": "GoToMeeting", "url": "https://goto.com/meeting", "description": "Secure online meetings.", "tags": "meetings, secure" },
+      { "name": "Intermedia AnyMeeting", "url": "https://intermedia.com/anymeeting", "description": "SMB video conferencing.", "tags": "smb, video" },
+      { "name": "Mural", "url": "https://mural.co", "description": "Visual collaboration workspace.", "tags": "whiteboard, collaboration" },
+      { "name": "Kosy Office", "url": "https://kosyoffice.com", "description": "Virtual office for remote teams.", "tags": "virtual-office, remote" },
+      { "name": "Bluescape", "url": "https://bluescape.com", "description": "Visual collaboration platform.", "tags": "visual, collaboration" },
+      { "name": "Remo", "url": "https://remo.co", "description": "Virtual events & networking.", "tags": "events, virtual" },
+      { "name": "EasyRetro", "url": "https://easyretro.com", "description": "Online retrospective boards.", "tags": "retro, agile" }
+    ]
+  },
+  {
+    "category": "Email & Marketing",
+    "items": [
+      { "name": "Rackspace Email", "url": "https://rackspace.com/email", "description": "Business email hosting.", "tags": "email, hosting" },
+      { "name": "Mail-in-a-Box", "url": "https://mailinabox.email", "description": "Self-hosted mail server.", "tags": "email, self-host" },
+      { "name": "Mailu", "url": "https://mailu.io", "description": "Simple Docker mail server.", "tags": "email, docker" },
+      { "name": "Mailcow", "url": "https://mailcow.email", "description": "Dockerized mail suite.", "tags": "email, docker" },
+      { "name": "Zoho Mail", "url": "https://zoho.com/mail", "description": "Ad-free business email.", "tags": "email, business" },
+      { "name": "Fastmail", "url": "https://fastmail.com", "description": "Privacy-first email.", "tags": "email, privacy" },
+      { "name": "Google Workspace", "url": "https://gsuite.google.com", "description": "Gmail & productivity suite.", "tags": "email, productivity" },
+      { "name": "Loopemail", "url": "https://loopemail.com", "description": "Shared inbox for teams.", "tags": "email, shared" },
+      { "name": "KanbanMail", "url": "https://kanbanmail.com", "description": "Email as Kanban board.", "tags": "email, kanban" },
+      { "name": "Mixmax", "url": "https://mixmax.com", "description": "Gmail productivity & automation.", "tags": "email, automation" },
+      { "name": "Ugly Email", "url": "https://uglyemail.com", "description": "Track email trackers.", "tags": "privacy, gmail" },
+      { "name": "Clearbit Connect", "url": "https://clearbit.com/connect", "description": "Contact info in Gmail.", "tags": "email, prospecting" },
+      { "name": "HubSpot Sales", "url": "https://hubspot.com/sales", "description": "Email tracking & sequences.", "tags": "email, crm" },
+      { "name": "Mailchimp", "url": "https://mailchimp.com", "description": "Email marketing platform.", "tags": "marketing, email" },
+      { "name": "Sendinblue", "url": "https://sendinblue.com", "description": "Email & SMS marketing.", "tags": "marketing, sms" },
+      { "name": "ConvertKit", "url": "https://convertkit.com", "description": "Creator-focused email marketing.", "tags": "creators, email" },
+      { "name": "Mailjet", "url": "https://mailjet.com", "description": "Collaborative email marketing.", "tags": "email, collaboration" },
+      { "name": "Mandrill", "url": "https://mandrillapp.com", "description": "Transactional email by Mailchimp.", "tags": "transactional, email" },
+      { "name": "Mailgun", "url": "https://mailgun.com", "description": "Programmable email APIs.", "tags": "api, email" },
+      { "name": "AWS SES", "url": "https://aws.amazon.com/ses", "description": "Scalable email service.", "tags": "email, aws" },
+      { "name": "Postmark", "url": "https://postmarkapp.com", "description": "Fast transactional email.", "tags": "email, transactional" },
+      { "name": "Postal", "url": "https://postalserver.io", "description": "Open-source mail server.", "tags": "email, self-host" }
+    ]
+  },
+  {
+    "category": "Productivity & Health",
+    "items": [
+      { "name": "Butt Mover", "url": "https://buttmover.com", "description": "Break-time reminder & exercises.", "tags": "health, reminders" },
+      { "name": "Memory Hammer", "url": "https://memoryhammer.app", "description": "Spaced-repetition flashcards.", "tags": "learning, memory" },
+      { "name": "Untools", "url": "https://untools.co", "description": "Collection of thinking tools.", "tags": "productivity, thinking" },
+      { "name": "Lofi.co", "url": "https://lofi.co", "description": "Ambient music & focus timer.", "tags": "focus, music" },
+      { "name": "LifeAt", "url": "https://lifeat.io", "description": "Virtual co-working & wellness.", "tags": "wellness, remote" },
+      { "name": "Lofi Cafe", "url": "https://lofi.cafe", "description": "Online lo-fi radio.", "tags": "music, focus" },
+      { "name": "Lofi Limo", "url": "https://lofi.limo", "description": "Minimalist lo-fi player.", "tags": "music, minimal" },
+      { "name": "Music for Programming", "url": "https://musicforprogramming.net", "description": "Focus music for devs.", "tags": "focus, music" }
+    ]
+  },
+  {
+    "category": "Payments & Finance",
+    "items": [
+      { "name": "Flurly", "url": "https://flurly.com", "description": "Simple digital-product checkout.", "tags": "checkout, digital" },
+      { "name": "Ko-fi", "url": "https://ko-fi.com", "description": "Creator tipping & shop.", "tags": "donations, creators" },
+      { "name": "Buy Me a Coffee", "url": "https://buymeacoffee.com", "description": "Support creators with coffee.", "tags": "donations, creators" },
+      { "name": "Itch.io", "url": "https://itch.io", "description": "Indie game & asset marketplace.", "tags": "marketplace, indie" },
+      { "name": "Gumroad", "url": "https://gumroad.com", "description": "Sell digital products easily.", "tags": "marketplace, digital" },
+      { "name": "Open Collective", "url": "https://opencollective.com", "description": "Transparent funding for communities.", "tags": "funding, oss" },
+      { "name": "Liberapay", "url": "https://liberapay.com", "description": "Recurring donations platform.", "tags": "donations, recurring" },
+      { "name": "Stripe", "url": "https://stripe.com", "description": "Online payments infrastructure.", "tags": "payments, api" },
+      { "name": "PayPal", "url": "https://paypal.com", "description": "Global payments & wallets.", "tags": "payments, wallet" },
+      { "name": "Paddle", "url": "https://paddle.com", "description": "SaaS billing & payments.", "tags": "billing, saas" },
+      { "name": "Chargebee", "url": "https://chargebee.com", "description": "Subscription billing platform.", "tags": "billing, subscription" },
+      { "name": "Google Pay", "url": "https://pay.google.com", "description": "Google’s digital wallet.", "tags": "wallet, google" },
+      { "name": "Apple Pay", "url": "https://apple.com/apple-pay", "description": "Apple’s secure payments.", "tags": "wallet, apple" },
+      { "name": "Amazon Pay", "url": "https://pay.amazon.com", "description": "Pay with Amazon account.", "tags": "wallet, amazon" },
+      { "name": "PayU", "url": "https://payu.com", "description": "Emerging-market payments.", "tags": "payments, emerging" },
+      { "name": "Doku", "url": "https://doku.com", "description": "Indonesian payment gateway.", "tags": "payments, indonesia" },
+      { "name": "Spreedly", "url": "https://spreedly.com", "description": "PCI-compliant vault & gateway.", "tags": "payments, vault" }
+    ]
+  },
+  {
+    "category": "Accounting & Modeling",
+    "items": [
+      { "name": "QuickBooks", "url": "https://quickbooks.intuit.com", "description": "Small-business accounting.", "tags": "accounting, smb" },
+      { "name": "Zoho Books", "url": "https://zoho.com/books", "description": "Online accounting software.", "tags": "accounting, cloud" },
+      { "name": "FreshBooks", "url": "https://freshbooks.com", "description": "Invoicing & time tracking.", "tags": "invoicing, time" },
+      { "name": "Sage 50", "url": "https://sage.com/en-us/products/50", "description": "Desktop accounting for SMBs.", "tags": "accounting, desktop" },
+      { "name": "Tipalti", "url": "https://tipalti.com", "description": "Global payables automation.", "tags": "payments, automation" },
+      { "name": "vCita", "url": "https://vcita.com", "description": "Client portal & payments.", "tags": "crm, portal" },
+      { "name": "Is It Worth the Cost", "url": "https://isitworththecost.com", "description": "ROI calculator for SaaS.", "tags": "roi, calculator" },
+      { "name": "Pry", "url": "https://pry.co", "description": "Financial modeling for startups.", "tags": "modeling, finance" },
+      { "name": "Finmark", "url": "https://finmark.com", "description": "Startup financial planning.", "tags": "planning, startups" }
+    ]
+  },
+  {
+    "category": "Incubators & Grants",
+    "items": [
+      { "name": "Growth Mentor Accelerators", "url": "https://growthmentor.com/accelerators", "description": "Curated accelerator list.", "tags": "accelerators, list" },
+      { "name": "Bridge for Billions", "url": "https://bridgeforbillions.org", "description": "Online incubation programs.", "tags": "incubation, mentorship" },
+      { "name": "NASA Startup Studio", "url": "https://nasastartupstudio.org", "description": "Space-tech accelerator.", "tags": "space, nasa" },
+      { "name": "OpenAI Fund", "url": "https://openai.com/fund", "description": "AI startup investments.", "tags": "ai, investment" },
+      { "name": "Gates Foundation", "url": "https://gatesfoundation.org", "description": "Global health & development grants.", "tags": "grants, health" },
+      { "name": "Mozilla MOSS", "url": "https://mozilla.org/moss", "description": "Open-source support grants.", "tags": "oss, grants" },
+      { "name": "Arnold Ventures", "url": "https://arnoldventures.org", "description": "Evidence-based philanthropy.", "tags": "grants, evidence" },
+      { "name": "Thiel Fellowship", "url": "https://thielfellowship.org", "description": "$100 k for dropouts under 23.", "tags": "fellowship, grant" },
+      { "name": "Sloan Foundation", "url": "https://sloan.org", "description": "Science & tech research grants.", "tags": "research, grant" },
+      { "name": "Emergent Ventures", "url": "https://mercatus.org/emergent-ventures", "description": "Fast micro-grants by Mercatus.", "tags": "micro-grants" },
+      { "name": "AI Grant", "url": "https://aigrant.org", "description": "Non-dilutive AI startup grants.", "tags": "ai, non-dilutive" },
+      { "name": "FOSS United", "url": "https://fossunited.org", "description": "Indian OSS grants & events.", "tags": "oss, india" },
+      { "name": "Fundera Grants", "url": "https://fundera.com/business-loans/grants", "description": "Small-business grant finder.", "tags": "grants, smb" },
+      { "name": "Startup India", "url": "https://startupindia.gov.in", "description": "Indian gov startup schemes.", "tags": "india, gov" },
+      { "name": "Business Queensland Grants", "url": "https://business.qld.gov.au/running-business/grants", "description": "QLD gov startup grants.", "tags": "grants, australia" },
+      { "name": "Side Project Grants", "url": "https://sakofchit.com/side-project-grants", "description": "Curated side-project funding.", "tags": "side-projects, grants" },
+      { "name": "NASA Technology Transfer", "url": "https://technology.nasa.gov", "description": "NASA IP licensing & funding.", "tags": "nasa, tech-transfer" }
+    ]
+  },
+  {
+    "category": "Investors & Crowdfunding",
+    "items": [
+      { "name": "OpenVC", "url": "https://openvc.app", "description": "Open-source VC CRM.", "tags": "crm, vc" },
+      { "name": "DevTool Angels", "url": "https://devtoolangels.com", "description": "Angels focused on dev tools.", "tags": "angels, dev-tools" },
+      { "name": "AngelMatch", "url": "https://angelmatch.io", "description": "Investor database & CRM.", "tags": "investors, database" },
+      { "name": "Private Equity List", "url": "https://privateequitylist.com", "description": "Curated PE & VC list.", "tags": "pe, vc" },
+      { "name": "Omidyar Network", "url": "https://omidyar.com", "description": "Impact investing fund.", "tags": "impact, investing" },
+      { "name": "Vital Capital", "url": "https://vitalcapital.com", "description": "Impact investment in Africa.", "tags": "impact, africa" },
+      { "name": "Triodos Bank", "url": "https://triodos.com", "description": "Sustainable banking & investing.", "tags": "sustainable, banking" },
+      { "name": "Reinvestment Fund", "url": "https://reinvestment.com", "description": "Community development finance.", "tags": "community, finance" },
+      { "name": "BlueOrchard", "url": "https://blueorchard.com", "description": "Impact investment manager.", "tags": "impact, microfinance" },
+      { "name": "Community Reinvestment Fund", "url": "https://crfund.com", "description": "US community development loans.", "tags": "community, loans" },
+      { "name": "Hockeystick", "url": "https://hockeystick.co", "description": "Investor relations platform.", "tags": "investor, relations" },
+      { "name": "Kickstarter", "url": "https://kickstarter.com", "description": "Reward-based crowdfunding.", "tags": "crowdfunding, rewards" },
+      { "name": "Indiegogo", "url": "https://indiegogo.com", "description": "Flexible crowdfunding platform.", "tags": "crowdfunding, flexible" },
+      { "name": "Wefunder", "url": "https://wefunder.com", "description": "Equity crowdfunding.", "tags": "equity, crowdfunding" },
+      { "name": "StartEngine", "url": "https://startengine.com", "description": "Equity crowdfunding platform.", "tags": "equity, crowdfunding" },
+      { "name": "Republic", "url": "https://republic.co", "description": "Crowd-invest in startups.", "tags": "crowdfunding, startups" },
+      { "name": "Crowd Supply", "url": "https://crowdsupply.com", "description": "Hardware crowdfunding & fulfillment.", "tags": "hardware, crowdfunding" }
+    ]
+  },
+  {
+    "category": "Startup Freebies",
+    "items": [
+      { "name": "Microsoft for Startups", "url": "https://startups.microsoft.com", "description": "Azure credits & tools.", "tags": "credits, azure" },
+      { "name": "Google for Startups", "url": "https://cloud.google.com/startup", "description": "GCP credits & mentorship.", "tags": "credits, gcp" },
+      { "name": "Facebook for Startups", "url": "https://facebook.com/startups", "description": "Fb tools & ad credits.", "tags": "credits, ads" }
+    ]
+  }
+]

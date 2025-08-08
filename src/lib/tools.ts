@@ -2,16 +2,18 @@
 
 import fs from 'fs/promises';
 import path from 'path';
-import { categories as allCategories } from '@/data/categories';
-import type { BaseMeta, CategoryTool, JsonLineTool, UrlTool } from './tool-schemas';
-
-export type Tool = BaseMeta & {
-  [key: string]: any;
-};
+import type { Tool } from './tool-schemas';
 
 const dataDir = path.join(process.cwd(), 'src', 'data');
 
+// A simple in-memory cache to avoid re-reading files on every call
+let toolCache: Tool[] | null = null;
+
 export const getAllTools = async (): Promise<Tool[]> => {
+  if (toolCache) {
+    return toolCache;
+  }
+
   const files = await fs.readdir(dataDir);
   const jsonFiles = files.filter(file => file.endsWith('.json'));
 
@@ -21,21 +23,19 @@ export const getAllTools = async (): Promise<Tool[]> => {
     const filePath = path.join(dataDir, file);
     const fileContent = await fs.readFile(filePath, 'utf-8');
     try {
-      const tools: Tool[] = JSON.parse(fileContent);
-      if (Array.isArray(tools)) {
-        // This handles UrlTool arrays, JsonLineTool arrays, and CategoryTool arrays
-        const flattenedTools = tools.flatMap(tool => {
-            if (tool._schema === 'CategoryTool' && Array.isArray((tool as CategoryTool).tools)) {
-                return (tool as CategoryTool).tools.map(t => ({...t, category: tool.category, ...tool, tools: undefined}));
-            }
-            return tool;
-        });
-        allTools.push(...flattenedTools);
+      const toolsFromFile: any[] = JSON.parse(fileContent);
+      if (Array.isArray(toolsFromFile)) {
+        allTools.push(...toolsFromFile);
       }
     } catch (e) {
       console.error(`Could not parse ${file}:`, e);
     }
   }
+  
+  // Sort tools alphabetically by name
+  allTools.sort((a, b) => (a.name || '').localeCompare(b.name || ''));
+
+  toolCache = allTools;
   return allTools;
 };
 
@@ -44,13 +44,19 @@ export async function getToolsBySlug(slug: string): Promise<Tool[]> {
   if (slug === 'all') {
     return allTools;
   }
+  const category = slug.replace(/-/g, ' ').toLowerCase();
+  
   return allTools.filter(tool => {
-      const sourceFile = tool._sourceFile || '';
-      return path.basename(sourceFile, '.TXT').toLowerCase() === slug.toLowerCase();
+    const toolCategory = (tool.category || '').toLowerCase();
+    const sourceFile = (tool._sourceFile || '').toLowerCase();
+
+    // Match by assigned category or by the original filename slug
+    return toolCategory.includes(category) || 
+           path.basename(sourceFile, '.txt') === slug;
   });
 }
 
-function extractUniqueValues(tools: Tool[], key: string): string[] {
+function extractUniqueValues(tools: Tool[], key: keyof Tool): string[] {
   const valueSet = new Set<string>();
   tools.forEach(tool => {
     const value = tool[key];

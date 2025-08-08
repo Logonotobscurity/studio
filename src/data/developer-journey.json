@@ -1,156 +1,1205 @@
-### Major Cloud Providers
-- [Google Cloud Free Tier](https://cloud.google.com/free) - Google Cloud’s always-free tier plus $300 trial credits covering compute, storage, databases and AI services.
-- [AWS Free Tier](https://aws.amazon.com/free/) - Amazon Web Services free tier with 750 hrs EC2, RDS, Lambda, S3 and 100+ other services for 12 months.
-- [Microsoft Azure Free Account](https://azure.microsoft.com/free/) - $200 credit and 25+ always-free services for new Azure accounts including Functions, Cosmos DB and App Service.
-- [Oracle Cloud Free Tier](https://www.oracle.com/cloud/free/) - Two always-free Ampere VMs, block & object storage, databases plus a 30-day $300 trial for extra services.
-- [IBM Cloud Free Tier](https://www.ibm.com/cloud/free/) - Lite plans for Watson, Kubernetes, databases plus $200 credit over 30 days on IBM Cloud.
-
-### Cloud Management Solutions
-- [Brainboard](https://www.brainboard.co) - Drag-and-drop cloud architecture designer that auto-generates Terraform & deploys multi-cloud infrastructure.
-- [Cloud 66](https://www.cloud66.com) - DevOps-as-a-service: build, deploy and maintain apps on any cloud or server with native Kubernetes support.
-- [Pulumi](https://www.pulumi.com) - Infrastructure-as-code platform using real programming languages instead of DSLs for AWS, Azure, GCP & more.
-- [Terraform](https://www.terraform.io) - Open-source IaC tool for provisioning and managing cloud, SaaS and on-prem resources via declarative configs.
-- [Scalr](https://www.scalr.com) - Terraform remote-state & operations platform with policy-as-code, cost controls and RBAC for enterprise teams.
-- [Deployment.io](https://www.deployment.io) - Zero-config continuous deployment that builds and ships static sites or containers to any provider.
-
-### Source Code Repositories
-- [Bitbucket](https://bitbucket.org) - Atlassian’s Git hosting with free private repos, built-in CI/CD and deep Jira integration.
-- [Codeberg](https://codeberg.org) - Non-profit community-driven Gitea-based Git hosting for open-source projects.
-- [GitHub](https://github.com) - World’s largest code host providing Git repos, Actions CI/CD, Copilot AI and collaboration tools.
-- [GitLab](https://gitlab.com) - All-in-one DevOps platform: Git repos, built-in CI/CD, security scanning, registry and project management.
-- [Framagit](https://framagit.org) - French non-profit GitLab instance offering free public/private repositories for open-source initiatives.
-- [Heptapod](https://heptapod.net) - GitLab fork with first-class Mercurial support maintained by Octobus and Clever Cloud.
-- [NotABug](https://notabug.org) - Peer-to-peer-friendly Gitea hosting emphasizing software freedom and decentralized workflows.
-- [OSDN](https://osdn.net) - Japanese open-source hub providing Git/SVN/CVS hosting, file releases, mailing lists and forums.
-- [Pagure](https://pagure.io) - Light-weight self-hosted Git forge written in Python; used by Fedora.
-- [Perforce Helix Core](https://www.perforce.com) - Enterprise-grade version control for large binaries; free for up to 5 users and 20 workspaces.
-- [Plastic SCM](https://www.plasticscm.com) - Distributed VCS optimized for game dev and large repos; free for personal/open-source use.
-- [Savannah GNU](https://savannah.gnu.org) - Official GNU hosting platform offering CVS, Git, mailing lists and download mirrors.
-- [Savannah Non-GNU](https://savannah.nongnu.org) - Sister site hosting free software projects that are not part of the GNU Project.
-
-### APIs, Data, and ML
-- [JSON Grid](https://jsongrid.com) - Instantly turn any JSON endpoint into a sortable, filterable spreadsheet-like grid.
-- [ZeroSheets](https://zerosheets.com) - Turn Google Sheets into instant JSON APIs without code.
-- [ip.city](https://ip.city) - Simple IP geolocation API returning city, country and ASN data.
-- [Abstract API](https://www.abstractapi.com) - Suite of developer APIs (IP, email, phone, exchange rates, etc.) with generous free tiers.
-- [Apify](https://apify.com) - Serverless cloud platform for web scraping, automation and running headless browsers at scale.
-- [API Template](https://apitemplate.io) - Generate PDFs and images from reusable templates via REST API.
-- [API Toolkit](https://apitoolkit.io) - Real-time API monitoring, anomaly detection and quality metrics.
-- [Arize](https://arize.com) - ML observability platform for model monitoring, drift detection and root-cause analysis.
-- [Maxim AI](https://maxim-ai.com) - No-code platform to build, deploy and monitor machine-learning workflows.
-- [Beeceptor](https://beeceptor.com) - Mock REST APIs in seconds with rule-based responses and request inspection.
-- [BigDataCloud](https://www.bigdatacloud.com) - High-performance IP geolocation, reverse geocoding and network APIs.
-- [Browse AI](https://www.browse.ai) - Train a robot in 2 minutes to scrape or monitor any website without code.
-- [BrowserCat](https://browsercat.io) - Headless browser API for screenshots, PDFs and automated interactions.
-- [Calendarific](https://calendarific.com) - Global public-holiday and calendar API supporting 230+ countries.
-- [Canopy API](https://canopyapi.co) - Real-time data API for Amazon product listings, reviews and pricing.
-- [Clarifai](https://clarifai.com) - End-to-end AI platform for computer vision, NLP and automated data labeling.
-- [Cloudmersive](https://cloudmersive.com) - Utility APIs for OCR, virus scanning, document conversion and image processing.
-- [Google Colab](https://colab.research.google.com) - Free Jupyter notebook environment running on Google GPUs and TPUs.
-- [Comet](https://comet.com) - Experiment management and model monitoring platform for ML teams.
-- [Commerce Layer](https://commercelayer.io) - Headless commerce API for inventory, orders, payments and global fulfillment.
-- [Composio](https://composio.dev) - Composable back-end as a service with ready-made integrations and workflows.
-- [Conversion Tools](https://conversiontools.io) - Online file-conversion API for documents, images, audio and video formats.
-- [Country State City API](https://countrystatecity.in) - Free, fast API for hierarchical country, state and city data.
-- [Coupler.io](https://coupler.io) - No-code ETL tool to import data from apps into Google Sheets or BI dashboards.
-- [CraftMyPDF](https://craftmypdf.com) - REST API to generate pixel-perfect PDFs from reusable templates.
-- [Crawlbase](https://crawlbase.com) - Scraping API that handles proxies, browsers, CAPTCHAs and JS rendering at scale.
-- [CurlHub](https://curlhub.io) - Share and inspect cURL requests with teammates via short links and rich logs.
-- [CurrencyScoop](https://currencyscoop.com) - Real-time and historical exchange-rate API for 150+ currencies with free tier.
-- [Cube Dev](https://cube.dev) - Headless open-source analytics API layer to power dashboards and embedded BI.
-- [DataDeadDrop](https://datadeaddrop.com) - Secure, anonymous file drop and short-lived data sharing for compliance teams.
-- [DataFetcher](https://datafetcher.com) - No-code REST/GraphQL importer for Google Sheets and Airtable.
-- [DataImporter](https://dataimporter.io) - Embed CSV/Excel upload widgets that automatically map and validate data.
-- [Datalore](https://datalore.jetbrains.com) - JetBrains-hosted collaborative Jupyter environment with smart coding assistance.
-- [DataMiner](https://dataminer.io) - Browser extension to scrape and export data from any website into Excel/CSV/API.
-- [Datapane](https://datapane.com) - Turn Python notebooks into interactive web reports and dashboards you can share.
-- [DB-IP](https://db-ip.com) - Commercial IP geolocation database and API with city-level accuracy and threat data.
-- [DB Designer](https://www.dbdesigner.net) - Visual database schema design and SQL DDL generator that syncs with live DBs.
-- [DeepAR](https://www.deepar.ai) - SDK and cloud service for real-time face filters, AR try-on and background removal.
-- [Deepnote](https://deepnote.com) - Real-time collaborative data science notebook with built-in environments and SQL.
-- [Disease.sh](https://disease.sh) - Open-source REST API for real-time COVID-19 and other disease statistics.
-- [Doczilla](https://doczilla.io) - High-performance PDF and Office document viewer API for embedding in web apps.
-- [Doppio](https://doppio.page) - Instantly generate privacy-friendly analytics dashboards from server logs.
-- [DrawDB](https://drawdb.io) - Free online database diagram editor that exports SQL and JSON schemas.
-- [DreamFactory](https://dreamfactory.com) - Auto-generate REST APIs from any database or SOAP service with role-based security.
-- [Duply](https://duply.co) - Programmatic image & video generation API using reusable After Effects templates.
-- [DynamicDocs](https://dynamicdocs.io) - REST API to create pixel-perfect PDFs from LaTeX templates and JSON data.
-- [Efemarai](https://efemarai.com) - Testing & debugging platform for computer-vision and perception ML models.
-- [ErdLab](https://erdlab.io) - Browser-based entity-relationship diagram tool with live SQL generation.
-- [ExtendsClass](https://extendsclass.com) - Toolbox of online REST/SOAP clients, mock servers, testers and formatters for APIs.
-- [ExportSDK](https://exportsdk.com) - Developer-first SDK and REST API to create PDF invoices, reports and labels.
-- [File.coffee](https://file.coffee) - Anonymous temporary file host with simple upload API and CDN-backed delivery.
-- [Financial Modeling Prep](https://financialmodelingprep.com) - Real-time and historical financial data API for stocks, forex, crypto and financial statements.
-- [FormatJSON Online](https://formatjsononline.com) - Web-based JSON formatter, validator, minifier and tree-viewer with shareable links.
-- [FraudLabs Pro](https://fraudlabspro.com) - Real-time fraud-scoring API for e-commerce transactions using 100+ validation rules.
-- [GeoDataSource](https://www.geodatasource.com) - Commercial geolocation database and API for city, region, country and ZIP code lookups.
-- [Geolocated.io](https://geolocated.io) - REST API to geocode IP addresses or domains with threat-intelligence enrichment.
-- [Glitterly](https://glitterly.io) - Programmatic image and GIF generation API for social media and marketing automation.
-- [Hex](https://hex.tech) - Collaborative data workspace that combines notebooks, SQL, apps and dashboards in one place.
-- [Hook0](https://hook0.com) - Open-source webhook gateway that retries, logs and secures outbound HTTP callbacks.
-- [Hoppscotch](https://hoppscotch.io) - Open-source, lightweight API testing tool (Postman alternative) running in the browser.
-- [Hugging Face](https://huggingface.co) - Hub for 200k+ open-source ML models, datasets and inference APIs for NLP, vision and audio.
-- [Hybiscus](https://hybiscus.dev) - REST API to build beautiful, server-generated PDF reports from JSON components.
-- [Invantive](https://www.invantive.com) - Data integration platform offering 70+ connectors and SQL across cloud APIs and on-prem sources.
-- [IPAddress.sh](https://ipaddress.sh) - Simple API to get your public IP address, ASN and geolocation in JSON or plain text.
-- [IP-API](https://ip-api.com) - Free IP geolocation API returning country, city, ISP, timezone and threat information.
-- [IPbase](https://ipbase.com) - Fast IP geolocation and threat-intelligence API with 250k free requests per month.
-- [IPGeolocation.io](https://ipgeolocation.io) - IP geolocation, timezone and security data API with 1 000 free requests daily.
-- [IPGeoLocationAPI](https://ipgeolocationapi.com) - Lightweight IP-to-location API providing country, region, city and latitude/longitude.
-- [IPLocate.io](https://iplocate.io) - Developer-friendly IP geolocation API with ASN, currency and timezone fields.
-- [IP2Location](https://www.ip2location.com) - Commercial IP geolocation database and API for city, proxy, VPN and ASN detection.
-- [IP2Location.io](https://ip2location.io) - RESTful IP geolocation API with threat intelligence and domain WHOIS lookups.
-- [IPAPI.co](https://ipapi.co) - High-precision IP geolocation API with privacy-safe, GDPR-compliant data responses.
-- [IPAPI.is](https://ipapi.is) - Comprehensive IP intelligence API covering geolocation, VPN, proxy and ASN data.
-- [IPinfo.io](https://ipinfo.io) - Developer-trusted IP data API providing geolocation, carrier, company and privacy detection.
-- [IPQuery.io](https://ipquery.io) - Fast IP reputation and geolocation API to detect proxies, VPNs and threats in real time.
-- [IPTrace.io](https://iptrace.io) - IP geolocation and threat-intelligence API with ASN, VPN and abuse-contact data.
-- [JSON2Video](https://json2video.com) - REST API that renders videos from JSON templates—add text, images, audio, transitions and effects.
-- [JSONip](https://jsonip.com) - Ultra-simple API that returns your public IPv4 or IPv6 address in JSON or plain text.
-- [JSONServe](https://jsonserve.com) - Instantly spin up mock REST endpoints from JSON files with custom routes and latency settings.
-- [JSONing](https://jsoning.com) - Cloud-based JSON storage service with RESTful CRUD endpoints and automatic backups.
-- [JSONSwiss](https://jsonswiss.com) - Swiss-army toolkit for JSON—validate, transform, diff, patch and convert on the fly via API.
-- [Kong](https://konghq.com) - Open-source API gateway and service-mesh delivering traffic control, security and observability.
-- [Kreya](https://kreya.app) - Cross-platform gRPC & REST client for designing, testing and documenting APIs with Git sync.
-- [Lightly](https://lightly.ai) - Self-supervised learning platform to curate, label and improve computer-vision datasets.
-- [LoginLlama](https://loginllama.com) - Plug-and-play API to detect suspicious logins, brute-force and credential-stuffing attacks.
-- [MailboxValidator](https://mailboxvalidator.com) - Email-verification API that cleans lists by checking syntax, MX, SMTP and disposable domains.
-- [MarketData.app](https://marketdata.app) - Real-time and historical market data API for stocks, options, forex and crypto.
-- [Meteosource](https://www.meteosource.com) - Global weather API with hyper-local forecasts, radar and satellite imagery in 40 languages.
-- [Microlink](https://microlink.io) - Turn any URL into structured data—titles, screenshots, meta tags and content extraction API.
-- [Mindee](https://mindee.com) - OCR APIs for invoices, receipts, passports and custom documents with 95 %+ accuracy.
-- [Mintlify](https://mintlify.com) - Beautiful documentation platform that syncs with code and auto-generates API references.
-- [MockAPI](https://mockapi.io) - Instantly create fake REST APIs with zero code—custom schemas, CRUD endpoints and faker.js support.
-- [Mockfly](https://mockfly.dev) - Collaborative mock server with rules engine, cloud storage and Git-like version control.
-- [Mocki](https://mocki.io) - Generate dynamic mock APIs from simple JSON templates with latency and error simulation.
-- [Mocko](https://mocko.dev) - Deploy lightweight mock REST services in seconds using YAML or JSON definitions.
-- [Mocky](https://mocky.io) - Free service to create custom HTTP responses and share static JSON/XML mocks via unique URLs.
-- [MocknRoll](https://mocknroll.com) - Online tool to design and host fake RESTful endpoints with conditional logic and faker data.
-- [MicroEnv](https://microenv.com) - Instant disposable development environments via browser-accessible containers with API integration.
-- [MultiExitIP](https://multiexitip.com) - API to test outbound IP addresses from multiple exit nodes for load-balancing and failover checks.
-- [NameKit](https://namekit.ai) - AI-powered domain-name generator and availability checker with branding analytics.
-- [NewsAPI](https://newsapi.org) - JSON API for live headlines and historical news articles from 80 000+ global sources.
-- [NumLookupAPI](https://numlookupapi.com) - RESTful phone-number validation and carrier lookup API covering 230+ countries.
-- [OCR.space](https://ocr.space) - Free OCR REST API for extracting text from images and PDFs in 20+ languages.
-- [OpenAPI Designer](https://openapidesigner.com) - Visual editor to design, validate and export OpenAPI 3 specifications without writing YAML.
-- [ParseHub](https://parsehub.com) - Point-and-click desktop app that extracts data from dynamic websites and delivers structured JSON/CSV.
-- [Parseur](https://parseur.com) - Template-based mail and document parser that turns emails and PDFs into structured data via API.
-- [PDFBolt](https://pdfbolt.com) - REST API to generate PDFs from HTML or URLs with headers, footers and custom CSS.
-- [PDFEndpoint](https://pdfendpoint.com) - High-throughput HTML-to-PDF conversion API with web-fonts, charts and encryption support.
-- [PDF-API.io](https://pdf-api.io) - Cloud service to create, merge, split, watermark and password-protect PDFs via REST calls.
-- [Pixela](https://pixe.la) - RESTful API to record and graph any quantitative data—think “serverless” self-graphing metrics.
-- [Postman](https://www.postman.com) - Collaborative API platform for design, testing, mocking, monitoring and documentation.
-- [Insomnia](https://insomnia.rest) - Open-source desktop REST/GraphQL client with environment variables and code-gen.
-- [Prefect](https://www.prefect.io) - Workflow-orchestration engine for data and ML pipelines with hybrid execution and observability.
-- [Preset](https://preset.io) - Cloud-hosted Apache Superset for drag-and-drop data exploration and dashboard sharing.
-- [PromptLoop](https://promptloop.com) - No-code spreadsheet add-on that runs GPT prompts on any Excel or Google-Sheet dataset.
-- [Public-APIs GitHub](https://github.com/public-apis/public-apis) - Curated list of 1 000+ free public APIs across dozens of categories—community maintained.
-- [RapidAPI](https://rapidapi.com) - Marketplace to discover, test and connect to thousands of public and private APIs in one hub.
-- [RequestBin](https://requestbin.com) - Capture and inspect HTTP requests sent to a unique endpoint—great for webhook debugging.
-- [ReqRes](https://reqres.in) - Free hosted fake REST API for testing authentication, pagination and CRUD operations.
-- [Roboflow](https://roboflow.com) - End-to-end computer-vision platform for dataset management, annotation, training and deployment.
-- [RoboHash](https://robohash.org) - Generate unique robot or monster avatars from any text or email hash via simple URL API.
-- [ScrapersProxy](https://scrapersproxy.com) - Rotating-residential proxy network with automatic retries and CAPTCHA solving for scraping.
-- [ScrapingAnt](https://scrapingant.com) - Headless Chrome scraping API that returns clean HTML, screenshots or parsed JSON.
-- [SimpleScraper](https://simplescraper.io) - Browser extension and cloud crawler to extract data and sync it to Google Sheets or API.
-- [SelectStar](https://www.selectstar.com) - Automated data-discovery and lineage platform for modern data stacks.
+[
+    {
+      "category": "Major Cloud Providers",
+      "services": [
+        {
+          "name": "Google Cloud Free Tier",
+          "url": "https://cloud.google.com/free",
+          "description": "Google Cloud’s always-free tier plus $300 trial credits covering compute, storage, databases and AI services.",
+          "tags": "gcp, free, trial, ai, storage"
+        },
+        {
+          "name": "AWS Free Tier",
+          "url": "https://aws.amazon.com/free/",
+          "description": "Amazon Web Services free tier with 750 hrs EC2, RDS, Lambda, S3 and 100+ other services for 12 months.",
+          "tags": "aws, free, ec2, lambda, s3"
+        },
+        {
+          "name": "Microsoft Azure Free Account",
+          "url": "https://azure.microsoft.com/free/",
+          "description": "$200 credit and 25+ always-free services for new Azure accounts including Functions, Cosmos DB and App Service.",
+          "tags": "azure, free, credit, serverless"
+        },
+        {
+          "name": "Oracle Cloud Free Tier",
+          "url": "https://www.oracle.com/cloud/free/",
+          "description": "Two always-free Ampere VMs, block & object storage, databases plus a 30-day $300 trial for extra services.",
+          "tags": "oracle, free, vm, storage"
+        },
+        {
+          "name": "IBM Cloud Free Tier",
+          "url": "https://www.ibm.com/cloud/free/",
+          "description": "Lite plans for Watson, Kubernetes, databases plus $200 credit over 30 days on IBM Cloud.",
+          "tags": "ibm, free, watson, k8s"
+        }
+      ]
+    },
+    {
+      "category": "Cloud Management & IaC",
+      "services": [
+        {
+          "name": "Terraform",
+          "url": "https://www.terraform.io",
+          "description": "Open-source IaC tool for provisioning and managing cloud, SaaS and on-prem resources via declarative configs.",
+          "tags": "iac, terraform, open-source"
+        },
+        {
+          "name": "Pulumi",
+          "url": "https://www.pulumi.com",
+          "description": "Infrastructure-as-code platform using real programming languages instead of DSLs for AWS, Azure, GCP & more.",
+          "tags": "iac, pulumi, multi-cloud"
+        },
+        {
+          "name": "Brainboard",
+          "url": "https://www.brainboard.co",
+          "description": "Drag-and-drop cloud architecture designer that auto-generates Terraform & deploys multi-cloud infrastructure.",
+          "tags": "diagram, terraform, multi-cloud"
+        },
+        {
+          "name": "Scalr",
+          "url": "https://www.scalr.com",
+          "description": "Terraform remote-state & operations platform with policy-as-code, cost controls and RBAC for enterprise teams.",
+          "tags": "terraform, enterprise, rbac"
+        },
+        {
+          "name": "Cloud 66",
+          "url": "https://www.cloud66.com",
+          "description": "DevOps-as-a-service: build, deploy and maintain apps on any cloud or server with native Kubernetes support.",
+          "tags": "devops, k8s"
+        },
+        {
+          "name": "Deployment.io",
+          "url": "https://www.deployment.io",
+          "description": "Zero-config continuous deployment that builds and ships static sites or containers to any provider.",
+          "tags": "cd, static-sites, containers"
+        }
+      ]
+    },
+    {
+      "category": "Source Code Repositories",
+      "services": [
+        {
+          "name": "GitHub",
+          "url": "https://github.com",
+          "description": "World’s largest code host providing Git repos, Actions CI/CD, Copilot AI and collaboration tools.",
+          "tags": "git, ci-cd, ai"
+        },
+        {
+          "name": "GitLab",
+          "url": "https://gitlab.com",
+          "description": "All-in-one DevOps platform: Git repos, built-in CI/CD, security scanning, registry and project management.",
+          "tags": "git, ci-cd, security"
+        },
+        {
+          "name": "Bitbucket",
+          "url": "https://bitbucket.org",
+          "description": "Atlassian’s Git hosting with free private repos, built-in CI/CD and deep Jira integration.",
+          "tags": "git, ci-cd, jira"
+        },
+        {
+          "name": "Codeberg",
+          "url": "https://codeberg.org",
+          "description": "Non-profit community-driven Gitea-based Git hosting for open-source projects.",
+          "tags": "git, open-source, gitea"
+        },
+        {
+          "name": "Framagit",
+          "url": "https://framagit.org",
+          "description": "French non-profit GitLab instance offering free public/private repositories for open-source initiatives.",
+          "tags": "git, open-source, gitlab"
+        },
+        {
+          "name": "Heptapod",
+          "url": "https://heptapod.net",
+          "description": "GitLab fork with first-class Mercurial support maintained by Octobus and Clever Cloud.",
+          "tags": "git, mercurial"
+        },
+        {
+          "name": "NotABug",
+          "url": "https://notabug.org",
+          "description": "Peer-to-peer-friendly Gitea hosting emphasizing software freedom and decentralized workflows.",
+          "tags": "git, p2p, gitea"
+        },
+        {
+          "name": "OSDN",
+          "url": "https://osdn.net",
+          "description": "Japanese open-source hub providing Git/SVN/CVS hosting, file releases, mailing lists and forums.",
+          "tags": "git, svn, cvs"
+        },
+        {
+          "name": "Pagure",
+          "url": "https://pagure.io",
+          "description": "Light-weight self-hosted Git forge written in Python; used by Fedora.",
+          "tags": "git, self-hosted, fedora"
+        },
+        {
+          "name": "Perforce Helix Core",
+          "url": "https://www.perforce.com",
+          "description": "Enterprise-grade version control for large binaries; free for up to 5 users and 20 workspaces.",
+          "tags": "vcs, enterprise, binaries"
+        },
+        {
+          "name": "Plastic SCM",
+          "url": "https://www.plasticscm.com",
+          "description": "Distributed VCS optimized for game dev and large repos; free for personal/open-source use.",
+          "tags": "vcs, gamedev"
+        },
+        {
+          "name": "Savannah GNU",
+          "url": "https://savannah.gnu.org",
+          "description": "Official GNU hosting platform offering CVS, Git, mailing lists and download mirrors.",
+          "tags": "gnu, git, cvs"
+        },
+        {
+          "name": "Savannah Non-GNU",
+          "url": "https://savannah.nongnu.org",
+          "description": "Sister site hosting free software projects that are not part of the GNU Project.",
+          "tags": "hosting, free-software"
+        }
+      ]
+    },
+    {
+      "category": "APIs, Data & Machine Learning",
+      "services": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co",
+          "description": "Hub for 200k+ open-source ML models, datasets and inference APIs for NLP, vision and audio.",
+          "tags": "ml, nlp, vision, datasets"
+        },
+        {
+          "name": "Google Colab",
+          "url": "https://colab.research.google.com",
+          "description": "Free Jupyter notebook environment running on Google GPUs and TPUs.",
+          "tags": "jupyter, gpu, tpu, free"
+        },
+        {
+          "name": "RapidAPI",
+          "url": "https://rapidapi.com",
+          "description": "Marketplace to discover, test and connect to thousands of public and private APIs in one hub.",
+          "tags": "api-marketplace"
+        },
+        {
+          "name": "Postman",
+          "url": "https://www.postman.com",
+          "description": "Collaborative API platform for design, testing, mocking, monitoring and documentation.",
+          "tags": "api, testing, mocking"
+        },
+        {
+          "name": "Roboflow",
+          "url": "https://roboflow.com",
+          "description": "End-to-end computer-vision platform for dataset management, annotation, training and deployment.",
+          "tags": "cv, annotation, training"
+        },
+        {
+          "name": "BigDataCloud",
+          "url": "https://www.bigdatacloud.com",
+          "description": "High-performance IP geolocation, reverse geocoding and network APIs.",
+          "tags": "geolocation, api"
+        },
+        {
+          "name": "CurrencyScoop",
+          "url": "https://currencyscoop.com",
+          "description": "Real-time and historical exchange-rate API for 150+ currencies with free tier.",
+          "tags": "forex, api"
+        },
+        {
+          "name": "Financial Modeling Prep",
+          "url": "https://financialmodelingprep.com",
+          "description": "Real-time and historical financial data API for stocks, forex, crypto and financial statements.",
+          "tags": "stocks, crypto, api"
+        },
+        {
+          "name": "NewsAPI",
+          "url": "https://newsapi.org",
+          "description": "JSON API for live headlines and historical news articles from 80 000+ global sources.",
+          "tags": "news, api"
+        },
+        {
+          "name": "OpenWeatherMap",
+          "url": "https://openweathermap.org/api",
+          "description": "Global weather data API with forecasts, maps and historical data.",
+          "tags": "weather, api"
+        },
+        {
+          "name": "Stripe API",
+          "url": "https://stripe.com/docs/api",
+          "description": "Payment-processing APIs for cards, wallets, subscriptions and marketplaces.",
+          "tags": "payments, api"
+        },
+        {
+          "name": "Twilio API",
+          "url": "https://www.twilio.com/docs/usage/api",
+          "description": "Programmable messaging, voice and video APIs for communications.",
+          "tags": "sms, voice, api"
+        },
+        {
+          "name": "SendGrid API",
+          "url": "https://docs.sendgrid.com/api-reference",
+          "description": "Email-delivery and marketing APIs with templates and analytics.",
+          "tags": "email, api"
+        },
+        {
+          "name": "Clarifai",
+          "url": "https://clarifai.com",
+          "description": "End-to-end AI platform for computer vision, NLP and automated data labeling.",
+          "tags": "ai, cv, nlp"
+        },
+        {
+          "name": "Cloudmersive",
+          "url": "https://cloudmersive.com",
+          "description": "Utility APIs for OCR, virus scanning, document conversion and image processing.",
+          "tags": "ocr, antivirus, conversion"
+        },
+        {
+          "name": "Replicate",
+          "url": "https://replicate.com",
+          "description": "Run open-source ML models in the cloud via a simple REST API.",
+          "tags": "ml, inference, api"
+        },
+        {
+          "name": "AssemblyAI",
+          "url": "https://www.assemblyai.com",
+          "description": "Speech-to-text and audio-intelligence APIs powered by deep learning.",
+          "tags": "stt, ai, audio"
+        }
+      ]
+    },
+    {
+      "category": "Artifact Repositories",
+      "services": [
+        {
+          "name": "Docker Hub",
+          "url": "https://hub.docker.com",
+          "description": "World’s largest public container registry plus private repos and automated builds.",
+          "tags": "docker, registry"
+        },
+        {
+          "name": "JFrog Artifactory",
+          "url": "https://jfrog.com/artifactory",
+          "description": "Universal binary repository manager supporting Maven, npm, Docker, PyPI and more with fine-grained permissions.",
+          "tags": "artifacts, maven, npm, docker"
+        },
+        {
+          "name": "Quay.io",
+          "url": "https://quay.io",
+          "description": "Red Hat’s secure container registry with vulnerability scanning, geo-replication and robot accounts.",
+          "tags": "docker, registry, security"
+        },
+        {
+          "name": "Sonatype Central",
+          "url": "https://central.sonatype.org",
+          "description": "The default public repository for Java/Maven artifacts used by millions of developers worldwide.",
+          "tags": "maven, java"
+        },
+        {
+          "name": "JitPack",
+          "url": "https://jitpack.io",
+          "description": "On-demand Maven repository that builds GitHub projects directly from source and serves artifacts instantly.",
+          "tags": "maven, github"
+        },
+        {
+          "name": "CloudRepo",
+          "url": "https://cloudrepo.io",
+          "description": "Cloud-hosted private Maven, npm and Python repositories with role-based access and usage analytics.",
+          "tags": "maven, npm, python"
+        },
+        {
+          "name": "Cloudsmith",
+          "url": "https://cloudsmith.io",
+          "description": "Cloud-native artifact and package management platform for containers, Helm, deb, rpm and 28+ formats.",
+          "tags": "artifacts, multi-format"
+        },
+        {
+          "name": "Repsy",
+          "url": "https://repsy.io",
+          "description": "Secure, private package repositories for Maven, npm, PyPI and Docker with CDN-backed distribution.",
+          "tags": "maven, npm, pypi, docker"
+        },
+        {
+          "name": "Gemfury",
+          "url": "https://gemfury.com",
+          "description": "Private artifact registry for 15+ package types with granular access controls and CI/CD integration.",
+          "tags": "artifacts, ci-cd"
+        },
+        {
+          "name": "RepoFlow",
+          "url": "https://repoflow.io",
+          "description": "Cloud service to automate building, signing and publishing software packages to multiple repositories.",
+          "tags": "package-automation"
+        }
+      ]
+    },
+    {
+      "category": "Team Collaboration & Communication",
+      "services": [
+        {
+          "name": "Slack",
+          "url": "https://slack.com",
+          "description": "Hub for team messaging, integrations and workflows with 2 400+ app connections.",
+          "tags": "chat, integrations"
+        },
+        {
+          "name": "Discord",
+          "url": "https://discord.com",
+          "description": "Voice, video and text platform for communities and teams with rich integrations.",
+          "tags": "chat, voice, video"
+        },
+        {
+          "name": "Microsoft Teams",
+          "url": "https://teams.microsoft.com",
+          "description": "Workspace hub combining chat, meetings, files and 700+ apps in one secure platform.",
+          "tags": "chat, meetings, microsoft"
+        },
+        {
+          "name": "Zoom",
+          "url": "https://zoom.us",
+          "description": "Enterprise video conferencing with webinars, phone and chat in one secure platform.",
+          "tags": "video, conferencing"
+        },
+        {
+          "name": "Google Meet",
+          "url": "https://meet.google.com",
+          "description": "Secure video-conferencing with live captions, recordings and 250-participant support.",
+          "tags": "video, conferencing"
+        },
+        {
+          "name": "Notion",
+          "url": "https://notion.so",
+          "description": "All-in-one workspace for docs, wikis, tasks and databases with powerful block-based editing.",
+          "tags": "wiki, docs, tasks"
+        },
+        {
+          "name": "Miro",
+          "url": "https://miro.com",
+          "description": "Online whiteboard for ideation, flowcharts, retros and workshops with real-time cursors.",
+          "tags": "whiteboard, collaboration"
+        },
+        {
+          "name": "Trello",
+          "url": "https://trello.com",
+          "description": "Kanban-style project management tool with cards, lists and team boards.",
+          "tags": "kanban, pm"
+        },
+        {
+          "name": "Asana",
+          "url": "https://asana.com",
+          "description": "Task and project management for teams with timelines, boards and automation.",
+          "tags": "pm, tasks"
+        },
+        {
+          "name": "Figma",
+          "url": "https://figma.com",
+          "description": "Cloud-based design and prototyping tool with real-time collaboration and developer hand-off.",
+          "tags": "design, collaboration"
+        }
+      ]
+    },
+    {
+      "category": "CMS & Site Builders",
+      "services": [
+        {
+          "name": "Contentful",
+          "url": "https://www.contentful.com",
+          "description": "Headless CMS that delivers structured content via GraphQL/REST APIs to any frontend or device.",
+          "tags": "headless, cms, graphql"
+        },
+        {
+          "name": "Sanity",
+          "url": "https://www.sanity.io",
+          "description": "Real-time headless CMS treating content as data, with GROQ query language and portable text.",
+          "tags": "headless, cms"
+        },
+        {
+          "name": "Storyblok",
+          "url": "https://www.storyblok.com",
+          "description": "Visual headless CMS with component-based editing and nestable content blocks for developers & marketers.",
+          "tags": "headless, cms, visual"
+        },
+        {
+          "name": "Strapi",
+          "url": "https://strapi.io",
+          "description": "Open-source headless Node.js CMS with REST/GraphQL and customizable admin.",
+          "tags": "headless, cms, nodejs"
+        },
+        {
+          "name": "DatoCMS",
+          "url": "https://www.datocms.com",
+          "description": "Developer-friendly headless CMS with real-time content editing and advanced image pipeline.",
+          "tags": "headless, cms"
+        },
+        {
+          "name": "Directus",
+          "url": "https://directus.io",
+          "description": "Open-source data platform that instantly wraps SQL databases with dynamic REST+GraphQL APIs and an admin app.",
+          "tags": "headless, sql, rest, graphql"
+        },
+        {
+          "name": "Prismic",
+          "url": "https://prismic.io",
+          "description": "Headless website builder featuring a visual page builder and instant previews for developers and editors.",
+          "tags": "headless, cms, visual"
+        },
+        {
+          "name": "Webflow",
+          "url": "https://webflow.com",
+          "description": "Visual no-code website builder exporting clean HTML/CSS and hosting on a global CDN.",
+          "tags": "nocode, builder, cms"
+        },
+        {
+          "name": "TinaCMS",
+          "url": "https://tina.io",
+          "description": "Open-source visual editor for Next.js sites—edit content inline while seeing live previews.",
+          "tags": "cms, nextjs, visual"
+        }
+      ]
+    },
+    {
+      "category": "Code Generation & AI Assistants",
+      "services": [
+        {
+          "name": "GitHub Copilot",
+          "url": "https://copilot.github.com",
+          "description": "AI pair-programmer providing code suggestions directly in VS Code, JetBrains and Neovim.",
+          "tags": "ai, code-completion"
+        },
+        {
+          "name": "Tabnine",
+          "url": "https://www.tabnine.com",
+          "description": "AI code-completion plugin for all major IDEs trained on permissive open-source data.",
+          "tags": "ai, completion"
+        },
+        {
+          "name": "SuperMaven",
+          "url": "https://supermaven.com",
+          "description": "Fast AI code-completion engine supporting 20+ languages with local indexing for privacy.",
+          "tags": "ai, completion, privacy"
+        },
+        {
+          "name": "v0.dev",
+          "url": "https://v0.dev",
+          "description": "Vercel’s generative UI tool that turns prompts into shadcn/ui React components ready for production.",
+          "tags": "ai, ui, react"
+        },
+        {
+          "name": "DhiWise",
+          "url": "https://www.dhiwise.com",
+          "description": "Low-code platform that converts Figma designs into production-ready React, Flutter or Kotlin code.",
+          "tags": "figma, codegen, low-code"
+        },
+        {
+          "name": "Cody",
+          "url": "https://cody.dev",
+          "description": "AI code assistant inside your IDE that writes, explains and refactors code using your own codebase as context.",
+          "tags": "ai, assistant, ide"
+        },
+        {
+          "name": "AppInvento",
+          "url": "https://appinvento.io",
+          "description": "No-code backend builder that auto-generates REST APIs, authentication and admin panels from models.",
+          "tags": "nocode, backend, api"
+        },
+        {
+          "name": "Fern",
+          "url": "https://buildwithfern.com",
+          "description": "Developer toolchain to auto-generate SDKs, server stubs and docs from OpenAPI specs.",
+          "tags": "openapi, sdk, codegen"
+        }
+      ]
+    },
+    {
+      "category": "Code Quality & Review",
+      "services": [
+        {
+          "name": "SonarCloud",
+          "url": "https://sonarcloud.io",
+          "description": "Cloud-based static-analysis and security scanning for 25+ languages integrated into CI/CD.",
+          "tags": "static-analysis, security"
+        },
+        {
+          "name": "CodeClimate",
+          "url": "https://codeclimate.com",
+          "description": "Static-analysis SaaS measuring maintainability, test coverage and security in every PR.",
+          "tags": "static-analysis, coverage"
+        },
+        {
+          "name": "Codacy",
+          "url": "https://www.codacy.com",
+          "description": "Automated code-quality and security analysis for 40+ languages integrated into PR workflows.",
+          "tags": "quality, security"
+        },
+        {
+          "name": "Codecov",
+          "url": "https://codecov.io",
+          "description": "Test-coverage reporting platform that posts insights directly into GitHub/GitLab/Bitbucket.",
+          "tags": "coverage, ci"
+        },
+        {
+          "name": "CodeRabbit",
+          "url": "https://coderabbit.ai",
+          "description": "AI-powered code-review assistant that summarizes PR changes and suggests improvements.",
+          "tags": "ai, review"
+        },
+        {
+          "name": "DeepSource",
+          "url": "https://deepsource.io",
+          "description": "Continuous quality and security analyzer supporting Go, Python, Ruby, JavaScript and Terraform.",
+          "tags": "static-analysis, security"
+        },
+        {
+          "name": "HoundCI",
+          "url": "https://houndci.com",
+          "description": "Automated style-guide enforcement for GitHub PRs using language-specific linters.",
+          "tags": "lint, style"
+        },
+        {
+          "name": "Scrutinizer",
+          "url": "https://scrutinizer-ci.com",
+          "description": "Continuous inspection platform combining static analysis, test coverage and code intelligence.",
+          "tags": "static-analysis, coverage"
+        }
+      ]
+    },
+    {
+      "category": "CI / CD",
+      "services": [
+        {
+          "name": "GitHub Actions",
+          "url": "https://github.com/features/actions",
+          "description": "Automate workflows directly from GitHub repos with matrix builds and 10 000+ marketplace actions.",
+          "tags": "ci-cd, github"
+        },
+        {
+          "name": "CircleCI",
+          "url": "https://circleci.com",
+          "description": "Cloud-native CI/CD supporting Docker, macOS and GPU runners with 2 400+ orb integrations.",
+          "tags": "ci-cd, docker"
+        },
+        {
+          "name": "Travis CI",
+          "url": "https://travis-ci.com",
+          "description": "Hosted continuous integration for open-source and private projects with GitHub and Bitbucket sync.",
+          "tags": "ci-cd"
+        },
+        {
+          "name": "Drone",
+          "url": "https://drone.io",
+          "description": "Self-hosted container-native CI/CD platform configured via simple YAML pipelines.",
+          "tags": "ci-cd, self-hosted"
+        },
+        {
+          "name": "Buildkite",
+          "url": "https://buildkite.com",
+          "description": "Fast, secure CI/CD that runs agents on your own infrastructure while orchestrating via SaaS dashboards.",
+          "tags": "ci-cd, hybrid"
+        },
+        {
+          "name": "Buddy",
+          "url": "https://buddy.works",
+          "description": "Docker-based CI/CD with visual pipeline editor and 150+ prebuilt actions for web, Docker and serverless.",
+          "tags": "ci-cd, docker, visual"
+        },
+        {
+          "name": "Semaphore",
+          "url": "https://semaphoreci.com",
+          "description": "Fast CI/CD for cloud-native apps with Docker, Kubernetes and monorepo support.",
+          "tags": "ci-cd, k8s"
+        },
+        {
+          "name": "AppVeyor",
+          "url": "https://www.appveyor.com",
+          "description": "Continuous-integration service for Windows, Linux and macOS with artifact hosting and deployment.",
+          "tags": "ci-cd, windows"
+        },
+        {
+          "name": "Codefresh",
+          "url": "https://codefresh.io",
+          "description": "Kubernetes-native CI/CD with GitOps dashboard, built-in image registry and progressive delivery.",
+          "tags": "ci-cd, k8s, gitops"
+        },
+        {
+          "name": "Bitrise",
+          "url": "https://bitrise.io",
+          "description": "CI/CD tailored for mobile—build, test and ship iOS/Android apps using 300+ workflow steps.",
+          "tags": "ci-cd, mobile"
+        }
+      ]
+    },
+    {
+      "category": "Testing",
+      "services": [
+        {
+          "name": "Cypress",
+          "url": "https://cypress.io",
+          "description": "Fast, reliable end-to-end testing framework running in real browsers with time-travel debugging.",
+          "tags": "e2e, browser, testing"
+        },
+        {
+          "name": "BrowserStack",
+          "url": "https://browserstack.com",
+          "description": "Cloud of 3 000+ real browsers and devices for live and automated cross-browser testing.",
+          "tags": "cross-browser, testing"
+        },
+        {
+          "name": "Lambdatest",
+          "url": "https://lambdatest.com",
+          "description": "Cross-browser testing cloud supporting 3 000+ browsers, devices and geolocations with Selenium, Cypress and Appium.",
+          "tags": "cross-browser, testing"
+        },
+        {
+          "name": "Applitools",
+          "url": "https://applitools.com",
+          "description": "Visual AI testing platform that detects UI regressions across browsers, devices and screen sizes.",
+          "tags": "visual-testing, ai"
+        },
+        {
+          "name": "Percy",
+          "url": "https://percy.io",
+          "description": "Visual testing and review platform that captures UI snapshots and highlights pixel-level changes.",
+          "tags": "visual-testing"
+        },
+        {
+          "name": "Playwright",
+          "url": "https://playwright.dev",
+          "description": "Cross-browser end-to-end testing framework for modern web apps.",
+          "tags": "e2e, testing"
+        },
+        {
+          "name": "Katalon",
+          "url": "https://katalon.com",
+          "description": "Unified low-code test-automation solution for web, API, mobile and desktop applications.",
+          "tags": "test-automation, low-code"
+        },
+        {
+          "name": "Gremlin",
+          "url": "https://www.gremlin.com",
+          "description": "Chaos-engineering platform for controlled experiments on Kubernetes, cloud and bare-metal systems.",
+          "tags": "chaos, k8s"
+        }
+      ]
+    },
+    {
+      "category": "Security & PKI",
+      "services": [
+        {
+          "name": "Snyk",
+          "url": "https://snyk.io",
+          "description": "Developer-first security platform finding and fixing vulnerabilities in open-source libs, containers and IaC.",
+          "tags": "security, vulns, containers"
+        },
+        {
+          "name": "GitGuardian",
+          "url": "https://gitguardian.com",
+          "description": "Real-time secrets-detection platform scanning commits, PRs and repos for leaked credentials.",
+          "tags": "secrets, security"
+        },
+        {
+          "name": "Let's Encrypt",
+          "url": "https://letsencrypt.org",
+          "description": "Free, automated and open certificate authority issuing trusted SSL/TLS certificates via ACME.",
+          "tags": "ssl, certificates"
+        },
+        {
+          "name": "SSL Labs",
+          "url": "https://www.ssllabs.com",
+          "description": "Comprehensive SSL/TLS server testing tool grading configuration, protocols and cipher suites.",
+          "tags": "ssl, testing"
+        },
+        {
+          "name": "Mozilla Observatory",
+          "url": "https://observatory.mozilla.org",
+          "description": "Grades web-security headers, TLS and CSP configurations with actionable remediation guidance.",
+          "tags": "security, headers"
+        },
+        {
+          "name": "OPA Gatekeeper",
+          "url": "https://open-policy-agent.github.io/gatekeeper/website/docs/",
+          "description": "Policy-based control for Kubernetes with admission webhooks.",
+          "tags": "k8s, security, policy"
+        },
+        {
+          "name": "OWASP ZAP",
+          "url": "https://www.zaproxy.org",
+          "description": "Open-source web-application security scanner for finding vulnerabilities.",
+          "tags": "security, scanner"
+        },
+        {
+          "name": "Trivy",
+          "url": "https://aquasecurity.github.io/trivy/",
+          "description": "Comprehensive vulnerability scanner for containers and other artifacts.",
+          "tags": "vulnerabilities, containers"
+        },
+        {
+          "name": "Aikido",
+          "url": "https://aikido.dev",
+          "description": "All-in-one DevSecOps platform scanning code, containers and clouds for vulnerabilities and compliance.",
+          "tags": "devsecops, compliance"
+        },
+        {
+          "name": "Doppler",
+          "url": "https://www.doppler.com",
+          "description": "Universal secrets manager syncing environment variables across CI/CD, servers and local dev.",
+          "tags": "secrets, env"
+        }
+      ]
+    },
+    {
+      "category": "Authentication & Identity",
+      "services": [
+        {
+          "name": "Auth0",
+          "url": "https://auth0.com",
+          "description": "Extensible identity platform providing universal login, MFA, RBAC and B2B/B2C flows via SDKs.",
+          "tags": "auth, sso, rbac"
+        },
+        {
+          "name": "Firebase Auth",
+          "url": "https://firebase.google.com/products/auth",
+          "description": "Backend service for user authentication via passwords, phone numbers, federated identity providers and more.",
+          "tags": "auth, firebase"
+        },
+        {
+          "name": "Supabase Auth",
+          "url": "https://supabase.com/auth",
+          "description": "Open-source authentication with row-level security, magic links and social logins.",
+          "tags": "auth, postgres, open-source"
+        },
+        {
+          "name": "Clerk",
+          "url": "https://clerk.com",
+          "description": "Drop-in React components and APIs for complete user management—sign-up, MFA, sessions and orgs.",
+          "tags": "auth, react"
+        },
+        {
+          "name": "AWS Cognito",
+          "url": "https://aws.amazon.com/cognito/",
+          "description": "Scalable user directory and authentication by AWS with SAML and OAuth2 support.",
+          "tags": "auth, aws"
+        },
+        {
+          "name": "Okta",
+          "url": "https://developer.okta.com",
+          "description": "Universal identity and access-management suite with SSO, MFA and lifecycle automation APIs.",
+          "tags": "auth, sso, mfa"
+        },
+        {
+          "name": "Stytch",
+          "url": "https://stytch.com",
+          "description": "Passwordless auth APIs for email magic links, OTP, biometrics and session management.",
+          "tags": "passwordless, auth"
+        },
+        {
+          "name": "WorkOS",
+          "url": "https://workos.com",
+          "description": "APIs for adding enterprise SSO, directory sync and audit logs to SaaS applications.",
+          "tags": "sso, enterprise"
+        }
+      ]
+    },
+    {
+      "category": "Monitoring & Observability",
+      "services": [
+        {
+          "name": "Datadog",
+          "url": "https://www.datadoghq.com",
+          "description": "Full-stack monitoring for infrastructure, APM, logs, synthetic tests and real-user monitoring.",
+          "tags": "monitoring, apm, logs"
+        },
+        {
+          "name": "New Relic",
+          "url": "https://newrelic.com",
+          "description": "Full-stack observability platform for APM, infra, logs and synthetics with AI-powered insights.",
+          "tags": "apm, observability"
+        },
+        {
+          "name": "Grafana Cloud",
+          "url": "https://grafana.com/products/cloud",
+          "description": "Managed observability stack—metrics, logs, traces and alerting with Grafana dashboards.",
+          "tags": "metrics, logs, dashboards"
+        },
+        {
+          "name": "Prometheus",
+          "url": "https://prometheus.io",
+          "description": "Open-source monitoring & alerting toolkit with a multi-dimensional data model.",
+          "tags": "metrics, alerting"
+        },
+        {
+          "name": "UptimeRobot",
+          "url": "https://uptimerobot.com",
+          "description": "Free uptime monitoring with 50 monitors and 5-minute intervals.",
+          "tags": "uptime, monitoring"
+        },
+        {
+          "name": "Better Stack",
+          "url": "https://betterstack.com",
+          "description": "Uptime and synthetic monitoring with incident management, status pages and real-time alerting.",
+          "tags": "uptime, incident"
+        }
+      ]
+    },
+    {
+      "category": "Analytics / Product Insights",
+      "services": [
+        {
+          "name": "Google Analytics",
+          "url": "https://analytics.google.com",
+          "description": "De-facto standard web and app analytics providing audience insights, conversions and e-commerce tracking.",
+          "tags": "analytics, web"
+        },
+        {
+          "name": "Mixpanel",
+          "url": "https://mixpanel.com",
+          "description": "Event-based product analytics measuring user flows, retention and A/B test impact.",
+          "tags": "events, retention, ab-test"
+        },
+        {
+          "name": "Amplitude",
+          "url": "https://amplitude.com",
+          "description": "Product-analytics suite tracking user events, funnels, retention and experimentation.",
+          "tags": "events, funnels"
+        },
+        {
+          "name": "PostHog",
+          "url": "https://posthog.com",
+          "description": "Open-source product-analytics suite with event tracking, session replays, feature flags and A/B tests.",
+          "tags": "analytics, open-source"
+        },
+        {
+          "name": "Hotjar",
+          "url": "https://hotjar.com",
+          "description": "Behavior-analytics suite with heatmaps, session recordings and on-site feedback widgets.",
+          "tags": "heatmaps, recordings"
+        },
+        {
+          "name": "LogRocket",
+          "url": "https://logrocket.com",
+          "description": "Session-replay and frontend-performance monitoring with JavaScript error tracking and analytics.",
+          "tags": "session-replay, errors"
+        },
+        {
+          "name": "Microsoft Clarity",
+          "url": "https://clarity.microsoft.com",
+          "description": "Free session-recording and heatmap tool providing insights into user behavior without sampling.",
+          "tags": "heatmaps, recordings"
+        },
+        {
+          "name": "Plausible",
+          "url": "https://plausible.io",
+          "description": "Privacy-friendly open-source web analytics with no cookies and lightweight script.",
+          "tags": "privacy, analytics"
+        },
+        {
+          "name": "umami",
+          "url": "https://umami.is",
+          "description": "Open-source, cookieless web analytics you can self-host or run on Vercel with a single click.",
+          "tags": "privacy, self-host"
+        }
+      ]
+    },
+    {
+      "category": "Search",
+      "services": [
+        {
+          "name": "Algolia",
+          "url": "https://www.algolia.com",
+          "description": "Hosted search API delivering millisecond results, typo-tolerance and analytics for web and mobile apps.",
+          "tags": "search, api"
+        },
+        {
+          "name": "Typesense",
+          "url": "https://typesense.org",
+          "description": "Open-source typo-tolerant search engine with instant search-as-you-type.",
+          "tags": "search, open-source"
+        },
+        {
+          "name": "Meilisearch",
+          "url": "https://www.meilisearch.com",
+          "description": "Lightning-fast open-source search engine with instant results and zero-config setup.",
+          "tags": "search, open-source"
+        },
+        {
+          "name": "OramaSearch",
+          "url": "https://oramasearch.com",
+          "description": "Open-source full-text search engine optimized for edge runtimes and static sites.",
+          "tags": "search, edge"
+        },
+        {
+          "name": "Searchly",
+          "url": "https://searchly.com",
+          "description": "Hosted Elasticsearch with REST API, dashboard and search-as-you-type analytics for apps.",
+          "tags": "elasticsearch, hosted"
+        },
+        {
+          "name": "Bonsai",
+          "url": "https://bonsai.io",
+          "description": "Fully managed Elasticsearch clusters with automatic scaling, backups and security patches.",
+          "tags": "elasticsearch, managed"
+        }
+      ]
+    },
+    {
+      "category": "Storage & CDN",
+      "services": [
+        {
+          "name": "AWS S3",
+          "url": "https://aws.amazon.com/s3/",
+          "description": "Scalable object storage with 99.999999999% durability and tiered pricing.",
+          "tags": "storage, aws"
+        },
+        {
+          "name": "Cloudflare R2",
+          "url": "https://developers.cloudflare.com/r2/",
+          "description": "S3-compatible object storage with zero egress fees.",
+          "tags": "storage, s3-compatible"
+        },
+        {
+          "name": "Backblaze B2",
+          "url": "https://www.backblaze.com/b2/cloud-storage.html",
+          "description": "S3-compatible object storage at ¼ the price of AWS S3.",
+          "tags": "storage, s3-compatible"
+        },
+        {
+          "name": "Cloudinary",
+          "url": "https://cloudinary.com",
+          "description": "End-to-end media platform for upload, transformation, optimization and delivery of images and videos.",
+          "tags": "images, cdn, video"
+        },
+        {
+          "name": "ImageKit",
+          "url": "https://imagekit.io",
+          "description": "Real-time image and video CDN with automatic optimization, lazy loading and format conversion.",
+          "tags": "images, cdn"
+        },
+        {
+          "name": "Uploadcare",
+          "url": "https://uploadcare.com",
+          "description": "File-upload widget and CDN with on-the-fly image/video processing, OCR and virus scanning.",
+          "tags": "upload, cdn"
+        }
+      ]
+    },
+    {
+      "category": "Localisation / i18n",
+      "services": [
+        {
+          "name": "Crowdin",
+          "url": "https://crowdin.com",
+          "description": "Cloud localization platform for teams—translate, review and deploy apps in 150+ languages.",
+          "tags": "l10n, i18n"
+        },
+        {
+          "name": "Lokalise",
+          "url": "https://lokalise.com",
+          "description": "Translation management system with API, CLI, OTA updates and branching.",
+          "tags": "l10n, i18n"
+        },
+        {
+          "name": "Phrase",
+          "url": "https://phrase.com",
+          "description": "Localization platform with in-context editor, branching and GitHub integration.",
+          "tags": "l10n, i18n"
+        },
+        {
+          "name": "Transifex",
+          "url": "https://www.transifex.com",
+          "description": "Enterprise-grade localization hub with continuous i18n delivery for web, mobile and docs.",
+          "tags": "l10n, enterprise"
+        },
+        {
+          "name": "Localazy",
+          "url": "https://localazy.com",
+          "description": "Developer-friendly localization hub offering shared translations and CLI-driven workflows.",
+          "tags": "l10n, cli"
+        },
+        {
+          "name": "Weblate",
+          "url": "https://weblate.org",
+          "description": "Self-hosted continuous localization platform featuring Git-based workflow and review processes.",
+          "tags": "l10n, self-hosted"
+        }
+      ]
+    },
+    {
+      "category": "Dev Environments & IDEs",
+      "services": [
+        {
+          "name": "Gitpod",
+          "url": "https://gitpod.io",
+          "description": "Cloud IDE spinning up full dev environments from any GitHub, GitLab or Bitbucket repo.",
+          "tags": "cloud-ide, git"
+        },
+        {
+          "name": "Replit",
+          "url": "https://replit.com",
+          "description": "Cloud IDE supporting 50+ languages with multiplayer editing, hosting and package management.",
+          "tags": "cloud-ide, multiplayer"
+        },
+        {
+          "name": "CodeSandbox",
+          "url": "https://codesandbox.io",
+          "description": "Instant full-stack development environments in the browser with GitHub integration.",
+          "tags": "cloud-ide, browser"
+        },
+        {
+          "name": "StackBlitz",
+          "url": "https://stackblitz.com",
+          "description": "Instant full-stack web IDE running Node, React, Angular and more directly in the browser.",
+          "tags": "cloud-ide, web"
+        },
+        {
+          "name": "Glitch",
+          "url": "https://glitch.com",
+          "description": "Build and deploy full-stack apps in the browser with instant hosting and live collaboration.",
+          "tags": "cloud-ide, hosting"
+        },
+        {
+          "name": "VS Code Web",
+          "url": "https://vscode.dev",
+          "description": "Browser-based VS Code for quick editing, markdown preview and GitHub integration.",
+          "tags": "cloud-ide, browser"
+        },
+        {
+          "name": "Coder",
+          "url": "https://coder.com",
+          "description": "Self-hosted cloud development environments powered by VS Code.",
+          "tags": "cloud-ide, self-hosted"
+        },
+        {
+          "name": "GitHub Codespaces",
+          "url": "https://github.com/features/codespaces",
+          "description": "Instant dev environments spun up from any GitHub repo with VS Code in the browser.",
+          "tags": "cloud-ide, github"
+        }
+      ]
+    },
+    {
+      "category": "Design & UI Tooling",
+      "services": [
+        {
+          "name": "Figma",
+          "url": "https://figma.com",
+          "description": "Cloud-based design and prototyping tool with real-time collaboration and developer hand-off.",
+          "tags": "design, prototyping"
+        },
+        {
+          "name": "Penpot",
+          "url": "https://penpot.app",
+          "description": "Open-source design and prototyping platform built for cross-functional teams with CSS export.",
+          "tags": "design, open-source"
+        },
+        {
+          "name": "Framer",
+          "url": "https://framer.com",
+          "description": "Design-to-code platform creating responsive sites and prototypes with built-in animations.",
+          "tags": "design, no-code"
+        },
+        {
+          "name": "Canva",
+          "url": "https://www.canva.com",
+          "description": "Drag-and-drop design tool with templates, stock assets and team collaboration features.",
+          "tags": "design, templates"
+        },
+        {
+          "name": "Excalidraw",
+          "url": "https://excalidraw.com",
+          "description": "Collaborative sketching tool with hand-drawn aesthetics and end-to-end encryption.",
+          "tags": "whiteboard, collaboration"
+        },
+        {
+          "name": "LottieFiles",
+          "url": "https://lottiefiles.com",
+          "description": "Repository of free lightweight animations (JSON) for web and mobile apps with Lottie player.",
+          "tags": "animation, lottie"
+        },
+        {
+          "name": "Undraw",
+          "url": "https://undraw.co",
+          "description": "Open-source illustrations for any project—customizable SVGs in PNG or SVG format.",
+          "tags": "illustrations, svg"
+        },
+        {
+          "name": "Heroicons",
+          "url": "https://heroicons.com",
+          "description": "Free SVG icon set by the makers of Tailwind CSS.",
+          "tags": "icons, svg"
+        },
+        {
+          "name": "Tailwind UI",
+          "url": "https://tailwindui.com",
+          "description": "Ready-to-use Tailwind CSS components designed by the creators of Tailwind.",
+          "tags": "ui-kit, tailwind"
+        },
+        {
+          "name": "shadcn/ui",
+          "url": "https://ui.shadcn.com",
+          "description": "Copy-paste React components built with Radix UI and Tailwind CSS for modern apps.",
+          "tags": "ui-kit, react"
+        }
+      ]
+    },
+    {
+      "category": "Utilities & Misc",
+      "services": [
+        {
+          "name": "Carbon.now.sh",
+          "url": "https://carbon.now.sh",
+          "description": "Create beautiful images of source code snippets with syntax highlighting and shareable URLs.",
+          "tags": "screenshots, code-snippet"
+        },
+        {
+          "name": "Ray.so",
+          "url": "https://ray.so",
+          "description": "Minimalist code-to-image generator with beautiful gradient backgrounds and shareable links.",
+          "tags": "screenshots, code-snippet"
+        },
+        {
+          "name": "QuickChart",
+          "url": "https://quickchart.org",
+          "description": "Chart-image API based on Chart.js—generate PNG/SVG graphs via simple URL parameters.",
+          "tags": "charts, api"
+        },
+        {
+          "name": "JSONPlaceholder",
+          "url": "https://jsonplaceholder.typicode.com",
+          "description": "Free fake REST API for testing and prototyping with zero setup—CRUD posts, users, todos.",
+          "tags": "mock-api"
+        },
+        {
+          "name": "Webhook.site",
+          "url": "https://webhook.site",
+          "description": "Instant, unique URL to capture and inspect HTTP requests—ideal for webhook debugging.",
+          "tags": "webhook, debugging"
+        },
+        {
+          "name": "Mockaroo",
+          "url": "https://mockaroo.com",
+          "description": "Generate realistic test data in CSV, JSON, SQL or Excel with 150+ built-in data types.",
+          "tags": "mock-data"
+        },
+        {
+          "name": "QRCode Monkey",
+          "url": "https://www.qrcode-monkey.com",
+          "description": "Free custom QR code generator with logo and design options.",
+          "tags": "qr, generator"
+        },
+        {
+          "name": "TinyPNG",
+          "url": "https://tinypng.com",
+          "description": "Smart lossy compression for PNG/JPEG images shrinking files up to 80 % while preserving quality.",
+          "tags": "compression, images"
+        },
+        {
+          "name": "Browserling",
+          "url": "https://www.browserling.com",
+          "description": "Live interactive cross-browser testing in real VMs via your browser—no installs.",
+          "tags": "cross-browser, testing"
+        },
+        {
+          "name": "Regex101",
+          "url": "https://regex101.com",
+          "description": "Online regex tester and debugger with syntax highlighting and explanation.",
+          "tags": "regex, debugging"
+        }
+      ]
+    }
+  ]

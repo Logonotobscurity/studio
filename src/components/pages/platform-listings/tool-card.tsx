@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import type { Tool } from "@/lib/tool-schemas";
+import type { Tool } from "@/lib/tools";
 import { ArrowUpRight } from "lucide-react";
 import Link from 'next/link';
 import { Badge } from "@/components/ui/badge";
@@ -26,9 +26,6 @@ export default function ToolCard({ tool, onSelect }: ToolCardProps) {
   return (
     <motion.div
       variants={cardVariants}
-      initial="hidden"
-      animate="visible"
-      transition={{ duration: 0.3 }}
       className="h-full"
     >
       <Card className="flex flex-col h-full group transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
@@ -43,7 +40,7 @@ export default function ToolCard({ tool, onSelect }: ToolCardProps) {
           <CardContent className="flex-grow">
               {description && benefit !== description && <p className="text-sm text-muted-foreground line-clamp-3">{description}</p>}
               <div className="mt-4 flex flex-wrap gap-2">
-                {tool.tags?.map((tag: string) => {
+                {Array.isArray(tool.tags) && tool.tags.map((tag: string) => {
                     const tagInfo = tagMap[tag];
                     return tagInfo ? <Badge key={tag} variant={tagInfo.variant} className="font-figtree">{tagInfo.label}</Badge> : null;
                 })}

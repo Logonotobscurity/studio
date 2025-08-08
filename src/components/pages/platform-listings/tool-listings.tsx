@@ -14,7 +14,6 @@ import { useToolFilters } from '@/hooks/use-tool-filters';
 import { AnimatePresence, motion } from 'framer-motion';
 
 type ToolListingsProps = {
-  slug: string;
   initialTools: Tool[];
   availableCategories: string[];
   availableFunnels: string[];
@@ -24,7 +23,6 @@ type ToolListingsProps = {
 };
 
 export default function ToolListings({
-  slug,
   initialTools,
   availableCategories,
   availableFunnels,
@@ -127,11 +125,18 @@ export default function ToolListings({
           <AnimatePresence>
             {paginatedTools.length > 0 ? (
               <>
-                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                <motion.div 
+                  className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6"
+                  initial="hidden"
+                  animate="visible"
+                  variants={{
+                    visible: { transition: { staggerChildren: 0.05 } }
+                  }}
+                >
                   {paginatedTools.map((tool, index) => (
                     <ToolCard key={`${tool.id || tool.name}-${index}`} tool={tool} onSelect={handleSelectTool} />
                   ))}
-                </div>
+                </motion.div>
                 <Pagination currentPage={currentPage} totalPages={totalPages} />
               </>
             ) : (
