@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden isolate">
       <div 
         aria-hidden="true" 
         className="absolute inset-0 -z-10"
@@ -21,6 +21,7 @@ export default function Hero() {
           data-ai-hint="abstract sphere"
           sizes="100vw"
         />
+        <div className="absolute inset-0 bg-background/60 backdrop-blur-sm" />
       </div>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
