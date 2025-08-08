@@ -24,16 +24,29 @@ export const getAllTools = async (): Promise<Tool[]> => {
     const fileContent = await fs.readFile(filePath, 'utf-8');
     try {
       const toolsFromFile: any[] = JSON.parse(fileContent);
+      
       if (Array.isArray(toolsFromFile)) {
-        allTools.push(...toolsFromFile);
+        // Flatten nested structures like in 'developer-journey.json'
+        const flattenedTools = toolsFromFile.flatMap(item => {
+          if (item.services && Array.isArray(item.services)) {
+            return item.services.map((service: any) => ({
+              ...service,
+              category: item.category, // Assign the parent category
+              _sourceFile: file,
+            }));
+          }
+          return { ...item, _sourceFile: file };
+        });
+        allTools.push(...flattenedTools);
       }
+
     } catch (e) {
       console.error(`Could not parse ${file}:`, e);
     }
   }
   
   // Sort tools alphabetically by name
-  allTools.sort((a, b) => (a.name || '').localeCompare(b.name || ''));
+  allTools.sort((a, b) => (a.name || a.tool || '').localeCompare(b.name || b.tool || ''));
 
   toolCache = allTools;
   return allTools;
@@ -44,15 +57,15 @@ export async function getToolsBySlug(slug: string): Promise<Tool[]> {
   if (slug === 'all') {
     return allTools;
   }
-  const category = slug.replace(/-/g, ' ').toLowerCase();
+
+  const categoryNameFromSlug = slug.replace(/-/g, ' ').toLowerCase();
   
   return allTools.filter(tool => {
     const toolCategory = (tool.category || '').toLowerCase();
-    const sourceFile = (tool._sourceFile || '').toLowerCase();
+    const sourceFileBaseName = path.basename(tool._sourceFile || '', '.json').toLowerCase();
 
-    // Match by assigned category or by the original filename slug
-    return toolCategory.includes(category) || 
-           path.basename(sourceFile, '.txt') === slug;
+    return toolCategory === categoryNameFromSlug || 
+           sourceFileBaseName === categoryNameFromSlug;
   });
 }
 

@@ -1,8 +1,9 @@
-import { getToolsBySlug, getCategoriesForSlug, getFunnelsForSlug, Tool } from '@/lib/tools';
+import { getToolsBySlug, getCategoriesForSlug, getFunnelsForSlug } from '@/lib/tools';
 import ToolListings from '@/components/pages/platform-listings/tool-listings';
 import { categories } from '@/data/categories';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import type { Tool } from '@/lib/tool-schemas';
 
 type PlatformListingsPageProps = {
   params: { slug: string };
@@ -32,16 +33,16 @@ export default async function PlatformListingsPage({ params, searchParams }: Pla
     notFound();
   }
 
-  const tools: Tool[] = await getToolsBySlug(slug);
-  const availableCategories = await getCategoriesForSlug(tools);
-  const availableFunnels = await getFunnelsForSlug(tools);
+  const allToolsForSlug: Tool[] = await getToolsBySlug(slug);
+  const availableCategories = await getCategoriesForSlug(allToolsForSlug);
+  const availableFunnels = await getFunnelsForSlug(allToolsForSlug);
   
   const pageTitle = categories.find(c => c.slug === slug)?.title || 'All Tools';
   const pageDescription = categories.find(c => c.slug === slug)?.description || 'Explore all tools to accelerate your growth.';
 
   return (
     <ToolListings
-      initialTools={tools}
+      initialTools={allToolsForSlug}
       availableCategories={availableCategories}
       availableFunnels={availableFunnels}
       searchParams={searchParams}

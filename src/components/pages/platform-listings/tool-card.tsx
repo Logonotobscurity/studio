@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import type { Tool } from "@/lib/tools";
+import type { Tool } from "@/lib/tool-schemas";
 import { ArrowUpRight } from "lucide-react";
 import Link from 'next/link';
 import { Badge } from "@/components/ui/badge";

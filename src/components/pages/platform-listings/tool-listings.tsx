@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { SlidersHorizontal, List } from 'lucide-react';
-import type { Tool } from '@/lib/tools';
+import type { Tool } from '@/lib/tool-schemas';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
@@ -134,7 +134,7 @@ export default function ToolListings({
                   }}
                 >
                   {paginatedTools.map((tool, index) => (
-                    <ToolCard key={`${tool.id || tool.name}-${index}`} tool={tool} onSelect={handleSelectTool} />
+                    <ToolCard key={`${tool.url}-${index}`} tool={tool} onSelect={handleSelectTool} />
                   ))}
                 </motion.div>
                 <Pagination currentPage={currentPage} totalPages={totalPages} />

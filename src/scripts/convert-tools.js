@@ -31,11 +31,11 @@ function inferSchema(lines) {
   if (firstFive.every(l => l.startsWith('{'))) {
     return 'JsonLineTool';
   }
-  if (lines.some(l => l.startsWith('###'))) {
+  if (lines.some(l => l.trim().startsWith('###'))) {
     return 'CategoryTool';
   }
   // Default to CategoryTool for markdown-like lists that don't fit other schemas
-  if (lines.some(l => l.startsWith('- ['))) {
+  if (lines.some(l => l.trim().startsWith('- ['))) {
     return 'CategoryTool';
   }
   return 'unknown';
@@ -63,14 +63,18 @@ function parseTxt(content, schema, sourceFile) {
       lines.forEach((line, i) => {
         const trimmedLine = line.trim();
         if (trimmedLine) {
-          allTools.push({
-            ...baseMeta,
-            id: `u-${baseName}-${String(i).padStart(3, '0')}`,
-            name: new URL(trimmedLine).hostname.replace('www.',''),
-            url: trimmedLine,
-            description: `A tool for ${defaultCategoryName}.`,
-            category: defaultCategoryName
-          });
+          try {
+            allTools.push({
+              ...baseMeta,
+              id: `u-${baseName}-${String(i).padStart(3, '0')}`,
+              name: new URL(trimmedLine).hostname.replace('www.',''),
+              url: trimmedLine,
+              description: `A tool for ${defaultCategoryName}.`,
+              category: defaultCategoryName
+            });
+          } catch(e) {
+            console.warn(`Skipping invalid URL in ${sourceFile}: ${trimmedLine}`);
+          }
         }
       });
       return allTools;
@@ -78,7 +82,11 @@ function parseTxt(content, schema, sourceFile) {
        lines.forEach(line => {
         const trimmedLine = line.trim();
         if (trimmedLine) {
-          allTools.push({ ...JSON.parse(trimmedLine), ...baseMeta, category: defaultCategoryName });
+          try {
+            allTools.push({ ...JSON.parse(trimmedLine), ...baseMeta, category: defaultCategoryName });
+          } catch(e) {
+            console.warn(`Skipping invalid JSON line in ${sourceFile}: ${trimmedLine}`);
+          }
         }
       });
       return allTools;
@@ -108,7 +116,6 @@ function parseTxt(content, schema, sourceFile) {
 }
 
 async function generateTypes(allTools) {
-    const sampleTool = allTools.length > 0 ? allTools[0] : {};
     const keys = [...new Set(allTools.flatMap(tool => Object.keys(tool)))];
 
     let content = `// Auto-generated, never hand-edited. Based on all converted JSON files.
@@ -120,9 +127,13 @@ export type Tool = {
         if (allTypes.size === 1) {
             const foundType = allTypes.values().next().value;
             if (foundType === 'string') type = 'string';
-            if (foundType === 'number') type = 'number';
-            if (foundType === 'boolean') type = 'boolean';
-            if (foundType === 'object' && Array.isArray(sampleTool[key])) type = 'string[]';
+            else if (foundType === 'number') type = 'number';
+            else if (foundType === 'boolean') type = 'boolean';
+            else if (foundType === 'object') {
+              // A bit more robust check for array of strings
+              const isArrayOfStrings = allTools.every(t => !t[key] || (Array.isArray(t[key]) && t[key].every((i: any) => typeof i === 'string')));
+              if (isArrayOfStrings) type = 'string[]';
+            }
         }
         const isOptional = allTools.some(t => typeof t[key] === 'undefined');
         content += `  ${key}${isOptional ? '?' : ''}: ${type};\n`;
